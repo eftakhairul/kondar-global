@@ -1,0 +1,354 @@
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px){
+/* STYLES GO HERE */
+	.bodywrapper .container .adv_srch .ad_srch1, 
+	.bodywrapper .container .adv_srch .ad_srch2,
+	.bodywrapper .container .adv_srch .ad_srch3,
+	.bodywrapper .container .adv_srch .ad_srch4,
+	.bodywrapper .container .adv_srch .ad_srch5{
+		width:100% !important;
+		margin-bottom: 10px;
+		margin-left: 0px !important;
+
+	}
+
+	/*.text-header{display:none;}*/
+
+	.logo {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo img {float: none !important; margin: 0 auto}
+
+	.bodywrapper .header .ddl{margin-right: 0px;}
+
+	.box-list-select {
+		margin-top: 0px !important;
+	}
+
+	.btn-search-ad{margin-top: 15px; margin-left: 16px;}
+
+	.bodywrapper .header .menu  .parent li{background: none}
+
+	.bodywrapper .footer .fb4{padding-bottom: 5px; margin-top: 20px;}
+
+	.text-header{ background: none; margin-top: 20px; height: auto;}
+	.text-header .text-1, .text-header .text-2 {
+		display: block;
+		width:100%; text-align: center;
+	}
+	.bodywrapper .header .searchdiv {
+		float: none;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+	.logo{width:auto; float:left;}
+	.bodywrapper .header .ddl{float: right; margin-right: 0px;}
+
+	.text-header .text-1{float:left;}
+	.text-header .text-2{text-align: center}
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+	.text-header{margin-top: 30px; background: none}
+	.searchdiv {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.text-header .text-1, .text-header .text-2{text-align: center}
+
+	.logo {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo img {float: none !important}
+	.bodywrapper .header .ddl{margin-right: 0px;}
+	.bodywrapper .header .menu  .parent li{background: none}
+
+	.bodywrapper .container .adv_srch .ad_srch1, 
+	.bodywrapper .container .adv_srch .ad_srch2,
+	.bodywrapper .container .adv_srch .ad_srch3,
+	.bodywrapper .container .adv_srch .ad_srch4,
+	.bodywrapper .container .adv_srch .ad_srch5{
+		width:100% !important;
+		margin-bottom: 10px;
+		margin-left: 0px !important;
+
+	}
+
+	.bodywrapper .footer .fb4{padding-bottom: 5px; margin-top: 20px;}
+	.fb4 .text-right, .fb4 .copyright-area{text-align: center}
+
+	#awards input.serial_number {
+		width: 200px;
+		margin-left: -20px;
+	}
+}
+
+
+@media screen and (max-width: 504px) {
+	a.logo{width: 100%; text-align: center; display: inline-block;
+		position: relative;
+		z-index: 999;
+	}
+	.bodywrapper .header .ddl{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		height: auto;
+	}
+	.bodywrapper .header .ddl .box{display: inline-block;
+/*ajit*/
+      width: 100%;
+		clear: both;
+		text-align: center;		
+	}
+	.language_container  {
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+
+/*@media screen and(max-width: 800px) {
+	.bodywrapper .header .block-bg-header img{display: none}
+}*/
+
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px) {
+
+	.main-page.contact-us-page {height: auto;}
+
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+	.btn-search-ad{margin-top: 15px; margin-left: 16px;}
+	.box-list-select{padding-top: 10px;}
+	
+
+	.bodywrapper .footer .fb4{padding-bottom: 5px; margin-top: 20px;}
+
+	.copyright-area{float: none !important; text-align: center !important;}
+	.social{text-align: center !important}
+	.bodywrapper .header .menu  .parent li{background: none}
+
+	.bodywrapper .header .searchdiv {
+		float: right;
+		margin-top: 23px;
+	}
+
+	.bodywrapper .header .searchdiv {
+		float: none;
+		margin-top: 20px;
+	}
+
+	.text-header{ background: none; margin-top: 20px; height: auto;}
+	.text-header .text-1, .text-header .text-2 {
+		display: block;
+		width:100%; text-align: center;
+	}
+	.bodywrapper .header .searchdiv {
+		/* float: none; */
+		margin-top: 20px;
+		/* text-align: center; */
+	}
+	
+} 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+	.bodywrapper .footer .footer_wrap .fb4 {padding-bottom: 20px;}
+
+	.copyright-area{float: none !important; text-align: center !important;}
+	.social{text-align: center !important}
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+	.fix-btn-search-ad {
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+
+	.main-page.contact-us-page {height: auto;}
+}
+
+/** For small tablet **/
+@media only screen
+and (min-width : 600px)
+and (max-width : 800px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+	.text-header{
+		background: none; height: auto;
+	}
+	.text-header{ background: none; margin-top: 20px; height: auto;}
+	.text-header .text-1, .text-header .text-2 {
+		display: block;
+		width:100%; text-align: center;
+	}
+	.bodywrapper .header .searchdiv {
+	/* 	float: none; */
+		margin-top: 20px;
+		/* text-align: center; */
+	}
+}
+
+
+/* For small tablet (portrait & landscape)*/
+@media only screen
+and (min-width : 600px)
+and (max-width : 800px)
+and (orientation: landscape)
+{
+	.text-header{background: none; margin-top: 40px;}
+	.text-header .text-1, .text-header .text-2, .bodywrapper .header .searchdiv {
+		display: block;
+		width: 100%;
+		text-align:center;
+		margin-bottom: 10px;
+	}
+	
+	.bodywrapper .header .block-bg-header img {display: none}
+
+	.box-list-select{padding-top: 10px;}
+	.btn-search-ad{margin-top: 15px; margin-left: 16px;}
+
+	.bodywrapper .footer .fb4{padding-bottom: 5px; margin-top: 20px;}
+	
+}
+
+
+
+/* For Large tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.bodywrapper .header h4{font-size: 11px;}
+	.bodywrapper .header .menu .parent li a{padding:15px 25px;}
+	.bodywrapper .container .adv_srch h4 {
+		font-size: 12px;
+		text-transform: uppercase;
+		margin-top: 5px;
+	}
+	
+	.fix-btn-search-ad{padding-left: 0px;}
+
+	.left_side h1{font-size: 14px !important; padding-left: 10px !important;}
+
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	.bodywrapper .footer .fb4{padding-bottom: 5px; margin-top: 20px;}	
+	.bodywrapper .header .block-bg-header img{display: none}
+	.bodywrapper .header .menu .parent li a{padding:8px 8px;}		.productbaselisting .vehicle_category_image_wrap{float:left;width:100% !important;}	.productbaselisting .product_type_image_wrap{float:left;width:100% !important;}	.productbaselisting.car-lists .vehicletypeBlock .btn{ margin-left:0px !important;width:100% !important;}	.productbaselisting.car-lists .producttypeBlock .btn{ margin-left:0px !important;width:100% !important;}		.nav.nav-tabs{ margin:0px;}	.nav-tabs > li{width:100% !important;}
+}
+
+
+@media screen and (max-width: 599px) { .nav.nav-tabs{ margin:0px;}	.nav-tabs > li{width:100% !important;}
+	.text-header{ background: none; margin-top: 20px; height: auto;}
+	.text-header .text-1, .text-header .text-2 {
+		display: block;
+		width:100%; text-align: center;
+	}
+}
+
+
+
+@media screen and (max-width: 1199px) {
+	.bodywrapper .header h4{font-size: 11px;}
+	.text-header {
+		background: url(../images/bg-search-bar.png) 96% center no-repeat;
+	}
+}
+
+
+@media screen and (max-width: 991px) {.nav.nav-tabs{ margin:0px;}	.nav-tabs > li{width:100% !important;}
+	.bodywrapper .header .block-bg-header img {display: none}
+	.text-header {
+		background: url(../images/bg-search-bar.png) 104% center no-repeat;
+	}
+	.bodywrapper .header .slider img{height: 254px;}
+}
+
+@media screen and (max-width: 800px) {
+	.text-header{background: none}		.nav.nav-tabs{ margin:0px;}	.nav-tabs > li{width:100% !important;}
+}
+
+
+@media screen and (max-width: 767px) {.nav.nav-tabs{ margin:0px;}	.nav-tabs > li{width:100% !important;}
+	.media .pull-left{
+		width: 100%;
+		text-align: center;
+	}
+	.media .pull-left img{max-width: 112px; max-height: 114px; display: inline}
+        
+   
+}
+
+
+@media screen and (min-width: 801px) {
+	.bodywrapper .header .searchdiv{margin-top: -29px}			}
+
+@media screen and (min-width: 990px) {
+	/*.bodywrapper .header h4{font-size: 11px;}
+	.text-header .text-2{float:left; margin-left: 110px;}
+	.bodywrapper .header .searchdiv #Search{margin-left: 0px;}*/
+
+}
+
+@media screen and (min-width: 992px) {
+	.bodywrapper .header .searchdiv{margin-top: -4px}
+
+}
+
+/*@media screen and(min-width: 1025px) {
+	.bodywrapper .header .menu .parent li a{padding:15px 15px;}
+}*/
+ 
+/* Desktops and laptops ----------- */
+
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+
+
+@media screen and (min-width: 1599px) {
+/*ajit*/
+	.bodywrapper .footer{
+/*		background: #f6f6f6 url(../images/bg-foot.png) -12% center no-repeat;*/
+	}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}

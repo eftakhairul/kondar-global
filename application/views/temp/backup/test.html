@@ -1,0 +1,236 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+</title>
+<base href="http://localhost/kondarglobal/">
+<link rel="stylesheet" type="text/css" href="assets/template/css/bootstrap.css" media="screen">
+<link rel="stylesheet" type="text/css" href="assets/template/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="assets/template/css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="assets/template/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/template/css/style_repos.css" media="screen">
+<script type="text/javascript" src="assets/template/js/jquery.js"></script>
+<script type="text/javascript" src="assets/template/js/bootstrap-select.min.js"></script>
+
+</head>
+<script>
+$(document).ready(function(e) {	
+	$(".minimize_block").click(function(){	 
+		if($(this).val()=='+')
+			$(this).val('-');
+		else
+			$(this).val('+');	
+		//alert($(this).attr('id'));
+		var hideid=$(this).attr('id');
+		//alert('.'+hideid);
+		//$('.'+hideid).hide();	
+		$('.'+hideid).toggle(100);	
+		//var parenttable=$(this).closest( ".productsbytype" );
+		//var numberofchildrows=$(parenttable).find('tr.cart_details_row');
+	  	//$(this).find(".minimize_typedata").toggle(100);
+	});
+});	
+</script>
+
+<link rel="stylesheet" type="text/css" href="assets/template/css/lightbox.css" media="screen">
+<script type="text/javascript" src="assets/template/js/lightbox-2.6.min.js"></script>
+
+</head><body>
+<div class="bodywrapper">
+
+<!--End bread-->
+<form class="form-horizontal" role="form" enctype="multipart/form-data" method="post" action="http://localhost/kondarglobal/front/save_cart_data" id="cart_details_form">
+  <input type="hidden" value="submit" name="button_checkings" id="button_checkings" style="width:50px">
+  <div class="container">
+    <div class="main-page">
+      
+        <div class="row">
+          <div class="col-md-12">
+                        <div class="table-responsive" id="not_empty_cart">
+              <input type="hidden" value="1" name="update" style="width:50px;">
+              <table  class="table table-bordered my-table productsbytype">
+                                <input type="hidden" value="28" name="product_id[]" style="width:50px">
+                                <thead>
+                	<th colspan="11">Brake Lining                   <input type="button" id="minimize_block_28" class="minimize_block" name="minimize_block" value="+" style="float:right;"></th>
+                </thead>
+                  
+                <thead class="minimize_block_28">
+                  <tr>
+                    <th>DELETE</th>
+                    <th>No.</th>
+                    <th>QTY</th>
+                    <th>COMMENTS</th>
+                    <th>KGT REF#</th>
+                    <th>PRODUCT PHOTO</th>
+                    <th>VEHICLE PHOTO</th>
+                                        <th>DRAWING PHOTO</th>
+                                        <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody class="minimize_block_28">
+                                    <tr class="cart_details_row">
+                    <td><span><a href="javascript:void(0);" style="color:#000" onClick="remove_cart(this,28);"><i class="fa fa-times"></i></a></span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>1</span></td>
+                    <td><span style="color: #575757; font-family: arial; font-size: 12px; text-align: center;">
+                      <input type="text" value="1" style="width:50px" name="quantity[]" >
+                      </span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>
+                      <textarea name="comment[]"></textarea>
+                      </span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>TSFFKG17804</span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span><a class="example-image-link" data-lightbox="example-28" href="assets/uploads/product_images/TSFFKG17804p3.jpg"> <img src="assets/uploads/product_images/TSFFKG17804p3.jpg" height="75" /> </a>&nbsp;</span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span> <a class="example-image-link" data-lightbox="example-28" href="assets/uploads/product_images/TSFFKG17804v3.jpg"> <img src="assets/uploads/product_images/TSFFKG17804v3.jpg" height="75" /> </a>&nbsp;</span></td>
+                                        <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span> <a class="example-image-link" data-lightbox="example-28" href="assets/uploads/product_images/previewimage1.jpg"> <img src="assets/uploads/product_images/previewimage1.jpg" height="75" /> </a>&nbsp; </span></td>
+                                        <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><a href="javascript:void(0)" onClick="$(this).parent().parent().next('.less_info').toggle();$(this).find('.less_img').toggle();$(this).find('.more_img').toggle();"> <img class="less_img" src="assets/template/images/less_info.png" style="display:none" alt=""/> <img class="more_img" src="assets/template/images/more_info.png" style="display:inline" alt=""/> </a> </td>
+                  </tr>
+                  <tr class="less_info" style="background-color: rgb(219, 219, 219); display:none">
+                    <td colspan="11" style="color: #575757; font-family: arial; font-size: 12px;"><div class="single_product_wrapper">
+                        <div class="detail_wrap" style="text-align:left">
+                                                                                                                                  <div class="single_detail"> <span>WVA :</span> <span>17804</span> </div>
+                                                                              <div class="single_detail"> <span>Vehicle Brand Name :</span> <span>BEDFORD</span> </div>
+                                                  </div>
+                        <div class="detail_wrap" style="text-align:center">
+                                                                                                                                </div>
+                        <div class="clear"></div>
+                      </div></td>
+                  </tr>
+                                  <input type="hidden" value="19" name="product_id[]" style="width:50px">
+                                  <tr class="cart_details_row">
+                    <td><span><a href="javascript:void(0);" style="color:#000" onClick="remove_cart(this,19);"><i class="fa fa-times"></i></a></span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>2</span></td>
+                    <td><span style="color: #575757; font-family: arial; font-size: 12px; text-align: center;">
+                      <input type="text" value="1" style="width:50px" name="quantity[]" >
+                      </span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>
+                      <textarea name="comment[]"></textarea>
+                      </span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>TSFFKG19939</span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span><a class="example-image-link" data-lightbox="example-19" href="assets/uploads/product_images/TSFFKG19939p6.jpg"> <img src="assets/uploads/product_images/TSFFKG19939p6.jpg" height="75" /> </a>&nbsp;</span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span> <a class="example-image-link" data-lightbox="example-19" href="assets/uploads/product_images/TSFFKG19939v4.jpg"> <img src="assets/uploads/product_images/TSFFKG19939v4.jpg" height="75" /> </a>&nbsp;</span></td>
+                                        <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span> <a class="example-image-link" data-lightbox="example-19" href="assets/uploads/product_images/previewimage.jpg"> <img src="assets/uploads/product_images/previewimage.jpg" height="75" /> </a>&nbsp; </span></td>
+                                        <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><a href="javascript:void(0)" onClick="$(this).parent().parent().next('.less_info').toggle();$(this).find('.less_img').toggle();$(this).find('.more_img').toggle();"> <img class="less_img" src="assets/template/images/less_info.png" style="display:none" alt=""/> <img class="more_img" src="assets/template/images/more_info.png" style="display:inline" alt=""/> </a> </td>
+                  </tr>
+                  <tr class="less_info" style="background-color: rgb(219, 219, 219); display:none">
+                    <td colspan="11" style="color: #575757; font-family: arial; font-size: 12px;"><div class="single_product_wrapper">
+                        <div class="detail_wrap" style="text-align:left">
+                                                                                                                                  <div class="single_detail"> <span>WVA :</span> <span>19939</span> </div>
+                                                                              <div class="single_detail"> <span>Vehicle Brand Name :</span> <span>VOLVO</span> </div>
+                                                  </div>
+                        <div class="detail_wrap" style="text-align:center">
+                                                                                                                                </div>
+                        <div class="clear"></div>
+                      </div></td>
+                  </tr>
+                                  <input type="hidden" value="27" name="product_id[]" style="width:50px">
+                                  <tr class="cart_details_row">
+                    <td><span><a href="javascript:void(0);" style="color:#000" onClick="remove_cart(this,27);"><i class="fa fa-times"></i></a></span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>3</span></td>
+                    <td><span style="color: #575757; font-family: arial; font-size: 12px; text-align: center;">
+                      <input type="text" value="1" style="width:50px" name="quantity[]" >
+                      </span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>
+                      <textarea name="comment[]"></textarea>
+                      </span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span>TSFFKG19260</span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span><a class="example-image-link" data-lightbox="example-27" href="assets/uploads/product_images/TSFFKG19260p3.jpg"> <img src="assets/uploads/product_images/TSFFKG19260p3.jpg" height="75" /> </a>&nbsp;</span></td>
+                    <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span> <a class="example-image-link" data-lightbox="example-27" href="assets/uploads/product_images/TSFFKG19256v2.jpg"> <img src="assets/uploads/product_images/TSFFKG19256v2.jpg" height="75" /> </a>&nbsp;</span></td>
+                                        <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><span> <a class="example-image-link" data-lightbox="example-27" href="assets/uploads/product_images/TSFFKG19260d2.jpg"> <img src="assets/uploads/product_images/TSFFKG19260d2.jpg" height="75" /> </a>&nbsp; </span></td>
+                                        <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><a href="javascript:void(0)" onClick="$(this).parent().parent().next('.less_info').toggle();$(this).find('.less_img').toggle();$(this).find('.more_img').toggle();"> <img class="less_img" src="assets/template/images/less_info.png" style="display:none" alt=""/> <img class="more_img" src="assets/template/images/more_info.png" style="display:inline" alt=""/> </a> </td>
+                  </tr>
+                  <tr class="less_info" style="background-color: rgb(219, 219, 219); display:none">
+                    <td colspan="11" style="color: #575757; font-family: arial; font-size: 12px;"><div class="single_product_wrapper">
+                        <div class="detail_wrap" style="text-align:left">
+                                                                                                                                  <div class="single_detail"> <span>WVA :</span> <span>19260</span> </div>
+                                                                              <div class="single_detail"> <span>Vehicle Brand Name :</span> <span>DAF</span> </div>
+                                                  </div>
+                        <div class="detail_wrap" style="text-align:center">
+                                                                                                                                </div>
+                        <div class="clear"></div>
+                      </div></td>
+                  </tr>
+                                  <input type="hidden" value="29" name="product_id[]" style="width:50px">
+                </tbody></table>
+                
+               
+            </div>
+            <div class="out-box-modal" id="empty_cart" style="display:none;">
+              <div class="box-content-modal">
+                <h2 class="title-modal big">empty cart</h2>
+              </div>
+            </div>
+                      </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+            <div class="nav-prex-next text-right" id="cart_buttons">
+        <div class="row">
+          <div class="col-md-12">
+            <!--<a href="front/continue_shopping_cart" class="btn btn-primary btn-sm">Back</a>
+                                <a href="front/continue_shopping_cart" class="btn btn-primary btn-sm">CONTINUE SHOPPING</a>-->
+            <a href="javscript:void(0)" class="btn btn-primary btn-sm"  id="cart_back">Back</a> <a href="javscript:void(0)" class="btn btn-primary btn-sm"  id="cart_continue_shopping">CONTINUE SHOPPING</a> <a href="javscript:void(0)" class="btn btn-primary btn-sm" id="cart_checkout">SUBMIT</a> </div>
+        </div>
+      </div>
+          </div>
+    <!--End content-->
+  </div>
+</form><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+   
+      
+			
+       
+</div><!--End footer-->
+</div><!--End footer-->
+        
+    </div>
+</body>
+</html>

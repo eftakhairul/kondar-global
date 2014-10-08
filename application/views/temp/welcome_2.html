@@ -1,0 +1,149 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K G T Auto Spare Parts</title>
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/welcome.css">
+<link rel="stylesheet" type="text/css" href="./css/style_repos.css" media="screen">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	
+    <script type="text/javascript" src="./js/jskgt.js"></script>
+    
+    
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript" src="./js/jquery.earth-3d.js"></script>
+    <script>
+    function startTime(){
+        var today=new Date();
+        var day = today.getDate();
+        var month = today.getMonth()+1;
+        var year = today.getFullYear();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        // add a zero in front of numbers<10
+        m=checkTime(m);
+        s=checkTime(s);
+        day=checkTime(day);
+        month=checkTime(month);
+        if(h <10) {
+            re_h = "0" + h;
+        } else {
+            re_h = h;
+        }
+        $('#dateActive').html(day+' . '+month+' . '+year);
+        $('#timeActive').html(re_h+' : '+m+' : '+s);
+        setTimeout(function(){startTime()},500);
+    }
+    function checkTime(i){
+        if (i<10){
+          i = "0" + i;
+        }
+        return i;
+    }
+    $(function(){
+		startTime(); 
+    });
+
+    $(document).ready(function() {
+            $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+				effect: 'fade',
+                testMode: true,
+                onChange: function(evt){
+                    alert("The selected language is: "+evt.selectedItem);
+                }
+			});
+        });
+
+    $(window).resize(function(){
+        var w_with = $(window).width();
+        //if(w_with > 320) alert(w_with);
+    });
+
+</script>
+</head>
+<style type="text/css">
+
+	body{
+		background: #000 url('images/bg_wel.jpg');
+	    background-repeat: no-repeat;
+	    background-size:cover;
+	    background-position: center top;
+	    background-attachment: fixed;
+	}
+
+	.wel-text-foot{color:#fff; position: absolute; bottom: 0px; text-align: center; width: 100%; font-weight: bold;}
+
+</style>
+</head>
+
+<body onLoad="itemSize();">
+	<div class="container">
+		<div class="row">
+			<div class="wel-header text-center">
+				<div class="col-md-12"><img src="images/logo.png" class="img-responsive" style="margin:0 auto"/></div>
+				<div class="date-sec">
+		        	<div class="date-time color-white" id="dateActive">27 . 01 . 2014</div>
+		            <div class="sep"></div>
+		            <div class="date-time color-white" id="timeActive">09 : 00 : 02</div>
+		        </div>
+			</div>
+		</div>
+        
+        <div class="clearfix"></div>
+        <div class="row">
+        	<div class="col-md-12 text-center">
+        		<div class="language_container">
+		            <div id="polyglotLanguageSwitcher">
+		        		<form action="index.php">
+		        			<select id="polyglot-language-options">
+		        				<option id="en" value="en" selected>English</option>
+		        				<option id="fr" value="fr">Fran&ccedil;ais</option>
+		        				<option id="de" value="de">Deutsch</option>
+		        				<option id="it" value="it">Italiano</option>
+		        				<option id="es" value="es">Espa&ntilde;ol</option>
+		        			</select>
+		        		</form>
+		            </div>
+		            <input type="submit" class="button" value="ENTER" onclick="location.href='index.php'">
+		            <div class="clear"></div>
+		        </div>
+        	</div>
+        </div>    
+            
+
+                
+        <div class="clearfix"></div>
+        <div class="row">
+        	<div class="col-md-12 text-center">
+        		<!-- <img src="images/globe_welcome.png" class="img-responsive"  style="margin:0 auto"/> -->
+        		<div id="carousel"></div>
+			    <div id="content">
+			    	
+			        <div id="container">
+			          <canvas id="sphere" width="400" height="400"></canvas>
+			          <div id="glow-shadows" class="earth"></div>
+			        </div>
+			    </div>
+        	</div>
+        </div>
+        <div id="footer">
+            <div class="row">
+                <div class="col-md-12 text-center" style="height:190px; position:relative; ">
+                    <p class="wel-text-foot">Copy Right &copy 2014 Kondar Global. All rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

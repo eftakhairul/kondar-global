@@ -1,0 +1,33 @@
+
+.date-sec .date-time {
+	font-size: 13px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 170px;
+}
+.date-sec .sep {
+	border-top: 1px solid #FFFFFF;
+	height: 0;
+	margin: 0 0 0 8px;
+	padding: 0;
+	width: 160px;
+}
+
+.leftcontentsupporter { width: 270px; margin-top: 40px; }
+.leftcontentsupporter > img { margin-bottom: -20px; }
+.leftcontentsupporter > h1 { font-size: 17px; text-align: center; color: white; background: #de0000; padding: 5px; margin-bottom: 0px; margin-top: 0px; }
+.leftcontentsupporter .rows { padding: 5px; height: 66px; background: #101010 url("../images/left_seperator.png") no-repeat bottom center; }
+.leftcontentsupporter .rows > img { float:left; margin-top: 10px; margin-left: 6px; }
+.leftcontentsupporter .rows > div {  color:#FFFFFF; font-size: 9px; width: 100px; float:left; margin-left: 8px; margin-top: -10px; }
+.leftcontentsupporter .rows > div > h3 { font-size: 12px; font-weight: bold; }
+.leftcontentsupporter .rows > div.right { background: url("../images/horizental_seperator.png") no-repeat scroll left bottom transparent; padding-left: 10px; width: 103px; }
+.leftcontentsupporter .rows > div.right > h2 { font-size: 11px; }
+.hide_data{ display:none;}
+#div_id_notifications_panel h1 {font-size: 13px;font-weight: bold;}
+.float_right{ float:right;}
+
+

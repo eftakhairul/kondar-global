@@ -1,0 +1,149 @@
+.filepreview img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.filepreview{  color: red; font-size: 15px;}
+
+.filepreview.notempty {
+	width: 80%;
+	margin-left: 10%;
+	height: 300px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	float: left;
+	margin-top: 25px;
+	background: white;
+}
+
+.filepreview iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.answer {
+	color: #AF6047;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.question {
+	color: #DE0200;
+	font-weight: bold;
+}
+
+.questions_history .one_ques_hist {
+	border-radius: 5px;
+	padding: 5px;
+}
+.questions_history .ques_text {
+	color: rgb(100, 96, 96);
+}
+
+.questions_history .ques_answer {
+	color: rgb(207, 60, 60);
+	margin-left: 18px;
+	margin-bottom: 10px;
+}
+
+label {
+	font-weight: normal;
+}
+
+h2, h1, h3, h4 {
+	font-weight: normal;
+}
+
+.left {
+	float: left;
+}
+.both {
+	clear: both;
+}
+
+.file-upload-container {
+	width: 140px;
+	text-align: center;
+	color: white;
+	border: 1px solid #efefef;
+	padding: 10px;
+	background: #DE0200;
+}
+.file-upload-override-button {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: #DE0200;
+}
+.file-upload-override-button:hover {
+	background-color: #DE0200;
+}
+.file-upload-override-button:active {
+	position: relative;
+	top: 1px;
+}
+.file-upload-button {
+	position: absolute;
+	height: 50px;
+	top: -10px;
+	left: -10px;
+	cursor: pointer;
+	opacity: 0;
+}
+.file-upload-filename {
+	margin-left: 10px;
+	height: auto;
+	padding: 8px;
+}
+
+.form-horizontal .control-label {
+	text-align: left;
+}
+
+
+@media screen and (max-width: 320px) {
+	.toyota-page .col-xs-4{margin-bottom: 10px; text-align: center; width: 100%}
+	.toyota-page .col-xs-4 a{width: 100%}
+}
+
+
+.readmore
+{
+	color:#F00 !important;
+	position: absolute;
+	bottom: 0px;
+}
+
+
+.blacktext
+{
+	color:#000;
+}
+
+.clearboth
+{
+	clear:both;
+}
+
+
+
+.hidden_lite
+{
+	display:none ;
+}
+
+
+
+.media-heading
+{
+	font-size:20px;
+}
+
+
+.lesstext
+{
+	display:none;
+}

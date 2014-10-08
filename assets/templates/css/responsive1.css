@@ -1,0 +1,143 @@
+/*
+										Responsive Design
+_________
+
+Change height and width of (#sphere, #glow-shadows, #drag) to adjust the size of the globe
+change the percentage of the value "top" (#carousel) to adjust the position of the rotating products vertically
+_________________________________________________
+
+
+@media (max-height:600px) {
+	#sphere, #glow-shadows, #drag{ width:330px; height:330px;}
+	#glow-shadows.earth { background:none;}
+	#container{ height:330px; width:330px;margin: auto; margin-top:70px;}
+	#carousel{ margin-top:auto; top:9%;} 
+}
+*/
+
+/* For Big Laptop */
+@media (max-width: 1600px) {
+	#sphere, #glow-shadows, #drag{ width:450px; height:450px;}
+	#glow-shadows.earth { background:url(../images/shadow-450.png);}
+	#container{ height:450px; width:450px;margin: auto; margin-top:90px;} 
+	#carousel{ margin-top:auto; top:30%;} 
+}
+
+/* For Standard PC 17" LCD */
+@media (max-width: 1280px) {
+	#sphere, #glow-shadows, #drag{ width:450px; height:450px;}
+	#glow-shadows.earth { background:url(../images/shadow-450.png);}
+	#container{ height:450px; width:450px;margin: auto; margin-top:90px;} 
+	#carousel{ margin-top:auto; top:30%;} 
+}
+
+/* For 15" LCD */
+@media (max-width: 1024px) {
+	#sphere, #glow-shadows, #drag{ width:400px; height:400px;}
+	#glow-shadows.earth { background:url(../images/shadow-400.png);}
+	#container{ height:400px; width:400px;margin: auto; margin-top:120px;} 
+	#carousel{ margin-top:auto; top:30%;} 
+}
+
+@media (max-width: 768px) {
+	#carousel{ margin-top:auto; top:35%;} 
+}
+
+
+@media (max-width: 640px) and (min-width: 620px) {
+#header .date-sec { margin:15px auto; float:none;}
+#content { margin:0px auto; top:65%; left:0; right:0; border:1px solid red;}
+#container{ height:350px; width:345px; margin:0px 0 0 100px;}
+#carousel{ margin-top:auto; top:58%;} 
+#polyglotLanguageSwitcher{ width:100%;}
+.button { float:none; margin:12px auto;}
+.language_container { width:288px; margin:-29px auto;}
+	#footer{ display:none;}
+	#header{ position:absolute;}
+
+}
+
+
+@media (max-width: 600px) {
+	#header .logo { width:300px; height:90px;}
+#header .logo img { width:300px;}
+#header .date-sec {  margin: -80px 0px 0px 0px; float:right; height:50px;}
+}
+
+@media (max-width:480px) {
+	#container{ height:350px; width:336px; margin:0px 0 0 0;}
+	#footer{ display:none;}
+	#header{ position:absolute;}
+
+}
+
+
+/* For iPhone */
+@media (max-width:360px) {
+#carousel{ margin-top:auto; top:31%;} 
+#polyglotLanguageSwitcher{ width:100%;}
+#content { margin:0px auto; top:36%; left:0; right:0;}
+.button { float:none; margin:12px auto;}
+.language_container { width:250px; margin:-29px auto; }
+#polyglotLanguageSwitcher a{ width:200px; padding: 0.5em 6px 0.5em 0; margin-left:20px;}
+#footer{ padding-top:80px; background-size: 94%; display:block;}
+#glow-shadows.earth { background:url(../images/shadow-340.png);}
+#container{ height:340px; width:340px;}
+#sphere, #glow-shadows, #drag{ width:340px; height:340px;}
+#header .date-sec { margin:10px auto 10px auto; float:none; height:50px;}
+#header .date-sec .date-time { height:24px;line-height:24px;font-size:20px;}
+#header .logo { width:300px; height:90px;}
+#header .logo img { width:300px;}
+#footer {height:75px;}
+#footer img {width:300px;}
+}
+
+/* For small phones */
+@media (max-width:320px) {
+	#carousel{ margin-top:auto; top:21%;} 
+	#header .date-sec { margin:5px auto 5px auto; float:none; height:28px;}
+	#header .date-sec .date-time { height:14px;line-height:14px;font-size:12px;}
+	#header .logo { width:102px; height:30px;}
+	#header .logo img { width:102px;}
+	#content { margin:0px auto; top:38%; left:0; right:0;}
+	.button {float:right; margin: 31px 0px 0px 0px;}
+	#container{ height:250px; width:250px; margin: auto; margin-top:-35px;}
+	.language_container {width:260px;}
+	#polyglotLanguageSwitcher a{ width:140px; padding: 0.5em 6px 0.5em 0; margin-left:0px; float:left;}
+	#polyglotLanguageSwitcher { width:150px;}
+	#sphere, #glow-shadows, #drag{ width:250px; height:250px;}
+	#glow-shadows.earth { background:url(../images/shadow-250.png);}
+	#footer {height:40px;}
+	#footer img {width:160px;}
+	#copyright {font-size:10px; height:20px; line-height:20px;}
+	#header .date-sec .sep {width:90px; margin: 0px 0px 0px 30px;}
+}
+
+@media (max-width:240px) {
+
+}
+
+/* For iPad */
+@media (max-height:1200px) and (min-height: 1150px){
+	#carousel{ margin-top:auto; top:36%;} 
+}
+
+/* For samsung tab */
+@media (max-height:1450px) and (min-height: 1400px){
+	#carousel{ margin-top:auto; top:40%;} 
+}
+
+/* For small laptop */
+@media (max-height:600px) and (min-height: 560px){
+	#header .logo { width:300px; height:90px;}
+	#header .logo img { width:300px;}
+	#header .date-sec {margin: -80px 20px 0px 0px;}
+	.language_container { width:270px;}
+	#polyglotLanguageSwitcher a{ width:150px; padding: 0.5em 6px 0.5em 0; margin-left:0px;}
+	#container{ height:340px; width:340px; margin: auto; margin-top:140px;}
+	#sphere, #glow-shadows, #drag{ width:340px; height:340px;}
+	#glow-shadows.earth { background:url(../images/shadow-340.png);}
+	#carousel{ margin-top:auto; top:20%;} 
+	#footer {height:150px;}
+	#footer img {width:600px;}
+}

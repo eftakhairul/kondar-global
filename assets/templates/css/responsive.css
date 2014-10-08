@@ -1,0 +1,623 @@
+/*
+										Responsive Design
+_________
+
+Change height and width of (#sphere, #glow-shadows, #drag) to adjust the size of the globe
+change the percentage of the value "top" (#carousel) to adjust the position of the rotating products vertically
+_________________________________________________
+
+
+@media (max-height:600px) {
+	#sphere, #glow-shadows, #drag{ width:330px; height:330px;}
+	#glow-shadows.earth { background:none;}
+	#container{ height:330px; width:330px;margin: auto; margin-top:70px;}
+	#carousel{ margin-top:auto; top:9%;}
+}
+*/
+/*********************** Width Wise CSS ****************************/
+/* For 15" LCD */
+@media (max-width: 6000px) and (min-width: 1024px) {
+#mainBG {
+ background-size: cover !important;
+ -webkit-background-size:cover !important;
+ -moz-background-size:cover !important;
+ -o-background-size: cover !important;
+}
+}
+
+/* For Big Laptop */
+@media screen and (max-width: 1600px) {
+}
+
+/* For Standard PC 17" LCD */
+@media screen and (max-width: 1280px) {
+}
+
+/* For 15" LCD */
+@media (max-width: 1024px) {
+
+}
+ @media (max-width: 800px) and (min-width: 600px) {
+	 
+#mainBG {
+ background-size: 100% 1401px !important;
+ -webkit-background-size:100% 1401px !important;
+ -moz-background-size:100% 1401px !important;
+ -o-background-size: 100% 1401px !important;
+}
+	 
+ #header .date-sec {
+margin:15px auto;
+float:none;
+}
+
+#header .date-sec-top-left {
+margin:15px auto;
+float:none !important;
+}
+#header .date-sec-bottom-left {
+margin:15px auto;
+float:none !important;
+}
+#header .date-sec-bottom-right{
+margin:15px auto;
+float:none !important;
+}
+
+ #header .logo {
+width:300px;
+height:90px;
+}
+ #header .logo img {
+	width:300px;
+	height:100px;
+}
+ #container {
+height:250px;
+margin-top:220px;
+}
+ #sphere, #glow-shadows, #drag {
+width:250px;
+height:250px;
+}
+ #glow-shadows.earth {
+background:url(../images/shadow-250.png);
+margin: -254px auto;
+}
+#container {
+ 	text-align:center !important; 
+}
+
+ #carousel {
+	 left:50% !important;
+ margin-left: -347px;
+margin-top: -180px;
+}
+ .button {
+float:none;
+margin:29px auto;
+}
+ .language_container {
+width:288px;
+margin:-29px auto;
+}
+ #header {
+position:absolute;
+}
+ #footer {
+background-size: 100%;
+}
+ #copyright {
+font-size:10px;
+}
+ .rotateImg {
+ width:50px;
+ height:50px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ .globeCenterImg {
+ width:75px;
+ height:75px;
+ margin-top: -100px;
+ cursor:pointer;
+}
+.rotateImgOnHover {
+ width:75px;
+ height:75px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+}
+@media (max-width: 600px) {
+ #header {
+ position:absolute;
+ top:10px;
+}
+ #container {
+height:250px;
+margin-top:250px;
+}
+ #header .logo {
+width:300px;
+height:90px;
+}
+ #header .logo img {
+width:300px;
+height:100px;
+}
+ #copyright {
+font-size:10px;
+}
+ #header .date-sec {
+margin: 10px auto;
+ float: none;
+ height: 50px;
+}
+ .rotateImg {
+ width:50px;
+ height:50px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ .globeCenterImg {
+ width:75px;
+ height:75px;
+ margin-top: -100px;
+ cursor:pointer;
+}
+.rotateImgOnHover {
+ width:75px;
+ height:75px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ #carousel {
+	 left:50% !important;
+margin-left: -347px;
+margin-top: -180px;
+}
+ #footer {
+background-size: 100%;
+}
+
+#container {
+ 	text-align:center !important; 
+}
+
+ #sphere, #glow-shadows, #drag {
+width:250px;
+height:250px;
+}
+ #glow-shadows.earth {
+background:url(../images/shadow-250.png);
+margin: -254px auto;
+}
+}
+@media (max-width:480px) {
+ #container {
+height:250px;
+margin-top:250px;
+position: absolute;
+}
+ #footer {
+background-size: 100% !important;
+}
+ #copyright {
+ font-size: 10px;
+}
+ #header {
+position:absolute;
+top:10px;
+}
+ #header .date-sec {
+ margin: 10px auto;
+ float: none;
+ height: 50px;
+}
+ .rotateImg {
+ width:30x;
+ height:30px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ .globeCenterImg {
+ width:45px;
+ height:45px;
+ margin-top: -100px;
+ cursor:pointer;
+}
+.rotateImgOnHover {
+ width:45px;
+ height:45px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ #copyright {
+font-size:10px;
+}
+ #carousel {
+ margin-left: -355px;
+ margin-top: -170px;
+}
+ #sphere, #glow-shadows, #drag {
+width:250px;
+height:250px;
+}
+ #glow-shadows.earth {
+background:url(../images/shadow-250.png);
+margin: -254px auto;
+}
+}
+/* For iPhone */
+@media (max-width:360px) {
+ #header {
+position:absolute;
+top:10px;
+}
+ .rotateImg {
+ width:25px;
+ height:25px;
+ cursor:pointer;
+}
+ .globeCenterImg {
+ width:37px;
+ height:37px;
+ margin-top: -100px;
+ cursor:pointer;
+}
+.rotateImgOnHover {
+ width:37px;
+ height:37px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ #carousel {
+ margin-left: -345px;
+ margin-top: -170px;
+}
+ #polyglotLanguageSwitcher {
+width:100%;
+}
+ .button {
+float:none;
+width:200px;
+margin:12px auto;
+}
+ .language_container {
+width:212px;
+margin:-29px auto;
+}
+ #polyglotLanguageSwitcher a {
+width:200px;
+padding: 0.5em 6px 0.5em 0;
+margin-left:0px;
+}
+ #footer {
+background-size: 100% !important;
+}
+ #glow-shadows.earth {
+background:url(../images/shadow-250.png);
+margin: -254px auto;
+}
+ #container {
+height:250px;
+position: absolute;
+}
+ #sphere, #glow-shadows, #drag {
+width:250px;
+height:250px;
+}
+ #header .date-sec {
+margin:10px auto 10px auto;
+float:none;
+height:50px;
+}
+ #header .date-sec .date-time {
+height:24px;
+line-height:24px;
+font-size:20px;
+}
+ #header .logo {
+width:300px;
+height:90px;
+}
+ #header .logo img {
+	width:300px;
+	height:100px;
+}
+ #copyright {
+font-size:8px;
+}
+.dropdown-menusmall{
+margin-left:0px;
+margin-top: 355px;
+width: 270px;
+}
+}
+/* For smscreen phones */
+@media (max-width:320px) {
+ #header {
+position:absolute;
+top:10px;
+}
+ #header .date-sec {
+margin:5px auto 5px auto;
+float:none;
+height:28px;
+}
+ #header .date-sec .date-time {
+height:14px;
+line-height:14px;
+font-size:12px;
+}
+ #header .logo {
+width:200px;
+height:60px;
+}
+ #header .logo img {
+width:200px;
+height:60px;
+}
+ .button {
+float:right;
+margin: 31px 0px 0px 0px;
+}
+ #container {
+height:250px;
+position: absolute;
+}
+ .language_container {
+width:260px;
+}
+ .rotateImg {
+ width:25px;
+ height:25px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ .globeCenterImg {
+ width:37px;
+ height:37px;
+ margin-top: -100px;
+ cursor:pointer;
+}
+.rotateImgOnHover {
+ width:37px;
+ height:37px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ #carousel {
+ margin-left: -342px;
+ margin-top: -200px;
+}
+ #polyglotLanguageSwitcher a {
+width:140px;
+padding: 0.5em 6px 0.5em 0;
+margin-left:0px;
+float:left;
+}
+ #polyglotLanguageSwitcher {
+width:150px;
+}
+ #sphere, #glow-shadows, #drag {
+width:180px;
+height:180px;
+}
+ #glow-shadows.earth {
+background:url(../images/shadow-180.png);
+margin: -254px auto;
+}
+ #footer {
+background-size: 100%;
+}
+ #copyright {
+font-size:8px;
+}
+ #header .date-sec .sep {
+width:90px;
+margin: 0px 0px 0px 30px;
+}
+.dropdown-menusmall{
+margin-left:0px;
+margin-top: 355px;
+width: 270px;
+}
+}
+@media (max-width:320px) and (min-width:272px) {
+ #footer {
+background-size: 100%;
+}
+ #header {
+position:absolute;
+top:0px;
+}
+ #copyright {
+font-size:8px;
+}
+ .rotateImg {
+ width:25px;
+ height:25px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ .globeCenterImg {
+ width:37px;
+ height:37px;
+ margin-top: -100px;
+ cursor:pointer;
+}
+.rotateImgOnHover {
+ width:37px;
+ height:37px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ #carousel {
+ margin-left: -340px;
+ margin-top: -200px;;
+}
+ #sphere, #glow-shadows, #drag {
+width:180px;
+height:180px;
+}
+ #glow-shadows.earth {
+background:url(../images/shadow-180.png);
+margin: -254px auto;
+}
+ .language_container {
+width:173px;
+margin: -27px auto;
+}
+#polyglotLanguageSwitcher a {
+width:160px;
+padding: 0.5em 6px 0.5em 0;
+margin-left:0px;
+float:left;
+}
+.button {
+ margin: 8px 4px 0 0px;
+ width: 167px;
+}
+.dropdown-menusmall{
+margin-left:0px;
+margin-top: 355px;
+width: 270px;
+}
+}
+@media (max-width:272px) and (min-width:240px) {
+.language_container {
+width:176px;
+margin: -3px auto;
+}
+#polyglotLanguageSwitcher a {
+width:160px;
+padding: 0.5em 6px 0.5em 0;
+margin-left:0px;
+float:left;
+}
+.button {
+ margin: 12px 9px 0 0px;
+ width: 167px;
+}
+#footer {
+ background-size: 100%;
+}
+.dropdown-menusmall{
+margin-left:0px;
+margin-top: 355px;
+width: 270px;
+}
+}
+@media (max-width:240px) {
+ #footer {
+ background-size: 100%;
+}
+ #header {
+position:absolute;
+top:0px;
+}
+ #copyright {
+font-size:6px;
+}
+ .rotateImg {
+ width:25px;
+ height:25px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ .globeCenterImg {
+ width:37px;
+ height:37px;
+ margin-top: -100px;
+ cursor:pointer;
+}
+.rotateImgOnHover {
+ width:37px;
+ height:37px;
+ margin-top: 0px;
+ cursor:pointer;
+}
+ #carousel {
+ margin-left: -340px;
+ margin-top: -200px;
+}
+ #sphere, #glow-shadows, #drag {
+width:180px;
+height:180px;
+}
+ #glow-shadows.earth {
+background:url(../images/shadow-180.png);
+margin: -254px auto;
+}
+ .language_container {
+width:162px;
+margin: -3px auto;
+}
+#polyglotLanguageSwitcher a {
+width:160px;
+padding: 0.5em 6px 0.5em 0;
+margin-left:0px;
+float:left;
+}
+.button {
+ margin: 12px -6px 0px 0px;
+width: 167px;
+}
+.dropdown-menusmall{
+margin-left:0px;
+margin-top: 355px;
+width: 270px;
+}
+}
+/*********************** END ****************************/
+
+
+
+/*********************** Height Wise CSS ****************************/
+@media (max-height:6000px) and (min-height: 1024px) {
+#content {
+ overflow: hidden !important;
+position: absolute !important;
+left: 0% !important;
+top: 50% !important;
+width: 100% !important;
+margin-top: -350px !important;
+}
+#container {
+ width:100% !important;
+ float:left !important;
+ margin-top:200px !important;
+ position: relative !important;
+text-align: center !important;
+}
+#footer {
+ position:fixed;
+}
+}
+@media (max-height:800px) and (min-height: 480px) {
+ #footer {
+ position:absolute;
+ bottom:-200px;
+}
+}
+@media (min-height:620px) {
+ #footer {
+ position:absolute;
+ bottom:0;
+}
+}
+@media (max-height:480px) and (min-height: 300px) {
+ #footer {
+ position:absolute;
+ bottom:-300px;
+}
+}
+@media screen and (max-height:300px) and (min-height: 0px) {
+ #footer {
+ position:absolute;
+ bottom:-400px;
+}
+}
+/*********************** END ****************************/

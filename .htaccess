@@ -1,0 +1,91 @@
+# Customized error messages.
+ErrorDocument 404 /index.php
+
+# Set the default handler.
+DirectoryIndex index.php
+
+Options +FollowSymlinks
+<IfModule mod_rewrite.c>
+# RewriteCond %{REQUEST_URI} admin/$ 
+# RewriteRule ^admin/$ http://kondar.ca/admin/index/$1 [R,L]
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>  
+<ifmodule mod_expires.c>
+    <Filesmatch "\.(jpg|jpeg|png|gif|js|css|swf|ico|woff|mp3)$">
+	ExpiresActive on
+        ExpiresDefault "access plus 90 days"
+    </Filesmatch>
+</ifmodule>
+
+#<filesMatch "\.(ttf|PNG|ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+#Header set Cache-Control "max-age=10048000, public"
+#</filesMatch>
+ 
+#<filesMatch "\.(png)$">
+#Header set Cache-Control "max-age=12000, public"
+#</filesMatch>
+
+
+
+#<IfModule mod_deflate.c>
+#    AddOutputFilterByType DEFLATE text/css application/x-javascript application/javascript text/plain #text/html text/xml application/xml text/javascript
+#</IfModule>
+ 
+
+<IfModule pagespeed_module>
+ModPagespeed on
+ModPagespeedEnableFilters combine_css,rewrite_javascript
+ModPagespeedEnableFilters convert_png_to_jpeg
+#ModPagespeedEnableFilters rewrite_images
+ModPagespeedEnableFilters recompress_images,recompress_png
+ModPagespeedEnableFilters convert_gif_to_png	
+ModPagespeedEnableFilters convert_jpeg_to_progressive	
+ModPagespeedEnableFilters recompress_jpeg	
+ModPagespeedEnableFilters convert_jpeg_to_webp	
+ModPagespeedEnableFilters inline_css
+#ModPagespeedEnableFilters defer_javascript
+ModPagespeedEnableFilters move_css_to_head
+ModPagespeedEnableFilters convert_meta_tags
+</IfModule>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 10 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+
+AddEncoding gzip .jsgz .cssgz
+AddType application/x-javascript .jsgz
+AddType text/css .cssgz
+
+RewriteEngine on 
+# If client accepts compressed files 
+RewriteCond %{HTTP:Accept-Encoding} gzip 
+# and if compressed file exists 
+RewriteCond %{REQUEST_FILENAME}gz -f 
+# send .min.cssgz and .min.cssgz instead of .css and .js
+RewriteRule ^(.+)\.(min.css|min.js)$ $1.$2gz [L]
+
+#<files *.*>
+#SetOutputFilter DEFLATE
+#</files>    
+
+
+<IfModule mod_deflate.c>
+ AddOutputFilterByType DEFLATE text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/json
+ </IfModule>

@@ -1,0 +1,837 @@
+@charset "UTF-8";
+p{padding:0.01em;margin:0px}ul{list-style-type:none;padding:0px
+!important}a:link{color:#000}a
+img{border:none}.background-main{background-color:#f7f7f7;width:1146px;margin:auto;padding-bottom:50px}#body-home .background-main{background-color:#FFF;padding-bottom:0}#body-home
+.promo_app{cursor:pointer}h1,h2,h3,h4,h5,h6,H7,h8,h9,h10,h11,.bold{display:inline;margin:0px;padding:0px;font-weight:normal}h1,.h1{font-size:12px}h2,.h2{font-size:14px}h3,.h3{font-size:16px}h4,.h4{font-size:24px}h5,.h5{font-size:30px}h6,.h6{font-size:36px}h7,.h7{font-size:60px}h8,.h8{font-size:22px}h9,.h9{font-size:18px}h10,.h10{font-size:40px}h11,.h11{font-size:20px}h12,.h12{font-size:13px}h13,.h13{font-size:10px}.source{font-family:'Source Sans Pro',sans-serif}.georgia{font-family:Georgia,"Times New Roman",Times,serif}.bold{font-weight:bold !important}.w200{font-weight:200 !important}.w600{font-weight:600 !important}.center{text-align:center}.inter40{line-height:40px}.nodeco a:link{text-decoration:none !important}.lightgrey{color:#676767}.grey{color:#757474}.darkgrey{color:#494949}.darkgreen, .darkgreen a:link{color:#00350A;display:block;margin-top: -15px}.lightgold1{color:#e7c67c;text-decoration:none}.lightgold{color:#dcaa56}.white{color:#fff}.black, black a:link{color:#000 !important}.special{text-decoration:line-through}.form-row.error input,
+.form-row.error
+textarea{border-color:red;background:#FFEFEF;color:black}.error_list{color:red}pre{margin:0;white-space:pre-wrap;word-wrap:break-word}.title_section_sitemap{font:bold 14px/14px Tahoma;padding-top:2px}.section
+li{padding-left:10px;list-style:disc inside none}.btn-green{display:inline block;color:#164502;font-family:'Source Sans Pro',sans-serif;font-weight:bold;height:62px;margin:10px
+10px 0 0;float:left}.color{background:url(http://static1.betadvisor.com/img/base/frontendV2/buttons/button-green.png) no-repeat scroll 0 0 #91D960;border-radius:10px;-moz-border-radius:10px;display:inline-block;padding:10px
+30px 10px 30px;border:#599949 solid 1px;font-size:28px}.color2{background:url(http://static1.betadvisor.com/img/base/frontendV2/buttons/button-green.png) no-repeat scroll 0 0 #91D960;border-radius:10px;-moz-border-radius:10px;display:inline-block;padding:10px
+30px 10px 30px;border:#599949 solid 1px;font-size:22px;float:right}.color3{background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/button-grey-landing.jpg);border-radius:10px;-moz-border-radius:10px;display:inline-block;padding:10px
+30px 10px 30px;margin-right:10px;border:#CCC solid 1px;font-size:22px;float:right}.btn-green-totd{display:block;color:#164502;font-family:'Source Sans Pro',sans-serif;font-weight:bold;margin:auto;margin-left:10px;padding-top:5px}.color-totd,.color-totd-small,.color-totd-medium{background:url(http://static1.betadvisor.com/img/base/frontendV2/buttons/button-green2.png) no-repeat scroll 0 0 #91D960;border-radius:7px;-moz-border-radius:7px;display:inline-block;border:#599949 solid 1px}.color-totd-small-grey{background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/button-grey-landing.jpg);border-radius:7px;-moz-border-radius:7px;display:inline-block;border:#599949 solid 1px}.color-totd{padding:5px
+45px 5px 45px;font-size:18px}.color-totd-small{padding:5px
+5px 5px 5px;font-size:16px}.color-totd-medium{padding:5px
+25px 5px 25px;font-size:16px}.btn-gold-footer{display:inline block;height:39px;margin: -5px 0px 0 0;float:left}.colorg-footer{background:url(http://static1.betadvisor.com/img/base/frontendV2/buttons/button-gold-footer.png) no-repeat;border-radius:10px;-moz-border-radius:10px;display:inline-block;padding:9px
+30px 9px 30px;font-size:20px;color:#000;font-family:'Source Sans Pro',sans-serif;font-weight:bold}.btn-gold{display:inline block;height:31px;width:100%;margin:10px
+10px 0 0;float:left;text-align:center}.color-gold{background:url(http://static1.betadvisor.com/img/base/frontendV2/buttons/button-gold2.png) no-repeat scroll 0 0 #E7C470;border-radius:3px;-moz-border-radius:3px;display:inline-block;width:100%;border:#c9c2b5 solid 1px;font-size:16px;color:#3f3a38;padding:4px
+0 4px 0;font-family:'Source Sans Pro',sans-serif;font-weight:600}.btn-gold2{display:inline block;height:31px;width:100%;margin:10px
+10px 0 0;float:left;text-align:center}.color-gold2{background:url(http://static1.betadvisor.com/img/base/frontendV2/buttons/button-gold.png) no-repeat scroll 0 0 #E7C470;border-radius:3px;-moz-border-radius:3px;display:inline-block;width:80%;border:#c9c2b5 solid 1px;font-size:15px;color:#3f3a38;padding:4px
+0 4px 0;font-family:'Source Sans Pro',sans-serif;font-weight:600}.btn-silver{display:inline block;height:31px;width:100%;margin:10px
+10px 0 0;float:left;text-align:center}.color-silver{background:url(http://static1.betadvisor.com/img/base/frontendV2/buttons/button-silver.png) no-repeat scroll 0 -1px #EDEDED;border-radius:3px;-moz-border-radius:3px;display:inline-block;width:100%;border:#f1f1f1 solid 1px;font-size:16px;color:#3f3a38;padding:4px
+0 4px 0;font-family:'Source Sans Pro',sans-serif;font-weight:600}.findout{padding:10px
+0 0 10px}#man-1{height:341px;width:277px;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/man2-resized.png) no-repeat;position:absolute;margin-top:138px;margin-left:460px;z-index:7}#tv{height:242px;width:370px;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/tv2.png);position:absolute;margin-top:65px;margin-left:650px}#page{width:1146px;margin:auto;margin-top:0px;background-color:#fff}#content{padding-top:20px;width:1000px;margin:auto;position:relative}.darkgrey_bg{background-color:#3f3a38;text-align:center;border-left:1px solid #2D2D2D}.black_bg{background-color:#000;text-align:center}#body-home
+#content{width:1146px;padding-top:0}#header{height:123px;background-color:#000;position:relative;width:100%}#header li
+a{color:#b3650f;font-family:Arial,Helvetica,sans-serif;font-size:12px}#cartbtn{background-color:#f4d990;padding:10px
+35px 10px 5px;font-family:Arial,Helvetica,sans-serif;font-size:12px;width:130px;vertical-align:middle;text-align:right}#cartbtn a:link{color:#000 !important;text-decoration:none}#cartico{width:25px;height:25px;background-color:grey;float:left;position:absolute;top:6px;background:url(http://static1.betadvisor.com/img/base/frontendV2/header/cart.png)}#marge{width:60px}#menu-top{height:36px;margin-top:0px;background-color:#fff}.top{line-height:1em;position:absolute;right:80px;z-index:999}.top
+li{display:inline-block;height:16px;margin-right:0;padding:10px
+12px;position:relative;vertical-align:middle;white-space:nowrap}#logo{height:86px;width:287px;float:left;background:url(http://static1.betadvisor.com/img/base/frontendV2/header/logo.png)}.content{width:1000px;margin:auto}.cmargin{}#menu-main{height:86px;padding-right:65px;background:#000;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZjNmM2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #000 0%, #3f3f3f 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#3f3f3f));background: -webkit-linear-gradient(top, #000 0%,#3f3f3f 100%);background: -o-linear-gradient(top, #000 0%,#3f3f3f 100%);background: -ms-linear-gradient(top, #000 0%,#3f3f3f 100%);background:linear-gradient(to bottom, #000 0%,#3f3f3f 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3f3f3f',GradientType=0 )}#menu{float:right;margin-top:10px}#menu-main
+li{display:inline-block;margin-right:25px;color:#fff;position:relative;vertical-align:middle;white-space:nowrap}#menu-main li
+a{color:#fff;font-family:'Source Sans Pro',sans-serif;font-size:18px;text-decoration:none !important}#menu-main li a:hover{color:#E6CB6A}#body-tipster #menu .menu-analysts,
+#body-tipsters #menu .menu-analysts,
+#body-pricing #menu .menu-pricing,
+#body-help #menu .menu-help,
+#body-myaccount.myPicks #menu .menu-mypicks,
+#body-picks.activePicks #menu .menu-picks,
+#body-picks.lastPicks #menu .menu-last-picks,
+#body-pick.activePicks #menu .menu-picks,
+#body-pick.lastPicks #menu .menu-last-picks{color:#E6CB6A}#body-picks #content #col-l,
+#body-picks #content #col-r{display:inline-block;vertical-align:top}#body-picks #content #col-l{width:790px;padding-right:10px}#body-picks #content #col-r{width:190px}#col-r
+.box{width:auto}#col-r .box-title{font:600 16px/20px 'Source Sans Pro',sans-serif;padding:10px
+10px 11px;color:#6A6361;text-align:center}#col-r .box-content{padding:5px
+0}#suggestions{text-align:center;font:12px/16px Arial}#suggestions
+.sgg{padding:10px
+0;cursor:pointer}#suggestions
+.sggtitle{color:#494949;font:600 14px/18px Arial;padding-bottom:4px}#suggestions .sggtitle .ico-sport11{margin:0
+0 -7px}#suggestions .sgg-tipster{padding-top:2px}#suggestions .sgg .sggchart
+img{border:1px
+solid transparent}#suggestions .sgg:hover
+.sggtitle{color:#CE8D3A}#suggestions .sgg:hover .sggchart
+img{border:1px
+solid #CE8D3A}.separator{border-top:1px solid #BBB;border-bottom:1px solid #EEE;margin:5px
+0}.tipsters-pres
+.tipster_photo{background:none repeat scroll 0 0 black;margin:auto;padding:0
+12px;text-align:center;padding-top:15px}#banner-main{height:497px;width:1026px;padding:20px
+60px 0px 60px;z-index:6;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/background-full.jpg) no-repeat}#banner-main-1{height:480px;overflow:hidden}#banner-main-1 .h7, #banner-main-1
+.h6{display:inline-block;padding:0
+400px 0 0;font-size:45px;line-height:54px}#banner-main-1>ul,#banner-main-1>table{padding-right:580px !important;margin-top: -10px}#banner-main ul
+li{font-size:20px;margin:30px
+0}#banner-main ul li.ico-a{margin-bottom:0}#banner-main-1 .question
+span{line-height:100%}li.ico-a,li.ico-b,li.ico-c,li.ico-d{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/ico-home.png);background-repeat:no-repeat;padding:0px
+0 0px 0px;margin:10px
+0;height:32px;padding-left:2em;font-family:'Source Sans Pro',sans-serif;font-weight:600}li.ico-a{background-position:0px 0px}li.ico-b{background-position:0px -32px}li.ico-c{background-position:0px -64px}li.ico-d{background-position:0px -96px}li.active-menu{background-color:#D7D7D7;border-left:1px solid #A3A1A1;border-right:1px solid #A3A1A1}.hover-top{background-color:#D7D7D7;margin-top: -1px;padding:15px
+20px 10px 20px;position:absolute;right:0;width:251px;z-index:999}.hover-top-login{background-color:#D7D7D7;border-color:#A3A1A1;border-left:1px solid #A3A1A1;border-right:1px solid #A3A1A1;border-style:solid;border-width:1px;height:140px;margin-right:250px;margin-top: -1px;padding:20px;position:absolute;right:0;width:251px;z-index:999}#menu-top li.settings
+label{width:65px;float:left;margin:0.3em 0}table.droptop{border-collapse:separate;font-size:11px}table.droptop
+td{font-size:11px}.droptop td:first-child{}li.hover-list{padding:6px
+20px}.droptop
+select{padding:5px}li.head-ico1,li.head-ico2,li.head-ico3,li.head-ico4,.head-ico1,.head-ico2,.head-ico3,.head-ico4{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/header/ico.png);background-repeat:no-repeat;clear:both;display:inline-block;float:left;font-family:'Source Sans Pro',sans-serif;font-size:11px;font-weight:600;height:18px;margin:0
+4px 0 0;padding:0}#headico{background-color:#CCC;clear:both;float:right;padding:10px
+8px}li.topactive{background-color:grey;display:inline-block}#menu-top
+a{color:#000 !important;text-decoration:none}.head-ico1{background-position: -54px center;width:15px}.head-ico2{background-position: -36px center;width:19px}.head-ico3{background-position: -21px center;width:18px}.head-ico4{background-position:0 center;width:21px}.button{float:left;display:block;margin-top:20px;width:275px;height:61px;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/choose.png)}.findout a:link, #findout a:visited, #findout a:hover{color:#377f11;font-size:20px}#zone-sport{width:100%;height:160px;z-index:12;margin-bottom:30px;background-color:white;-moz-box-shadow:0px 14px 8px -10px #CCC, 0px -14px 8px -10px #CCC;-webkit-box-shadow:0px 14px 8px -10px #CCC, 0px -14px 8px -10px #CCC;box-shadow:0px 14px 8px -10px #CCC, 0px -14px 8px -10px #CCC}table.menusports{width:1000px;margin:auto}table.menusports
+td{vertical-align:top}.menusports{width:100%;height:160px;font-size:18px;font-weight:200;font-family:'Source Sans Pro',sans-serif;text-align:center}.menusports
+.h2.w200{text-transform:uppercase;padding:10px
+0}.menusports
+td{font-size:18px;font-weight:200;color:#000;padding:0px;margin:0px}.ico-sport1{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/sports-icons-v2.png);background-repeat:no-repeat;display:inline-block;padding:0px
+0 0px 0px;margin:10px
+0;height:45px;font-family:'Source Sans Pro',sans-serif;font-weight:600;margin:auto}.inline1{display:inline-block !important}.menusports .ico-sport1{margin:auto auto 20px}.menusports
+.sortname{padding:0
+20px}.menusports
+.sportname{display:inline-block}.menusports
+.menusports .sport.horse-racing{margin-right:0;margin-left:0}.football1{width:46px;background-position: -7px 0px}.horse-racing1{width:70px;background-position: -7px -56px}.tennis1{width:50px;background-position: -7px -116px}
+.rugby1{width:50px;background-position: -7px -240px}.baseball1{width:50px;background-position: -7px -295px}.american-football1{width:50px;background-position: -7px -357px}.ice-hockey1{width:50px;background-position: -7px -410px}.menusports
+a{text-decoration:none}.line{height:3px;border:0;margin:30px
+0 40px 0;width:900px;background:#fff url(http://static1.betadvisor.com/img/base/frontendV2/homepage/gradient-bg.png) repeat-y left;-o-background-size:100% 100%;-moz-background-size:100% 100%;-webkit-background-size:100% 100%;background-size:100% 100%;*background:#fff;background:#ffffff\0/;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static1.betadvisor.com/img/base/frontendV2/homepage/gradient-bg.png", sizingMethod="scale");background-image: -webkit-gradient(  linear,  left top, right top,  from(#FFFF),  to(#ffffff),  color-stop(0.5, #c5c5c5)  )}table#subscription{width:1000px;margin:auto;border:none;margin-top:25px}.sub1{width:290px;height:255px;font-family:'Source Sans Pro',sans-serif;background:#fff;border:8px
+#CCC solid;-moz-border-radius:20px;border-radius:20px}.sub3{width:290px;height:255px;font-family:'Source Sans Pro',sans-serif;background:#f9f1e4;border:8px
+#dcaa56 solid;-moz-border-radius:20px;border-radius:20px}.stars{display:block;height:36px;margin:auto;margin-top: -25px;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/star.png) repeat-x}.star1{width:36px}.star2{width:72px}.star3{width:108px}.titledesc{width:200px;height:50px;display:block;font-family:'Source Sans Pro',sans-serif;font-size:27px;margin:auto;padding-top:25px;border-bottom:thin #000 solid;text-align:center !important}.desc1{width:230px;height:50px;margin:auto;padding-top:10px;text-align:center !important}.desc2{width:220px;height:100px;margin:auto;padding-top:10px;text-align:center !important}.man-subs{position:absolute;right:90px;z-index:2;bottom:0}@media screen and (-webkit-min-device-pixel-ratio:0){.man-subs{margin-top:42px !important}}#topTipsterNewHome{background-color:#504c49;padding:20px
+40px}#topTipsterNewHome .tipsters-pres{border-spacing:0;width:100%}#topTipsterNewHome .tipsters-pres
+a{font:600 16px/18px 'Source Sans Pro',sans-serif;margin:auto !important;padding:5px
+1px;width:100%;border-color:#222;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}#topTipsterNewHome .tipsters-pres a.menu-analysts{text-decoration:none;font-weight:normal;color:white}#topTipsterNewHome .tipsters-pres a.menu-analysts:hover{text-decoration:underline}#body-home
+.contentUp{width:1146px;margin-left:auto;margin-right:auto}#body-home #menu-top{position:relative}#body-home #page, #body-home
+#header{background-color:transparent}#body-home #menu-main{padding-right:0px}#body-home #banner-main-1
+.h7{font-weight:200 !important}#body-home
+.greyUp{color:#3e3e3e;font-weight:100 !important}#body-home #banner-main-1 .h7, #body-home #banner-main-1
+.h6{padding:0
+0px 0 0 !important;font-size:37px;line-height:45px}#body-home
+#topTipsterNewHome{padding:0px}#body-home .ico-cUP,#body-home .ico-dUP,#body-home .ico-bUP{width:260px;padding-left:60px;float:left;font-size:24px !important}#body-home #banner-main-1
+ul{margin-top:5px;padding-right:0px !important;margin-left: -40px;padding-bottom:20px !important}#body-home #banner-main-1{overflow:visible}#body-home #banner-main-1
+li{position:relative;padding-top:15px;color:#3e3e3e;font-size:18px;line-height:20px;height:100px}#body-home
+.clear{clear:both}#body-home
+.btn_browseUp{height:50px;width:267px;display:block;background:#207f11;background: -moz-linear-gradient(top,  #207f11 0%, #53a535 49%, #429027 50%, #429027 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#207f11), color-stop(49%,#53a535), color-stop(50%,#429027), color-stop(100%,#429027));background: -webkit-linear-gradient(top,  #207f11 0%,#53a535 49%,#429027 50%,#429027 100%);background: -o-linear-gradient(top,  #207f11 0%,#53a535 49%,#429027 50%,#429027 100%);background: -ms-linear-gradient(top,  #207f11 0%,#53a535 49%,#429027 50%,#429027 100%);background:linear-gradient(to bottom,  #207f11 0%,#53a535 49%,#429027 50%,#429027 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#207f11', endColorstr='#429027',GradientType=0 );-webkit-border-radius:3px;border-radius:3px;color:#fff !important;line-height:50px;font-size:20px;text-align:center;text-shadow:1px 1px 1px #1d571d;filter:dropshadow(color=#1d571d, offx=1, offy=1)}#body-home
+.shadowWhite{text-shadow:1px 1px 1px #fff;filter:dropshadow(color=#fff, offx=1, offy=1);margin-left: -30px}#body-home .btn_browseUp:hover{background:#538412;background: -moz-linear-gradient(top, #538412 0%, #68a335 49%, #629329 50%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#538412), color-stop(49%,#68a335), color-stop(50%,#629329));background: -webkit-linear-gradient(top, #538412 0%,#68a335 49%,#629329 50%);background: -o-linear-gradient(top, #538412 0%,#68a335 49%,#629329 50%);background: -ms-linear-gradient(top, #538412 0%,#68a335 49%,#629329 50%);background:linear-gradient(to bottom, #538412 0%,#68a335 49%,#629329 50%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#538412', endColorstr='#629329',GradientType=0 )}#body-home #cont-btn_browseUp{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/fleche.png) no-repeat  0px 0px;padding-top:20px;padding-left:50px;margin-right: -30px;float:right;margin-top: -5px;width:295px}#body-home #banner-main-1 li
+.number{height:50px;width:50px;position:absolute;top:0px;left:0px}#body-home
+.orUp{color:#d29431;text-transform:uppercase}#body-home
+#growUp{color:#3e3e3e;font-size:24px;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/number.png) no-repeat  0px -145px;height:50px;padding-top:5px;padding-left:50px;margin-left: -40px;margin-top:20px}#body-home
+.smallGrey{color:#5c5756;font-size:13px}#body-home #zone-sport-Up{margin-top:30px}#body-home
+#topTipsterNewHome{background-color:#000}#body-home #banner-main{height:417px;margin:auto}#body-home .ico-bUP
+.number{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/number.png) no-repeat  0px -95px}#body-home .ico-cUP
+.number{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/number.png) no-repeat  0px 0px}#body-home .ico-dUP
+.number{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/number.png) no-repeat  0px -50px}#body-home
+.smallerUp{font-size:14px !important;color:#5c5756}#body-home
+.Youtipster{color:#fff;width:230px;font-size:13px}#body-home .Youtipster
+li{text-align:left;margin-bottom:15px;padding-left:20px;font-size:14px;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/check.png) no-repeat  0px 0px}#body-home
+.textOr{font-weight:100;font-family:'Source Sans Pro',sans-serif}#body-home
+.smallAtUp{font-size:13px;line-height:18px}#body-home .gradient-white{width:230px !important}#body-home
+.chiffreUp{background-color:#eca520;color:#000;padding:1px;-webkit-border-radius:2px;border-radius:2px}#body-home #topTipsterNewHome .gradient-green{width:130px !important;color:#fff !important;text-shadow:0px 0px 0px #1d571d;filter:dropshadow(color=#1d571d, offx=0, offy=0);background:#539e16;background: -moz-linear-gradient(top, #539e16 0%, #4ca82d 45%, #2d7719 47%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#539e16), color-stop(45%,#4ca82d), color-stop(47%,#2d7719));background: -webkit-linear-gradient(top, #539e16 0%,#4ca82d 45%,#2d7719 47%);background: -o-linear-gradient(top, #539e16 0%,#4ca82d 45%,#2d7719 47%);background: -ms-linear-gradient(top, #539e16 0%,#4ca82d 45%,#2d7719 47%);background:linear-gradient(to bottom, #539e16 0%,#4ca82d 45%,#2d7719 47%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#539e16', endColorstr='#2d7719',GradientType=0 );margin:10px
+auto !important}#body-home #topTipsterNewHome .gradient-green .btn-center{font-size:18px}#body-home
+.btn{box-shadow:none;-webkit-box-shadow:none;margin-left:10px !important;border:0
+!important}#body-home .tipster_photo:first-child, #body-home .black_bg:first-child{border-left:0}#body-home .tipster_photo, #body-home
+.black_bg{border-left:#2d2d2d solid 1px}#body-home
+.titleBase{font-size:28px;text-align:left;color:#3e3e3e}#body-home .titleBase
+p{color:#d29431;font-size:16px}#body-home
+.sportname{color:#528EB5;text-decoration:underline;font-size:14px}#body-home
+table.menusports{width:1146px}#body-home
+.bigContentUP{margin-left:0px}#body-home
+.NumberUpcase{width:265px;background-color:#f7f6f6;float:left;height:60px;padding:10px;margin-right:1px;margin-top:1px}#body-home .NumberUpcase
+span{color:#5c5756;display:block;width:257px;text-align:center;font-style:italic;font-size:14px;font-weight:100}#body-home .NumberUpcase h2
+span{color:#5c5756;display:block;margin-top:5px;width:60px;text-align:center;font-style:italic;font-weight:100;font-size:14px;float:right;margin-right:20px;text-align:left}#body-home .NumberUpcase
+h2{font-size:36px;margin-top:10px;color:#ffae01;font-weight:100;text-align:center;width:280px;display:block}#body-home .h2
+.first{color:#333;color:#333;width:360px;float:right;padding-right:0px !important;position:relative;margin-left:20px}#body-home
+#man_ok{left:0px}#body-home #testimonials
+.second{color:#333;margin-top:30px;padding-right:0px;color:#333;width:360px;float:right;margin-left:20px;position:relative}#body-home
+.quote{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/quote2.png) no-repeat  0px 0px;height:16px;width:21px;display:inline-block;line-height:15px}#body-home .quote.quote-open{margin-left: -21px}#body-home .quote.quote-close{background-position:0px -20px}#body-home
+#man_ok{left:0px;top:0px}#body-home .tips
+li{color:#939393;font-size:13px;font-style:italic;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/dot.png) no-repeat  0px 0px;height:17px;padding-left:10px;margin-left:10px}#body-home
+#tipExample{padding:5px
+0;line-height:1em}#body-home #tipExample
+i{padding-bottom:5px}#body-home #page, .background-main, #body-home
+#content{width:auto}#body-home #flash_content,
+#body-home #menu-top,
+#body-home #menu-main>div{margin:auto;width:1146px}#body-home .gradient-green:hover .btn-left > span,
+#body-home .gradient-green:hover .btn-center,
+#body-home .gradient-green:hover .btn-right>span{text-shadow:1px 1px 0 #000000, 1px 1px 2px #000}#body-home #banner-main{position:relative}#body-home #cont-btn_browseUp{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/fleche.jpg)}#body-home #banner-main{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/bg_footballer_2.jpg) no-repeat}#body-home #banner-main-1
+ul{padding-bottom:0 !important}#body-home #banner-main ul
+li{margin-bottom:0}#body-home #banner-main-1
+li{height:inherit;position:relative}#body-home #banner-main-1 li:nth-child(1),
+#body-home #banner-main-1 li:nth-child(2){padding-right:60px}#body-home #banner-main-1 li:nth-child(3){width:220px}#body-home #banner-main{font-family:'Source Sans Pro',sans-serif}#body-home .laptopLabel,
+#body-home
+.portraitLabel{position:absolute;font-size:14px}#body-home #banner-main-1 li:nth-child(1) .portraitLabel{left:10px;top:140px}#body-home #banner-main-1 li:nth-child(3) .portraitLabel{left:78px;top:140px}#body-home #banner-main-1 li:nth-child(3) .laptopLabel{top:86px;right:44px;font-size:12px;color:white}#body-home .Tinytext
+strong{color:#528eb5;display:block}#body-home .Tinytext
+span{color:#D29431;font-weight:600}#body-home .Tinytext
+i{font-style:italic;display:block}#body-home
+.Tinytext{display:block;margin:22px
+25px 25px 32px;width:185px;text-align:center;line-height:1.4em}#body-home
+.Tinytext.Second{text-align:left;margin-top:16px}#cartridge
+strong{font-size:1.1em;font-weight:400}#cartridge{min-height:48px;float:left;padding:10px
+0 12px 0;width:270px;text-align:center;color:white;font-weight:200;font-size:1.3em;line-height:1.1em;text-shadow:0 -1px 0 #707070;background:#eab92d;background: -moz-linear-gradient(-45deg,  #eab92d 0%, #eac556 22%, #cb9631 55%, #cb9631 81%);background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#eab92d), color-stop(22%,#eac556), color-stop(55%,#cb9631), color-stop(81%,#cb9631));background: -webkit-linear-gradient(-45deg,  #eab92d 0%,#eac556 22%,#cb9631 55%,#cb9631 81%);background: -o-linear-gradient(-45deg,  #eab92d 0%,#eac556 22%,#cb9631 55%,#cb9631 81%);background: -ms-linear-gradient(-45deg,  #eab92d 0%,#eac556 22%,#cb9631 55%,#cb9631 81%);background:linear-gradient(135deg,  #eab92d 0%,#eac556 22%,#cb9631 55%,#cb9631 81%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#eab92d', endColorstr='#cb9631',GradientType=1 )}#body-home
+#cartridge{position:absolute;right:15px;top:34px;float:right;border:1px
+solid #cb9631;-webkit-border-radius:4px;border-radius:4px;-webkit-box-shadow:2px 2px 0px 1px #cb9631;box-shadow:2px 2px 0px 1px #cb9631;-webkit-transform:rotate(8deg) translate3d( 0, 0, 0);-moz-transform:rotate(8deg);-ms-transform:rotate(8deg);-o-transform:rotate(8deg)}#body-home
+.arrowsLabels{font-size:0.8em;font-style:italic;color:gray;display:block;position:absolute;margin-top: -20px;margin-left: -25px}.name-tipster{float:left;display:block;min-width:350px}.ranking-info{float:right;display:block;vertical-align:middle;margin-top:10px}.ranking-info
+ul{margin:0}.ranking-info
+li{display:inline}.ranking-info
+li.link{padding:0
+20px;font-size:12px}.rate{padding:10px
+0px 10px 0px}.star{height:14px;width:15px;display:inline-block;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/stars-rate.png)}.st-gold{background-position:0px 0px}.st-grey{background-position: -15px 0px}.cgraph{width:120px;height:60px;display:block;margin:auto}.graph1{width:110px;height:51px;display:block;background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/graph.jpg);margin:auto}.ico-sport23{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/sports-icons-v2.png);background-repeat:no-repeat;display:block;padding:0px
+0 0px 0px;margin:10px
+0;height:23px;font-family:'Source Sans Pro',sans-serif;font-weight:600;margin:auto;position:absolute;margin-left:100px;margin-top: -20px}.rugby23{width:31px;background-position: -81px -241px}.tennis23{width:22px;background-position: -81px -116px}.baseball23{width:22px;background-position: -81px -301px}.american-football23{width:22px;background-position: -81px -356px}.football23{width:22px;background-position: -81px -2px}.horse-racing23{width:36px;background-position: -83px -56px}.basketball23{width:22px;background-position: -81px -177px}.ice-hockey23{width:22px;background-position: -81px -415px}.ico-sport66{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/sports-icons-v2.png);background-repeat:no-repeat;display:block;padding:0px
+0 0px 0px;margin:10px
+0;width:66px;font-family:'Source Sans Pro',sans-serif;font-weight:600;margin:auto;position:absolute;margin-left:0px;margin-top:0px}.football66{width:50px;height:46px;background-position: -3px 0px}.horse-racing66{width:70px;height:44px;background-position:0 -56px}.tennis66{width:50px;height:53px;background-position: -3px -114px}.basketball66{width:50px;height:53px;background-position: -3px -176px}.rugby66{width:50px;height:45px;background-position: -7px -240px}.baseball66{width:50px;height:53px;background-position: -3px -295px}.american-football66{width:50px;height:53px;background-position: -7px -357px}.ice-hockey66{width:50px;height:53px;background-position: -7px -410px}.check-mini{width:13px;height:13px;background:url(http://static1.betadvisor.com/img/base/frontendV2/icons/check-mini.png) no-repeat;overflow:hidden;display:block;padding:0px
+!important;margin:auto}.check{background:url(http://static1.betadvisor.com/img/base/frontendV2/subscription/check.png) no-repeat center}.check.checkimg{width:23px;height:20px;background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/check.png);background-repeat:no-repeat;background-position:0 50%;min-height:20px;overflow:hidden;display:inline-block;padding:0px
+!important;margin:auto}.white-area.height-w
+.checkimg{margin-top:-8px}.yes{background-position:0px -13px}.no{background-position:0px 0px}.yes-inline{display:inline-block !important;width:13px;height:13px;background:url(http://static1.betadvisor.com/img/base/frontendV2/icons/check-mini.png) no-repeat;overflow:hidden;background-position:0px -13px;padding:0px
+!important;margin:auto}.no-inline{display:inline-block !important;width:13px;height:13px;background:url(http://static1.betadvisor.com/img/base/frontendV2/icons/check-mini.png) no-repeat;overflow:hidden;background-position:0px 0px;padding:0px
+!important;margin:auto}table.col-infos{border-collapse:inherit;border-spacing:10px 0px}td:first-child{border-spacing:0px !important}#testimonials_hp{position:relative}#testimonials
+.first{display:inline-block;padding-right:40px;text-align:justify}#testimonials
+.second{display:inline-block;padding-right:137px;text-align:justify;min-height:155px}#testimonials
+.testimonials_sign{display:block;font-style:normal;font-weight:bold;padding-top:1em}#man_ok{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/man_ok.jpg) no-repeat scroll 0 0 transparent;position:absolute;height:210px;width:113px;right:8px;bottom:0}visual1 a:link,a:hover,a:visited,a:active{color:#000;outline:none}.visual2{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/award-bg.jpg) no-repeat scroll 60px -61px;line-height:22px !important}.visual2
+a{color:#000 !important;line-height:22px !important;font-size:14px !important}.t-top{vertical-align:top}.t-top
+ul{margin:0}.t-mid{vertical-align:top}#subscription1{background:url(http://static1.betadvisor.com/img/base/frontendV2/homepage/tips1.jpg)}#who{width:160px;margin:auto;color:#fff;font-size:12px}.graph-how{width:600px;max-height:350px;padding-top:40px;display:block;margin:auto}.bg-content{display:none}#bgtopic
+li{cursor:pointer;text-decoration:underline;line-height:24px}.bgtitle{font-weight:bold;padding-bottom:10px}.bgcontent{padding-bottom:10px;text-align:justify}#sms-sample{color:white;height:148px;margin:6px
+auto -2px;padding:134px
+42px 0;width:196px;background:url(http://static1.betadvisor.com/img/base/frontendV2/help/phone2.jpg) no-repeat 0 0 transparent}table.td-sample{width:450px;margin:auto;font-size:12px;color:#494949 !important;border-collapse:separate !important;border-spacing:3px}.td-sample td:nth-child(2){font-weight:bold}.td-sample
+a{text-decoration:none;color:#494949 !important}.tabs-sport-2{width:100%;margin:0px;padding:0px;position:absolute;margin-top:13px;display:block;z-index:3;margin-top:26px\9;*margin-top:16px;_margin-top:16px}ul.tabs-sport-2
+li{cursor:pointer}.tabs-sport-2
+li{background-color:#D8D8D8;border-top:3px solid #FFF;display:inline-block;margin-right:8px;padding:8px
+8px;position:relative;vertical-align:middle;white-space:nowrap;margin-top: -1px;margin-top: -3px\9;*margin-top:-3px;_margin-top: -3px}@media screen and (-webkit-min-device-pixel-ratio:0){.tab
+ul{margin-top:0px !important}}.tabs-sport-2 li
+a{color:#494949;font-size:16px;text-decoration:none}#content-sport-2{padding:40px
+20px 20px 20px;width:857px;border:1px
+#D8D8D8 solid}li.active-sport-2{background:white !important;padding:8px
+12px 8px 12px;margin-right:10px;border-right:1px #d4d4d4 solid;border-bottom:1px #fff solid;border-left:1px #d4d4d4 solid;border-top:1px #d4d4d4 solid;margin-top:1px;margin-top: -1px\9;*margin-top:-1px;_margin-top: -1px}@media screen and (-webkit-min-device-pixel-ratio:0){li.active-sport-2{margin-top:2px !important}}.padd-left{padding:0
+0 40px 40px;font-size:14px;display:block}#copyright{font-size:12px}#footer .foot2
+li{font-size:14px;line-height:24px}table.foot{width:1000px;margin:auto;height:65px;color:#fff}table.foot2{width:1000px;margin:0px
+auto;color:#fff;border-collapse:separate !important;padding:30px
+0 0}table.foot2
+td{padding:0px
+20px 0px 20px}#footer{background-color:#1a1a1a;margin:auto;width:1146px;padding-bottom:16px}.subtitle-foot{height:30px;display:block;vertical-align:top}#footertop{background:#000;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNjM2MzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #000 0%, #363636 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#363636));background: -webkit-linear-gradient(top, #000 0%,#363636 100%);background: -o-linear-gradient(top, #000 0%,#363636 100%);background: -ms-linear-gradient(top, #000 0%,#363636 100%);background:linear-gradient(to bottom, #000 0%,#363636 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#363636',GradientType=0 );height:70px;margin:auto;width:100%}#footertop
+li.social{display:inline-block;margin-right:12px;position:relative;vertical-align:middle;white-space:nowrap}.footer_list{text-decoration:none;list-style:none}#footer a:link, #footer a:hover, #footer a:active, #footer a:visited{color:#fff !important;font-size:14px;line-height:24px;text-decoration:none;font-family:Arial,Helvetica,sans-serif}#footer a:hover{text-decoration:underline}input[type="text"]{width:260px;padding:10px;height:20px;display:block;background-color:#fff}.mailinput{font-size:18px;color:#000;font-family:'Source Sans Pro',sans-serif}#btn-signup{background:url(http://static1.betadvisor.com/img/base/frontendV2/footer/signup.png);display:block;width:176px;height:42px}#btn-fb{background:url(http://static1.betadvisor.com/img/base/frontendV2/footer/facebook_ico.png);display:block;width:32px;height:32px}#btn-twitter{background:url(http://static1.betadvisor.com/img/base/frontendV2/footer/twitter_ico.png);display:block;width:32px;height:32px}.live-support{cursor:pointer}#footer .live-support:hover{text-decoration:underline}#follow-us-twitter img,
+#follow-us-facebook
+img{margin:0
+0 -2px 6px}li.ico1,li.ico2,li.ico3,li.ico4{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/ico-footer.png);background-repeat:no-repeat;padding:0px
+0 0px 0px;height:20px;padding-left:2em;font-family:'Source Sans Pro',sans-serif;font-weight:600;margin:10px
+0 10px}li.ico1{background-position:0px 0px;height:26px}li.ico2{background-position:0px -26px;height:26px}li.ico3{background-position:0px -52px;height:26px}li.ico4{background-position:0px -78px;height:26px}.iconumber{width:26px;height:24px;background-color:grey;display:block}li.icones{font-family:Arial,sans-serif;font-size:18px;color:#7f4300;font-weight:bold;list-style-type:none;padding-left:40px;margin-bottom:15px}li.icones-btg{font-family:Arial,sans-serif;font-size:14px;color:#000;font-weight:normal;list-style-type:none;padding-left:40px;margin-bottom:30px}li.icones-hiw{font-family:Arial,sans-serif;font-size:18px;color:#000;font-weight:normal;list-style-type:none;padding-left:40px;margin-bottom:10px;padding-top:10px}.icone{height:25px;width:26px;background:url(http://static1.betadvisor.com/img/base/frontendV2/icons/ico-number.png);margin-left: -40px;position:absolute;margin-top: -2px}.btg{margin-top: -5px !important}.ico5{background-position:0px 0px}.ico6{background-position:0px -24px;display:inline-block}.ico7{background-position:0px -48px;display:inline-block}.ico8{background-position:0px -72px;display:inline-block}.ico9{background-position:0px -96px;display:inline-block}.ico10{background-position:0px -120px;display:inline-block}.ico11{background-position:0px -144px;display:inline-block}.ico12{background-position:0px -168px;display:inline-block}.ico13{background-position:0px -192px;display:inline-block}.ico14{background-position:0px -216px;display:inline-block}.ico15{background-position:0px -216px;display:inline-block}li.icocheck{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/subscription/check.png);background-repeat:no-repeat;background-position:0 50%;padding:3px
+0 3px 20px;margin: .4em 0;padding-left:40px;list-style:none !important;min-height:25px}.iconlist
+p{padding-left:40px}#body-pricing #main-content{padding:0;border:0;background:none repeat scroll 0 0 transparent}.contenthelp{padding-top:40px;width:1000px;margin:auto}.help-section{vertical-align:top}.help-section
+a{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:24px}#breadcrumb{font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#303030;padding-bottom:15px}#breadcrumb a:link{font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#303030}.title{font-size:36px;color:#6a6361;font-weight:600;padding:0
+0 15px}.tabs{width:100%;margin:0;padding:0;z-index:3;white-space:nowrap;overflow:hidden}.tabs
+li{background:#e1e1e1;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZWJlYmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #e1e1e1 0%, #bebebe 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e1e1), color-stop(100%,#bebebe));background: -webkit-linear-gradient(top, #e1e1e1 0%,#bebebe 100%);background: -o-linear-gradient(top, #e1e1e1 0%,#bebebe 100%);background: -ms-linear-gradient(top, #e1e1e1 0%,#bebebe 100%);background:linear-gradient(to bottom, #e1e1e1 0%,#bebebe 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#bebebe',GradientType=0 );display:inline-block;margin:3px
+6px 0 0;position:relative;vertical-align:top;white-space:nowrap}.tabs li:hover{background:#ededed;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZWJlYmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #ededed 0%, #bebebe 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#bebebe));background: -webkit-linear-gradient(top, #ededed 0%,#bebebe 100%);background: -o-linear-gradient(top, #ededed 0%,#bebebe 100%);background: -ms-linear-gradient(top, #ededed 0%,#bebebe 100%);background:linear-gradient(to bottom, #ededed 0%,#bebebe 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#bebebe',GradientType=0 );-moz-box-shadow:0 -16px 6px -12px #E6EFF7 inset;-webkit-box-shadow:0 -16px 6px -12px #E6EFF7 inset;box-shadow:0 -16px 6px -12px #E6EFF7 inset}.tabs li
+a{color:#494949;text-decoration:none;font-size:16px;line-height:30px;padding:8px
+8px 3px;display:inline-block}.tabs li.active
+a{padding:8px
+8px 6px}#body-myaccount.myPicks .tabs > li:nth-child(1),
+#body-myaccount.mySubscriptions .tabs > li:nth-child(2),
+.tabs
+li.active{background:white !important;margin-top:0;border-right:3px #d4d4d4 solid;border-left:3px #d4d4d4 solid;border-top:3px #d4d4d4 solid;-moz-border-radius-topright:3px;border-top-right-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px}.tabs li:hover.active{background:white !important;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}.tabs li.active a:link, li.active a:hover, li.active a:visited{color:#ce8d3a;font-weight:bold}#main-content{z-index:1;text-decoration:none;background-color:#fff;border:3px
+#d4d4d4 solid;padding:20px
+40px;font-size:14px;text-align:justify}.content-tab{margin-top: -3px !important}#page #main-content
+p{margin:5px
+0}.block,table.block{` width: 860px;margin:auto;font-size:14px;font-weight:normal;background-color:#f5f4f2;border:thin #d4d4d4 solid;margin-top:30px;padding:5px
+20px 0px 20px;display:block;font-weight:normal;margin:20px
+auto auto;padding:20px
+0 10px}.block-betting{width:860px;margin:auto;font-size:14px;font-weight:normal;background-color:#f5f4f2;border:thin #d4d4d4 solid;margin-top:30px;padding:5px
+5px 0px 30px;display:block;font-weight:normal;margin:20px
+auto auto;padding-bottom:50px!important;z-index:1}.block-betting
+p{margin-left:30px;margin-bottom:30px;display:inline}.block-betting
+li{text-align:justify}.block-betting li:nth-child(2), .block-betting li:nth-child(3){padding-right:50px}.block-betting li:nth-child(4){padding-right:195px}.block-betting li:nth-child(5){padding-right:210px}.block-betting li:nth-child(6), .block-betting li:nth-child(7), .block-betting li:nth-child(8), .block-betting li:nth-child(9), .block-betting li:nth-child(10){padding-right:260px}.linkg{float:right;margin-top: -40px;margin-left:260px}.linkg
+a{font-size:22px}#man-big{position:absolute;z-index:2;width:277px;height:477px;margin-top: -426px;margin-left:610px}.block2{height:90px;margin:auto;font-size:14px;font-weight:normal;background-color:#f5f4f2;border:thin #d4d4d4 solid;margin-top:30px;padding:5px
+20px 0px 20px;display:block;position:relative}.block2
+ul{margin:0}.btnget1{` margin-top:30px;padding-top:30px;display:block;float:left}.block-mini{` font-size:18px;background-color:#f5f4f2;border:thin #d4d4d4 solid;margin:auto;font-weight:bold;padding:20px
+0px 10px 20px;text-align:center;margin-top:30px;display:block;z-index:1;width:360px}#list1{font-family:Arial,Helvetica,sans-serif;font-weight:bold;color:#000;font-size:18px}.p1{padding-left:35px;padding-bottom:0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;padding-right:120px}.p2{padding-bottom:0px;font-family:Arial,Helvetica,sans-serif;font-size:12px}.p3{padding-left:35px;padding-bottom:0px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:21px;color:#494949}.p4{padding-top:0px;margin-top:0px;margin-bottom:10px}.p5{width:900px;margin:auto;font-family:Arial,Helvetica,sans-serif;font-size:12px}.visual{float:right;margin-top: -10px}.visual-tipster{position:absolute;right:15px;bottom:0}.visual-phone{position:absolute;right:16px;bottom:0}.visual-graph{position:absolute;right: -12px;bottom: -1px}.left{text-align:left}.right{margin-left:190px;margin-top:10px}.fleft{float:left}.fright{float:right}.textcenter{text-align:center}.underline{text-decoration:underline}.info-tips{margin-left:10px;font-weight:bold;padding-left:25px;position:absolute}table.table1
+td.grey{background-color:#f5f4f2;border:thin #d4d4d4 solid}table.table2{font-size:14px;margin-top:30px;margin-bottom:50px}table.table2
+td{padding-top:10px;vertical-align:top !important}table.table2
+td.col1{text-align:right;font-weight:bold;padding-right:30px}table.table3{font-size:12px !important;border-collapse:collapse}table.table3
+td{vertical-align:top !important}table.table3
+tr.grey{background-color:#f5f4f2;border:none !important}table.table3
+tr{border-top:thin #d8d8d8 solid}table.table3
+td{padding:10px
+10px 10px 10px}.tab-bet{width:100%;margin-top:60px;top:25px;z-index:4}.tab-bet
+ul{margin:0px;padding:0px;position:absolute;margin-top: -37px;z-index:3;margin-top: -35px\9;*margin-top:-35px;_margin-top: -35px}.tab-bet-2{width:100%;margin-top:60px;top:25px;z-index:4}.tab-bet-2
+ul{margin:0px;padding:0px;position:absolute;margin-top: -39px;z-index:3;margin-top: -35px\9;*margin-top:-35px;_margin-top: -35px}.tabs-bet
+li{display:inline-block;background:url(http://static1.betadvisor.com/img/base/frontendV2/help/back_button.jpg);padding:7px
+7px 7px 7px;margin-right:6px;position:relative;vertical-align:middle;white-space:nowrap;border-top:3px #f7f7f7;solid}.tabs-bet li
+a{color:#000;text-decoration:none}li.active-bet{background:white !important;color:#ce8d3a !important;padding:8px
+16px 8px 16px;margin-left:8px;border-right:3px #d4d4d4 solid;border-left:3px #d4d4d4 solid;border-top:3px #d4d4d4 solid;-moz-border-radius-topright:2px;border-top-right-radius:2px;-moz-border-radius-topleft:2px;border-top-left-radius:2px;margin-top:2px;margin-top:1px\9;*margin-top:1px;_margin-top:1px}@media screen and (-webkit-min-device-pixel-ratio:0){li.active-bet{margin-top:3px !important}}li.active-sport{background:white !important;padding:8px
+12px 8px 12px;margin-right:10px;border-right:3px #d4d4d4 solid;border-left:3px #d4d4d4 solid;border-top:3px #d4d4d4 solid;margin-top: -1px}li.active-bet a,.gold{color:#ce8d3a !important;font-weight:bold}.ico-sport{height:20px;float:left;margin-right:10px}#content-sport{padding:40px
+20px 20px 20px;width:857px;border:2px
+#D8D8D8 solid}.title-faq{font-size:14px;margin-top:35px;display:block}.list_faq li
+a{text-decoration:none}li.plus-faq{list-style-image:url(http://static1.betadvisor.com/img/base/frontendV2/help/plus.jpg) !important;margin-left:20px;margin-top:6px}li.plus-faq
+a{text-decoration:none;font-family:Arial,Helvetica,sans-serif;color:#000;font-weight:bold;font-size:14px;line-height:14px}.tips-by-tipster p.p4
+a{text-decoration:none}.tips-by-tipster p.p4 a:hover{text-decoration:underline}.tips-by-tipster
+.btn{min-width:200px;padding:4px
+8px}.tips-by-tipster .picks-eventname{max-width:380px;overflow:hidden;white-space:nowrap}.expandable{background:url(http://static1.betadvisor.com/img/base/frontendV2/picto/expandable.gif) no-repeat scroll 0 0 transparent;padding-left:20px;margin-top:6px}li.expandable{cursor:pointer}.expandable.expanded{background-position:0 -17px}.expandable_item{padding:10px
+0 20px 20px}#contactarea{width:400px;margin-left:200px;margin-top:60px}.helpContactForm
+label{font-size:12px;display:inline-block}.helpContactForm
+input{width:100%;height:15px;border:1px
+solid #ccc;padding:5px;font-size:14px;color:#000;font-family:'Source Sans Pro',sans-serif;resize:none;overflow:hidden}.helpContactForm
+textarea{width:100%;height:100px;border:1px
+solid #ccc;padding:5px;font-size:14px;color:#000;font-family:'Source Sans Pro',sans-serif;resize:none;overflow:hidden}.helpContactForm
+div{margin:20px
+0}textarea#styled{width:100%;height:15px;border:1px
+solid #ccc;padding:5px;font-size:14px;color:#000;font-family:'Source Sans Pro',sans-serif;resize:none;overflow:hidden}textarea#inputmessage{width:100%;height:100px;border:1px
+solid #ccc;padding:5px;font-size:14px;color:#000;font-family:'Source Sans Pro',sans-serif;resize:none;overflow:hidden}table.table4{font-size:14px !important;margin-bottom:30px !important;vertical-align:middle;z-index:1;border-collapse:collapse !important}table.table4 thead
+th{color:#494949 !important;padding-top:15px;padding-bottom:15px;text-align:center;border-width:1px 1px 1px 0;border-color:#D4D4D4;border-style:solid;width:160px;background:#dfdfdf;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RmZGZkZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjMWMxYzEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #dfdfdf 0%, #c1c1c1 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfdfdf), color-stop(100%,#c1c1c1));background: -webkit-linear-gradient(top, #dfdfdf 0%,#c1c1c1 100%);background: -o-linear-gradient(top, #dfdfdf 0%,#c1c1c1 100%);background: -ms-linear-gradient(top, #dfdfdf 0%,#c1c1c1 100%);background:linear-gradient(to bottom, #dfdfdf 0%,#c1c1c1 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#c1c1c1',GradientType=0 )}table.table4 thead th:first-child{background:transparent;border-width:0 1px 1px 0;width:auto}table.table4
+td{padding:15px;border-width:0 1px 0 0;border-color:#D4D4D4;border-style:solid;vertical-align:middle !important;text-align:center;background-color:#f5f4f2}table.table4 tbody td:first-child{padding-right:2px;text-align:left;border-width:0 1px}table.table4 tbody tr:nth-child(odd) td{background-color:#fff}table.table4 tfoot
+td{background-color:#fff;padding:15px;border-width:1px 1px 1px 0;border-color:#D4D4D4;border-style:solid}table.table4 tfoot td:first-child{background-color:transparent;border-width:1px 1px 0 0}table.table4
+.btn{width:105px;font:600 16px/20px 'Source Sans Pro',sans-serif}.textgreen{color:#01831a;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:bold}.textgreen-sm{color:#01831a;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold}.textred-sm{color:#d5000e;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold}.ico-more{background:url(http://static1.betadvisor.com/img/base/frontendV2/subscription/more.png);background-repeat:no-repeat;background-position:3px 50%;padding:3px
+0 3px 20px;height:16px;width:16px;margin:1em
+0;padding-left:2em;font-weight:600}table.table5{min-height:100px;width:100%;margin:auto;font-weight:normal;background-color:#f5f4f2;border:thin #d4d4d4 solid;margin-top:10px;margin-bottom:30px;padding-right:30px;padding-left:30px;border-collapse:collapse}.table5
+td{padding-top:20px;padding-bottom:10px;vertical-align:top !important;font-size:12px;` height:160px;font-family:Arial,Helvetica,sans-serif}table.table6{font-size:12px;margin-top:0px;border-spacing:0;border:1px
+solid #D4D4D4;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;width:100%}table.table6 thead
+th{background-color:#F2DBB0 !important;font-weight:bold !important;padding:12px
+6px;text-align:center}table.table6 thead th:first-child{-webkit-border-radius:10px 0 0 0;-moz-border-radius:10px 0 0 0;border-radius:10px 0 0 0}table.table6 thead th:last-child{-webkit-border-radius:0 10px 0 0;-moz-border-radius:0 10px 0 0;border-radius:0 10px 0 0}table.table6
+td{padding:6px;text-align:center}table.table6
+h4{font-weight:bold;width:26px;text-align:right;display:inline-block}table.table6 td:nth-child(n+4){text-align:center}table.table6
+.centerspecial{text-align:center}table.table6 tr:nth-child(even){background-color:#f5f4f2;vertical-align:middle !important}table.table6
+.btn{min-width:106px;font-weight:600;margin:0}table.table6 .btn .btn-right>span{margin-left:2px}table#blockStatsTipsters.table6 thead
+th{padding:9px
+6px}table#blockStatsTipsters.table6 tbody tr:hover,
+table#last-picks.table6 tbody tr:hover{cursor:pointer;background-color:#DDD}table#blockStatsTipsters.table6 tbody tr:hover a .magnify_small
+.l1{text-decoration:underline}.ranking-link{display:inline-block;max-width:165px;overflow:hidden;padding-top:5px}.ranking-link .magnify_small .l1
+strong{font:bold 12px/16px Arial,Helvetica,sans-serif}.service-full,.service-off,.service-paused,.service-on{display:none}.service-paused,.service-on{white-space:nowrap}.service-on
+.price{font-weight:600;color:#8E6D44}#body-picks.freetip .rank-block .magnify_small
+.l2{font-size:14px;font-weight:normal}#body-picks.freetip .rank-block
+td.textdesc{padding-bottom:6px;text-align:right;vertical-align:bottom}#tipster-global-stats .table6 th,
+#tipster-global-stats .table6
+td{text-align:center;padding:9px}#ranking-more{cursor:pointer;padding:8px;background:none repeat scroll 0 0 #EEE;border-width:0 1px 1px;border-color:#D4D4D4;border-style:solid;text-align:center;-webkit-border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;-moz-box-shadow:0 -20px 5px -16px #DDE inset;-webkit-box-shadow:0 -20px 5px -16px #DDE inset;box-shadow:0 -20px 5px -16px #DDE inset}#ranking-more:hover{border-bottom:1px solid #888;-moz-box-shadow:0 -24px 20px -16px #CCE inset;-webkit-box-shadow:0 -24px 20px -16px #CCE inset;box-shadow:0 -24px 20px -16px #CCE inset}#ranking-more>#ico{background:white;border:1px
+solid #D4D4D4;display:inline-block;height:20px;width:20px;-webkit-border-radius:12px;-moz-border-radius:12px;border-radius:12px}#ranking-more:hover>#ico{border-color:#888}#ranking-more>#txt{font:600 14px/18px 'Source Sans Pro',sans-serif}#ranking-more:hover>#txt{text-decoration:underline}#rounded-top{background-color:#f2dbb0;border:thin #d4d4d4 solid;border-bottom:none !important;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;text-align:center;padding-top:3px;padding-bottom:6px;padding-right:10px;border-top-left-radius:10px 10px;border-top-right-radius:10px;height:4px}#rounded-top-mini{background-color:#f2dbb0;border:thin #d4d4d4 solid;border-bottom:none !important;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;text-align:center;padding-top:2px;padding-bottom:6px;padding-right:10px;border-top-left-radius:10px 10px;border-top-right-radius:10px;height:5px;width:388px}table.table6 td:nth-child(6){font-weight:bold}table.boldtable6 td:nth-child(3), table.boldtable6 td:nth-child(4){font-weight:bold}table.table7 tr:first-child{background-color:#f2dbb0 !important;border:thin #d4d4d4 solid;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;text-align:center}table.table7 td:nth-child(6){font-weight:bold}table.boldtable7 td:nth-child(3), table.boldtable6 td:nth-child(4){font-weight:bold}table.table7 tr:nth-child(odd){background-color:#f5f4f2;vertical-align:middle !important}.tipster-photo{display:block;height:40px;overflow:hidden;width:40px}.tipster-photo
+img{margin-left: -10px}
+.tipster{-moz-border-radius:0px 0px 14px 14px;-webkit-border-radius:0px 0px 14px 14px;border-radius:0px 0px 14px 14px;background:#fff;border:3px
+#d4d4d4 solid;padding:20px
+20px 25px;margin-bottom:20px}.title-tab{font-size:24px;font-weight:bold;color:#494949;padding-bottom:10px}.subtitle-tab{font-size:14px;font-weight:400;color:#494949;font-family:'Source Sans Pro',sans-serif}.intro{font-size:16px;font-style:italic;font-weight:bold;color:#7f4300;font-family:Arial,Helvetica,sans-serif}.tab-tipster{margin-top:60px;z-index:}.tab-tipster
+ul{margin:0px;padding:0px;position:absolute;margin-top: -44px;z-index:3;margin-top: -38px\9;*margin-top:-38px;_margin-top: -38px}@media screen and (-webkit-min-device-pixel-ratio:0){.tab-tipster
+ul{margin-top: -44px !important}}.tabs-tipster
+li{display:inline-block;background:url(http://static1.betadvisor.com/img/base/frontendV2/help/back_button.jpg);padding:10px
+30px 10px 30px;margin-right:10px;position:relative;vertical-align:middle;white-space:nowrap;border-top:3px #f7f7f7}.tabs-tipster li
+a{color:#494949;text-decoration:none}li.active-tipster{background:white !important;padding:10px
+30px 10px 30px;margin-right:10px;border-right:3px #d4d4d4 solid;border-left:3px #d4d4d4 solid;border-top:3px #d4d4d4 solid;margin-top:1px;margin-top:0px\9;*margin-top:0px;_margin-top:0px}@media screen and (-webkit-min-device-pixel-ratio:0){li.active-tipster{margin-top:2px !important}}li.active-tipster
+a{color:#ce8d3a;font-weight:bold}table.tipster, .tipster
+td{}table.tipster tr:first-child{border:thin #d4d4d4 solid;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:bold}.tipsterbloc
+img{padding-right:5px}.tipsterbloc
+h2{font-weight:bold}.tipsterbloc
+p{padding:0
+!important;margin:7px
+0 !important}.tip-subscribe{text-align:center}.tip-subscribe>p,.tip-subscribe>table{padding:30px
+0 0 !important}.tip-subscribe > table
+a.btn{margin:0
+!important}.blocks-tipster{-moz-border-radius:14px;-webkit-border-radius:14px;border-radius:14px;border-color:#CCC;background:#f7f7f7;height:160px;padding:10px
+10px 5px 30px;font-size:12px;vertical-align:top}.block-tipster{padding-bottom:10px}.block-tipster
+span{font-size:14px}.block-tipster
+strong{color:#CE8D3A}.block-tipster
+div{padding-top:2px}.block-tipster-link{padding-top:10px}.block-tipster-msg{padding-bottom:5px}.hidden-link{display:none}#subs-choice
+label{cursor:pointer}#subs-choice
+p{padding:0
+0 10px}#showSubscriptionsLink{padding:7px
+0 0;white-space:nowrap}.radiobtn{white-space:nowrap;width:190px;float:left;height:100px}.btntip{float:right;width:190px;height:100px;text-align:center}.btntip .bbtn-cart{width:170px}.btntip #sub-price{padding-left:8px}.price-stroke{color:#555;font-size:16px;text-align:left;text-decoration:line-through}.tipster-reasons
+td{padding-bottom:10px}#tipster-subsplans,.second-tier{display:none}#stat-area{min-width:500px}.download-excel{text-align:right;padding-top:10px}#export_tipster_last_picks{background:url(http://static1.betadvisor.com/img/base/picto/excel.png) no-repeat right top transparent;padding:1px
+25px 0 0;height:18px;display:inline-block}#list-articles .title-tab{font-size:16px;background:#F7F7F7;padding:5px}#list-articles .article-content{padding:0
+5px 30px 20px}button.sc-pm{border:none;background:inherit;margin:inherit;padding:inherit;color:black}.cta-button{width:200px;height:30px;margin-top: -20px;margin:auto;float:right;display:block}.margin-30{margin-top:100px}.common-title{position:relative;padding-bottom:10px}.link-mini{top:6px;position:absolute;right:10px}.link-mini
+a{font-size:14px;padding:0
+5px}#body-myaccount.myPicks.activePicks .link-mini > a:nth-child(1),
+#body-myaccount.myPicks.pendingPicks .link-mini > a:nth-child(2),
+#body-myaccount.myPicks.lastPicks .link-mini>a:nth-child(3){text-decoration:none}#body-myaccount.mySubscriptions.activeSubscriptions .link-mini > a:nth-child(1),
+#body-myaccount.mySubscriptions.endedSubscriptions .link-mini > a:nth-child(2),
+#body-myaccount.mySubscriptions.lockedSubscriptions .link-mini>a:nth-child(3){text-decoration:none}.subscription-block{padding:10px
+0}#my-subscriptions-table
+th{border-right:1px solid #aaa !important}#my-subscriptions-table th:last-child{border-right:0 !important}#my-subscriptions-table .sub-thead
+th{-webkit-border-radius:0 !important;-moz-border-radius:0 !important;border-radius:0 !important;width:60px !important;padding-top:2px !important}#my-subscriptions-table .sub-thead th:last-child{border-right:1px solid #aaa !important}#my-subscriptions-table
+td{border-right:1px solid #D4D4D4 !important}#my-subscriptions-table td:last-child{border-right:0 !important}#my-subscriptions-table tfoot
+tr{background:#ddd}#my-subscriptions-table tfoot
+td{border-right:1px solid #bbb !important}#my-subscriptions-table tfoot td:last-child{border-right:0 !important}#my-subscriptions-table
+.btn{max-width:inherit !important}#content>.common-title{padding:0}#content > .common-title .title-tab{color:#6A6361;font-size:36px;font-weight:600}#body-tipsters .common-title{padding:0}#body-tipsters .link-mini{top: -50px}.icone-flux{margin-top:5px}td.padding-20{padding-left:20px}td.border-bottom{border-bottom:#d4d4d4 1px solid}td.border-top{border-top:#d4d4d4 1px solid}td.border-right{border-right:#d4d4d4 1px solid}td.border-left{border-left:#d4d4d4 1px solid}#sticker{height:74px;margin-right: -35px;margin-top: -25px;position:absolute;right:0;width:74px;z-index:2;background:url(http://static1.betadvisor.com/img/base/frontendV2/pricing/sticker.png)}.flux{background:url(http://static1.betadvisor.com/img/base/frontendV2/tab_bet/flux.png);width:18px;height:18px;display:inline-block;margin-left:5px}#infoprices{background-color:white;border:1px
+solid #D4D4D4;margin-bottom:0;margin-left:185px;padding-bottom:0 !important;padding-left:30px;padding-right:25px !important;padding-top:30px;width:760px}@media screen and (-webkit-min-device-pixel-ratio:0){.m10{margin-top: -20px !important}}.m10{margin-top:10px}.ico-sport17{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/sports-icons-v2.png);background-repeat:no-repeat;display:block;padding:0px
+0 0px 0px;height:23px;font-family:'Source Sans Pro',sans-serif;font-weight:600;margin:0
+5px -5px 0}.inline17{display:inline-block !important}.rugby17{width:28px;background-position: -82px -241px}.tennis17{width:28px;background-position: -82px -116px}.baseball17{width:25px;background-position: -80px -301px}.american-football17{width:30px;background-position: -82px -356px}.football17{width:28px;background-position: -82px -2px}.horse-racing17{width:32px;background-position: -84px -56px}.basketball17{width:28px;background-position: -82px -177px}.ice-hockey17{width:32px;background-position: -82px -415px}.ico-sport11{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/sports-icons-v2.png);background-repeat:no-repeat;display:block;padding:0px
+0 0px 0px;height:23px;font-family:'Source Sans Pro',sans-serif;font-weight:600;margin:auto 0 0 0}.inline11{display:inline-block !important}.rugby11{width:22px;background-position: -138px -190px}.tennis11{width:22px;background-position: -140px -90px}.baseball11{width:22px;background-position: -138px -237px}.american-football11{width:22px;background-position: -138px -280px}.football11{width:22px;background-position: -138px 0px}.horse-racing11{width:26px;background-position: -141px -44px}.basketball11{width:22px;background-position: -138px -137px}.ice-hockey11{width:22px;background-position: -140px -330px}table.table8{margin:auto;border-collapse:collapse;text-align:center !important}span.question{background:none}.question
+span{background:url(http://static1.betadvisor.com/img/base/picto/interrogation.png) no-repeat top left;margin-top:0;width:14px;height:14px;display:inline-block;cursor:pointer}#content-subtab{padding:0
+0 30px}#content-subtab
+td{padding:0
+20px 0 0}#content-subtab td:last-child{padding:0
+0 0 25px}#content-subtab .content-subtab-on
+a{text-decoration:none;color:#CE8D3A;font-weight:bold}.breadcrumb-cart{background:none repeat scroll 0 0 #fff;box-shadow:0 1px 1px rgba(0, 0, 0, 0.3) inset;list-style-type:none;margin:12px
+0;overflow:hidden;width:996px;border-right:3px #dcdcdc solid}.breadcrumb-cart
+li{border-top:3px #dcdcdc solid;border-bottom:3px #dcdcdc solid;border-left:3px #dcdcdc solid;color:#191919;float:left;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:15px;height:70px;margin:0;position:relative;text-align:center;width:156px;padding-left:40px;padding-right:0px}.breadcrumb-cart
+li.past{background-color:#e8e8e8}.ico-arrow{background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/ico-arrow.png);display:inline-block;height:74px;position:absolute;right: -34px;margin-top:-2px;width:35px;z-index:50}.lastonglet{padding-left:5px !important;padding-right:0px !important}.active{background-position:0px}.past{background-position:-35px}.lastpast{background-position:-105px}.next{background-position:-71px}.big{display:inline-block;font-size:30px;padding:17px
+0;float:left;margin-right:5px}.text-bread{display:inline-block;padding:17px
+0;width:125px;text-align:left}.text-bread2{display:inline-block;padding:28px
+0 0 0;text-align:left;width:125px}.progress{background-color:#fcf2d8;border-top:3px solid #f4d990 !important;border-bottom:3px solid #f4d990 !important}table.payment{border-collapse:separate;border-spacing:20px 10px;background-color:#fff;font-size:14px}td.special-tab{text-align:right}.payment
+td{border:#bbb 3px solid;text-align:center;padding:20px;width:240px}.payment
+td.active{border:#dfaf5b 3px solid !important}.credit-method .method-select{padding:5px
+0 0}.credit-method td
+input{margin:auto 4px 1px;vertical-align:bottom;width:auto}.credit-method td,
+.credit-method td img,
+.credit-method td label,
+.credit-method td
+input{cursor:pointer !important}.credit-method td.contact,
+.credit-method td.contact img,
+.credit-method td.contact label,
+.credit-method td.contact
+input{cursor:default !important}.credit-method
+td.on{border-color:#CE8D3A;-moz-box-shadow:inset 0 0 14px -6px #DFB14C;-webkit-box-shadow:inset 0 0 14px -6px #DFB14C;-o-box-shadow:inset 0 0 14px -6px #DFB14C;box-shadow:inset 0 0 14px -6px #DFB14C}#top-payment{background:url(http://static1.betadvisor.com/img/base/frontendV2/tipster/bg_top.jpg) repeat scroll 0 0 transparent;padding:15px
+30px 15px 30px;border:3px
+solid #DCDCDC;font-size:18px;:18px;font-weight:bold;colof:#494949;font-family:'Source Sans Pro',sans-serif}.card{display:inline-block;height:52px;margin-right:4px;margin-bottom:15px;margin-top:15px}.cb1{width:69px;background-position:0px 0px}.cb2{width:80px;background-position:-69px 0px}.cb3{width:85px;background-position:-150px 0px}.logos-payment{background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/logos-payment.jpg);display:inline-block;height:45px;margin-right:4px;margin-bottom:15px;margin-top:15px}.logo-p1{width:118px;background-position:0px 0px}.logo-p2{width:106px;background-position:-118px 0px}.logo-p3{width:168px;background-position:-224px 0px}.logo-p4{width:156px;background-position:-392px 0px}table.method{border-collapse:separate;border-spacing:0px 10px}.w-block{width:250px;background-color:#fff;border:#CCC 1px solid;display:block;padding:20px;font-size:14px;font-family:'Source Sans Pro',sans-serif}.w-block2{width:250px;background-color:#fff;border:#CCC 1px solid;display:block;padding:20px;font-size:14px;margin-bottom:6px}#st-img{position:absolute;margin-top:-52px;margin-left:197px;margin-left:196px\9;*margin-left:196px;_margin-left:196px}#top-payment-method{background:url(http://static1.betadvisor.com/img/base/frontendV2/tipster/bg_top.jpg) repeat scroll 0 0 transparent;padding:5px
+30px 5px 30px;border:1px
+solid #DCDCDC;font-size:18px;font-weight:bold;width:230px;colof:#494949;font-family:'Source Sans Pro',sans-serif}td.cart{padding-left:60px;vertical-align:top}table.amount{font-size:11px;text-align:right}.method
+td{vertical-align:top}.method
+.color2{font-weight:bold;font-size:18px}.method
+.color3{font-weight:bold;font-size:18px}#cle{display:inline-block;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/cle.png);width:12px;height:16px;margin-right:10px}#back{display:inline-block;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/back.png);width:15px;height:15px;margin-right:10px}#arrow-btn{display:inline-block;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/arrow-btn.png);width:15px;height:15px;margin-left:6px}#landing-content{width:900px;height:760px}#title-landing{font-family:'Source Sans Pro',sans-serif;font-weight:700;text-align:center;display:block;widows:300px;float:left}#title-landing
+h1{font-size:50px;font-family:'Source Sans Pro',sans-serif;font-weight:800;text-align:center;line-height:42Px;margin:0px;padding:0px}#title-landing
+h2{font-size:44px;font-family:'Source Sans Pro',sans-serif;font-weight:800;line-height:44Px;text-align:center;margin:0px;padding:0px}#title-landing
+h3{font-size:33px;font-family:'Source Sans Pro',sans-serif;font-weight:800;text-align:center;margin:0px;padding:0px}#title-landing
+h6{color:#d99525}#soccer{width:380px;height:237px;float:right;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/soccer.jpg)}table.tablebox{border-collapse:separate;border-spacing:20px 0}#box{width:950px;height:420px;margin-top:235px;position:absolute;-moz-border-radius:15px;border-radius:15px;border:4px
+#daa03f solid;-o-background-size:100% 100%;-moz-background-size:100% 100%;-webkit-background-size:100% 100%;background-size:100% 100%;background: -webkit-gradient(
+linear,
+left top, left bottom,
+from(#faf0b3),
+to(#eccb81),
+color-stop(0.5, #f3de9a)
+);background: -webkit-linear-gradient(
+top,
+#faf0b3,
+#f3de9a 50%,
+#eccb81
+);background: -moz-linear-gradient(
+top,
+#faf0b3,
+#f3de9a 50%,
+#eccb81
+);background: -o-linear-gradient(
+top,
+#faf0b3,
+#f3de9a 50%,
+#eccb81
+);background:linear-gradient(
+top,
+#faf0b3,
+#f3de9a 50%,
+#eccb81
+)}#box
+a{text-decoration:none !important}#content-box{width:900px;margin:auto}#content-box
+input{border:1px
+solid #C9C9C9;background-color:#FFF;color:#888;font-size:14px;padding:10px;width:320px;height:auto;display:inline-block;margin:5px
+0 10px}#content-box input:focus{border:#37DD00 1px solid !important;color:#000;-moz-box-shadow:inset 0 0 14px -6px #37DD00;-webkit-box-shadow:inset 0 0 14px -6px #37DD00;-o-box-shadow:inset 0 0 14px -6px #37DD00;box-shadow:inset 0 0 14px -6px #37DD00}#content-box input[type=checkbox]{width:auto;margin:auto}#content-box
+.error_list{text-align:left;padding:0
+30px !important}#content-box
+#form_password2{padding-bottom:15px}#content-box
+td{vertical-align:top}#box ul li.ico-box{font-size:30px;color:#543a10;font-weight:bold;font-family:'Source Sans Pro',sans-serif}#box
+ul.error_list{margin:0}li.ico-box{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/cart/check-brown.png);background-position:10px 10px;background-repeat:no-repeat;font-family:'Source Sans Pro',sans-serif;font-weight:600;height:28px;margin:20px
+0;padding:0
+0 0 2em}#block-light{width:300px;background-color:#f7e2b2;margin:auto;padding:30px;margin-top:15px;clear:both;height:40px}.red-text{color:#b30009;font-size:18px;font-weight:Bold}.red-text2{color:#b30009;font-size:26px;font-weight:Bold}.green-text{color:#188007;font-weight:Bold;font-size:48px;display:inline}h4.green-text{color:#188007 !important;font-weight:Bold;font-size:34px;display:inline}.grey-percentage{color:#676767;font-size:22px;display:inline}td.cont-box2{text-align:center;vertical-align:top;padding-top:30px}.btn-validate{display:block;padding:10px
+10px;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/button-green-landing.jpg);height:76px;border-radius:15px;-moz-border-radius:15px;width:310px;border:1px
+#52aa40 solid;color:#fff;font-size:30px;text-align:center;font-family:'Titillium Web',sans-serif;font-weight:700;line-height:35px;text-shadow:1px 1px #333;margin:20px
+auto 0;cursor:pointer}.specialpercent{margin-top:-8px}.btn-validate-reflet{display:block;padding:0px
+0px;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/reflet.jpg);height:67px;width:321px;color:#fff;font-size:30px;text-align:center;text-shadow:1px 1px #333;margin:0
+auto}#arrow-deco{background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/arrow-deco.png);width:122px;height:105px;position:absolute;margin-left:405px;margin-top:85px;z-index:999}.copyright{display:block;margin:auto;text-align:center;font-size:14Px;margin-bottom:20px;line-height:20px}table.step1{border-collapse:collapse;border-spacing:30px 0;background-color:#fff}table.step1
+td{padding:20px
+20px}table.step1
+.numbers{font-size:20px;text-align:right}table.step1
+td.subtotal{border-bottom:0 !important;padding-bottom:0;font-size:18px}table.step1
+td.substract{padding:0}table.step1 td.substract
+hr{border-width:1px 0;border-style:solid;border-color:#888 #FFFFFF #EEE;float:right;width:220px}table.step1
+td.total{border-bottom:1px solid #D4D4D4;padding-top:0}.remove{padding:7px
+7px !important;vertical-align:top;text-align:right}.remove
+a{text-decoration:none}.numbers{padding-left:45px !important}.step1
+select{background-color:#FFF;display:block;font-size:16px;font-family:Verdana,Geneva,sans-serif;width:300px;margin:auto;padding:5px;-moz-border-radius:5px;border-radius:5px;-moz-box-shadow:inset 0 0 3px 3px #E2E2E2;-webkit-box-shadow:inset 0 0 3px 3px #E2E2E2;box-shadow:inset 0 0 3px 3px #E2E2E2;border:1px
+#D4D4D4 solid !important}.profil-pict{width:98px;height:98px}.step1
+input{border:1px
+#333 solid;height:25px;width:250px;margin-top:5px;font-size:14px;color:#000;padding:5px
+}.step1
+label{font-size:12px}.bold2{font-weight:bold;display:block}.button-input{background-color:#66b949;display:inline block;-moz-border-radius:5px;border-radius:5px;padding:6px
+10px;color:#fff;margin-left:10px}#logo-card{width:560px;float:right;height:30px;margin-top:30px}.cards{display:inline-block;height:28px;margin-right:6px;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/card-logos.jpg)}.card-a{width:44px;background-position:0px 0px}.card-b{width:47px;background-position:-44px 0px}.card-c{width:50px;background-position:-91px 0px}.card-d{width:50px;background-position:-141px 0px}.card-e{width:45px;background-position:-191px 0px}.card-f{width:46px;background-position:-236px 0px}.card-g{width:107px;background-position:-282px 0px}.card-h{width:90px;background-position:-389px 0px}.landing-item-step2
+table{width:100%}.landing-item-step2{margin:0
+0 20px;border:1px
+solid #D4D4D4;padding:10px;background:#F7F7F7;cursor:pointer}.landing-item-step2:hover{border-color:#5EC33B;-moz-box-shadow:inset 0 0 14px -6px #37DD00;-webkit-box-shadow:inset 0 0 14px -6px #37DD00;-o-box-shadow:inset 0 0 14px -6px #37DD00;box-shadow:inset 0 0 14px -6px #37DD00}.landing-item-step2
+img{padding-right:10px}.landing-item-step2
+.darkgrey{font-weight:bold;padding-bottom:4px}.landing-item-step2
+.desc{font-size:14px;padding:4px}.landing-item-step2 .desc
+strong{color:#CE8D3A}.tipster-info{padding:10px;height:75px;vertical-align:middle;position:relative}.tipster-info-stats{text-align:left;text-decoration:none;cursor:pointer}.iteminfo
+a{text-decoration:none}.tipster-info .tipster-info-stats{float:left;width:140px}.tipster-info-links{float:right;width:215px}.tipster-info-button{float:right;margin-top:20px;position:relative;margin-left:10px}.tipster-info-directbuy{margin-top:20px;position:absolute;right:14px}.tipster-info-photo{float:left;margin-right:10px}.tipster-info-link{float:right;padding-top:10px}.tipster-info
+table{border:0;outline-width:0}.tipster-info
+td{border:0;outline-width:0;text-align:left;padding:4px}table.tipster-link{height:100%;width:350px;float:right}table.tipster-link
+td{text-align:right;padding:0}.tipster-info-stats .ico-sport11{margin-top:0;padding:0;vertical-align:bottom}.tipster-info-stats
+.l1{display:inline-block;padding-bottom:4px;padding-left:4px;font-weight:bold}.tipster-info-stats .tipster-info-stats-desc{padding:5px
+0 5px 5px}.presscoverage .presscoverage-header{font-size:16px}.presscoverage .presscoverage-extract{background:#F7F7F7;border:1px
+solid #4D4D4D;margin:10px
+0 25px 20px;padding:10px;text-align:justify}#popunder{background:black none repeat scroll 0 0;height:100%;left:0;opacity:0.6;filter:alpha(opacity=60);position:fixed;top:0;width:100%;z-index:1000}#popup{left:0;margin:auto;position:absolute;right:0;top:20px;width:1000px;z-index:1055;background-color:white}#popup-content{background:white;z-index:1001;position:absolute;left:25%;right:25%;top:25%;border:1px
+solid #FFF;filter:progid:DXImageTransform.Microsoft.Shadow(color='black',direction=135,strength=4);-webkit-box-shadow:2px 2px 32px black;-moz-box-shadow:2px 2px 32px black;box-shadow:2px 2px 32px black}#popup-content
+button{border:inherit;margin:inherit;padding:inherit;background:inherit}#popup-content .btn-close{margin:5px;cursor:pointer}#popup-content>div{margin:30px
+10px 20px;overflow:auto;background-color:#F5F4F2;border:thin solid #D4D4D4;font-size:14px;padding:10px;max-height:300px}#popup-content
+table{margin:auto}.btn-close{right:0;top:0;float:right;background:url(http://static1.betadvisor.com/img/base/btn/btn-close.png) no-repeat scroll left top transparent;display:block;height:15px;width:25px}#popunderV2{display:none;background:black none repeat scroll 0 0;height:100%;left:0;opacity:0.6;filter:alpha(opacity=60);position:fixed;top:0;width:100%;z-index:1000}#popupV2{left:0;margin:auto;position:fixed;right:0;top:130px;width:1000px;z-index:1001}table#popupV2body{background:white;z-index:1001;border:1px
+solid #FFF;filter:progid:DXImageTransform.Microsoft.Shadow(color='black',direction=135,strength=4);-webkit-box-shadow:2px 2px 32px black;-moz-box-shadow:2px 2px 32px black;box-shadow:2px 2px 32px black;margin:auto}#popupV2body .btn-close{margin:5px;cursor:pointer}table#popupV2body tr td
+div#popupContent{margin:30px
+10px 20px;overflow:auto;background-color:#F5F4F2;border:thin solid #D4D4D4;font-size:14px;padding:10px;max-height:350px}#popupV2body
+table{margin:auto}.magnify_small{position:relative;top: -1px}table.magnify_small
+td{padding:0;text-align:left}.magnify_small>span{padding-right:3px;vertical-align:middle;display:inline-block}.magnify_small > span
+img{vertical-align:middle}.magnify_small .l1, .magnify_small
+.l2{display:inline-block;font-size:inherit;padding:0
+3px;vertical-align:middle;margin:0}.magnify_small .l1 h3, .magnify_small .l2
+h3{font-size:inherit}.magnify_giant>span{vertical-align:bottom;display:inline-block}#pagination{padding:20px
+0 0}#pagerdate>#pagination{padding:0
+0 20px}#pagination
+ul{border:0;margin:0;padding:0;text-align:center}#pager
+li{font-size:12px;display:inline-block;border:1px
+solid #D4D4D4;padding:0;margin:0}#pager li:hover{border-color:#888}#pager
+li.active{color:#CE8D3A;font-weight:bold;border-color:#A58F68 !important}#pager li > a, #pager li>span{padding:3px
+6px;display:inline-block}#pager
+li.off{border:1px
+solid #D4D4D4;color:#D4D4D4}.pagerdate_top{width:100%;text-align:center;padding-top:20px}.pagerdate_top
+a{text-decoration:none;color:#444}.block-line-header{margin:20px
+0 0}.graph-title{padding:10px
+0}.stattype{padding:2px
+6px;cursor:pointer;border:1px
+solid #D4D4D4;display:inline-block}.stattype.on{color:#7FD14D}#stat-sum-subgraph{font-size:12px;width:900px;border:1px
+solid #D4D4D4;_background:#F7F7F7;border-spacing:0;background:#f7f7f7;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZjdmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZmVmZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #f7f7f7 0%, #efefef 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#efefef));background: -webkit-linear-gradient(top, #f7f7f7 0%,#efefef 100%);background: -o-linear-gradient(top, #f7f7f7 0%,#efefef 100%);background: -ms-linear-gradient(top, #f7f7f7 0%,#efefef 100%);background:linear-gradient(to bottom, #f7f7f7 0%,#efefef 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#efefef',GradientType=0 )}#stat-sum-subgraph
+td{text-align:center;font:bold 16px/24px Arial,Helvetica,sans-serif;border-right:1px solid #DDD;border-left:1px solid #FFF;padding:0
+15px;text-align:left;width:20%}#stat-sum-subgraph td:first-child{border-left:0}#stat-sum-subgraph td:last-child{border-right:0}#stat-sum-subgraph td>div{color:#888;font-weight:normal;font-size:14px;background:url(http://static1.betadvisor.com/img/base/picto/interrogation.png) no-repeat right 2px transparent}#statistics-detail th,
+#statistics-detail
+td{padding:12px;white-space:nowrap;overflow:hidden;max-width:280px}#statistics-detail th:first-child,
+#statistics-detail td:first-child{text-align:left}#statistics-detail tr:nth-child(2n){background-color:inherit}#statistics-detail
+tr.even{background-color:#F5F4F2}.pie-category .stat-gen{cursor:pointer}.stat-gen
+.trigbull{width:9px;height:9px;display:inline-block;margin-right:5px;background:url(http://static1.betadvisor.com/img/base/picto/triangle.png) no-repeat left top transparent;zoom:1}.stat-gen.on
+.trigbull{background-position:left bottom}.pie-legend{display:inline-block;height:8px;margin:0
+5px 0 0;width:8px}.table-detail{width:100%}.table-detail
+td{text-align:center}.table-detail td:last-child{width:220px}.pie-graph{padding-left:40px;width:180px}.qtip-content{font-size:12px}#tipBiography
+p{font-size:12px;padding-left:0}#tipBiography
+li{padding-left:0}#tipster-biography
+p{font-size:12px;padding:0
+0 5px;margin:0
+0 5px !important}#tipster-biography
+h15{font-size:14px}#tipster-biography .table6 td:last-child{border-left:1px solid #D4D4D4}#tipster-biography .table6 tr:last-child
+td{border-top:1px solid #D4D4D4}#bio_tz{padding:10px
+0;font-size:12px}#bio_tz
+label{padding-right:10px}#article-content-tipster-V2 .iconlist
+p{font-size:14px}#popupdiv{padding:30px;padding-bottom:0px !important;padding-right:25px !important;border:#d4d4d4 1px solid;margin-left:185px;background-color:white;margin-bottom:0px;margin:20px
+auto;height:100%;width:90%}.rank-price
+.price{display:none}.mgtop{margin-top:10px}#loading_div{display:none;padding-top:20px;text-align:center}#sc-ident{margin:auto}#sc-ident
+td{vertical-align:top;margin:5px}#sc-ident .helpContactForm
+form{padding:20px}#sc-ident .sc-login-border{border:1px
+solid #D4D4D4}#sc-ident #select-country-custom{font-size:12px}.error_list
+li{color:red;font-size:14px}.form-row .checkbox, .form-row
+.radio{float:left;margin:0
+10px 0 0;padding:0;top:0;max-width:20px}.sc-checkout{width:600px;margin:auto}.sc-checkout
+form{width:430px;margin:auto}.form-help{font-size:12px}#payment-accept-links{margin:auto;text-align:center}.hover:hover{cursor:pointer;text-decoration:underline}.auth{margin:0
+auto;width:400px;border:1px
+solid #D4D4D4}.auth
+.helpContactForm{padding:20px}.myaccount a, .fright
+a{padding:0
+10px}.clear{clear:both}table.full-border,.full-border{border:#d4d4d4 1px solid}.auth #top-payment{padding:15px}.auth #top-payment
+.fright{font-size:12px}#top-payment .topPaymentHeader
+td{padding:0
+20px}#renewal
+.custcb{background:#fff;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGUwZTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #fff 1%, #e0e0e0 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#e0e0e0));background: -webkit-linear-gradient(top, #fff 1%,#e0e0e0 100%);background: -o-linear-gradient(top, #fff 1%,#e0e0e0 100%);background: -ms-linear-gradient(top, #fff 1%,#e0e0e0 100%);background:linear-gradient(to bottom, #fff 1%,#e0e0e0 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 );border:2px
+inset #888;cursor:pointer;height:10px;margin:auto;outline:1px
+solid #888;width:10px;line-height:12px}#renewal .custcb>input{display:none}#renewal .custcb .check-mini{background-image:url(http://static1.betadvisor.com/img/base/frontendV2/subscription/check.png);background-repeat:no-repeat;height:30px;width:30px;position:absolute;margin:-10px 0 0 -3px}#renewal .subprice
+s{color:#BBB;padding-right:15px}#renewal tr.disabled
+td{color:#aaa}#renewal table.table6
+td{padding:10px}#renewal table.table6 tfoot tr:first-child
+td{border-top:1px solid #D4D4D4}#renewal table.table6 tfoot
+td{text-align:right;font-size:16px}#renewal table.table6 tfoot td#sub-total{text-align:center;font-size:20px;font-weight:bold;color:#CE8D3A}#renewal table.table6 tfoot td#sub-total-discount{text-align:center}#renewal table.table6 tfoot
+tr{background:#fff !important}#renewal table.table6 tfoot
+.btn{max-width:inherit;min-width:inherit;margin-bottom:10px}#myalerts_email table.table6 tbody table.tipsterbloc td:nth-child(2){text-align:left}#myalerts_email_new
+table{background:#F7F7F7}.myaccount-table{margin:auto}.myaccount-table
+td{vertical-align:top;width:330px}.myaccount-settings{width:300px}#mybets-detail input[type=text]{width:42px;display:inline;font-weight:bold;background:#F2E6DC;color:#000}#mystatistics-filter>button{vertical-align:middle;margin:0}#mystatistics-filter>button.btn-small{padding:2px
+4px}#mystatistics-filter>select,#mystatistics-filter>label{vertical-align:middle}.sred{color:#D20000}.sgreen{color:#49A749}.table-full-size
+table{width:100%}.time-left{font-size:14px;font-wight:bold}.title-tab
+#tips{font-size:14px}.title-tab b.match-title{width:100%;clear:both}.title-tab
+.magnify_small{font-size:14px;font-weight:normal}
+.btn{display:inline-block;font:bold 18px/22px 'Source Sans Pro',sans-serif;color:#000;padding:8px;margin:8px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;border:1px
+solid #BBB;-moz-box-shadow:inset 0px -6px 4px rgba(255,255,255,0.6);-webkit-box-shadow:inset 0px -6px 4px rgba(255,255,255,0.6);box-shadow:inset 0px -6px 4px rgba(255,255,255,0.6);text-decoration:none;text-align:center;text-shadow:1px 1px 2px #FFF;cursor:pointer;overflow:hidden;max-height:42px}.btn:hover{border-color:#888}.btn.btn-big{font:bold 22px/26px 'Source Sans Pro',sans-serif;padding:10px;max-height:50px}.btn.btn-small{font:bold 16px/20px 'Source Sans Pro',sans-serif;padding:4px;max-height:32px}.btn-left>span,.btn-right>span{display:inline-block;height:13px;width:13px;-webkit-border-radius:32px;-moz-border-radius:32px;border-radius:32px;background:rgba(255,255,255,0.4);border:1px
+solid #888;vertical-align:middle;margin:0
+4px;font:bold 20px/10px Arial;-moz-box-shadow:1px 1px 1px #FFFFFF, -1px -1px 1px #000000, 1px -1px 1px #888888, -1px 1px 1px #888;-webkit-box-shadow:1px 1px 1px #FFFFFF, -1px -1px 1px #000000, 1px -1px 1px #888888, -1px 1px 1px #888;box-shadow:1px 1px 1px #FFFFFF, -1px -1px 1px #000000, 1px -1px 1px #888888, -1px 1px 1px #888}.btn.btn-big .btn-left > span, .btn.btn-big .btn-right>span{height:15px;width:15px;font:bold 22px/10px Arial}.btn.btn-small .btn-left > span, .btn.btn-small .btn-right>span{height:11px;width:11px;font:bold 20px/8px Arial}.btn-left>span{margin-right:10px}.btn-right>span{margin-left:10px}.btn-left,.btn-center,.btn-right{display:inline-block;vertical-align:middle}.btn-left,.btn-right{padding-top:1px}.btn-center{padding:0
+5px}.btn-bottom{display:inline-block;height:0;width:300%;margin-left:-100%}.gradient-black{color:#FFF !important;text-shadow:1px 1px 2px #000;border-color:#333;background:#111;height:100%;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY4Njg2OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzM1MzUzNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZjRmNGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #686868 0%, #353535 50%, #000 51%, #4f4f4f 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#686868), color-stop(50%,#353535), color-stop(51%,#000000), color-stop(100%,#4f4f4f));background: -webkit-linear-gradient(top, #686868 0%,#353535 50%,#000 51%,#4f4f4f 100%);background: -o-linear-gradient(top, #686868 0%,#353535 50%,#000 51%,#4f4f4f 100%);background: -ms-linear-gradient(top, #686868 0%,#353535 50%,#000 51%,#4f4f4f 100%);background:linear-gradient(to bottom, #686868 0%,#353535 50%,#000 51%,#4f4f4f 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#000000',GradientType=0 );-moz-box-shadow:inset 0px -4px 4px rgba(80,80,80,0.6);-webkit-box-shadow:inset 0px -4px 4px rgba(80,80,80,0.6);box-shadow:inset 0px -4px 4px rgba(80,80,80,0.6)}.gradient-black:hover{border-color:#000;background:#333;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY4Njg2OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzJjNTM1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZjRmNGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #686868 0%, #2c535e 50%, #000 51%, #4f4f4f 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#686868), color-stop(50%,#2c535e), color-stop(51%,#000000), color-stop(100%,#4f4f4f));background: -webkit-linear-gradient(top, #686868 0%,#2c535e 50%,#000 51%,#4f4f4f 100%);background: -o-linear-gradient(top, #686868 0%,#2c535e 50%,#000 51%,#4f4f4f 100%);background: -ms-linear-gradient(top, #686868 0%,#2c535e 50%,#000 51%,#4f4f4f 100%);background:linear-gradient(to bottom, #686868 0%,#2c535e 50%,#000 51%,#4f4f4f 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 )}.gradient-black:hover .btn-bottom{-moz-box-shadow:0 12px 6px 6px #6DDDFF;-webkit-box-shadow:0 12px 6px 6px #6DDDFF;box-shadow:0 12px 6px 6px #6DDDFF}.gradient-black .btn-left > span,
+.gradient-black .btn-right>span{background:rgba(255,255,255,0.2);-moz-box-shadow:    -1px -1px 1px #000;-webkit-box-shadow: -1px -1px 1px #000;box-shadow:         -1px -1px 1px #000}.gradient-black:hover .btn-left > span,
+.gradient-black:hover .btn-right>span{text-shadow:0 0 2px #6DDDFF}.gradient-white{background:#f0f0f0;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U3ZTdlNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2M2YzZjNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGYwZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #f6f6f6 0%, #e7e7e7 50%, #c6c6c6 51%, #f0f0f0 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(50%,#e7e7e7), color-stop(51%,#c6c6c6), color-stop(100%,#f0f0f0));background: -webkit-linear-gradient(top, #f6f6f6 0%,#e7e7e7 50%,#c6c6c6 51%,#f0f0f0 100%);background: -o-linear-gradient(top, #f6f6f6 0%,#e7e7e7 50%,#c6c6c6 51%,#f0f0f0 100%);background: -ms-linear-gradient(top, #f6f6f6 0%,#e7e7e7 50%,#c6c6c6 51%,#f0f0f0 100%);background:linear-gradient(to bottom, #f6f6f6 0%,#e7e7e7 50%,#c6c6c6 51%,#f0f0f0 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#f0f0f0',GradientType=0 );-moz-box-shadow:inset 0px -4px 4px rgba(255,255,255,0.6);-webkit-box-shadow:inset 0px -4px 4px rgba(255,255,255,0.6);box-shadow:inset 0px -4px 4px rgba(255,255,255,0.6)}.gradient-white:hover{background:#f6f6f6;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2JhZTZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2M2YzZjNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOGYxZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #f6f6f6 0%, #bae6ff 50%, #c6c6c6 51%, #d8f1ff 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(50%,#bae6ff), color-stop(51%,#c6c6c6), color-stop(100%,#d8f1ff));background: -webkit-linear-gradient(top, #f6f6f6 0%,#bae6ff 50%,#c6c6c6 51%,#d8f1ff 100%);background: -o-linear-gradient(top, #f6f6f6 0%,#bae6ff 50%,#c6c6c6 51%,#d8f1ff 100%);background: -ms-linear-gradient(top, #f6f6f6 0%,#bae6ff 50%,#c6c6c6 51%,#d8f1ff 100%);background:linear-gradient(to bottom, #f6f6f6 0%,#bae6ff 50%,#c6c6c6 51%,#d8f1ff 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#d8f1ff',GradientType=0 )}.gradient-white:hover .btn-bottom{-moz-box-shadow:0 12px 8px 4px #6DDDFF;-webkit-box-shadow:0 12px 8px 4px #6DDDFF;box-shadow:0 12px 8px 4px #6DDDFF}.gradient-white:hover .btn-left > span,
+.gradient-white:hover .btn-center,
+.gradient-white:hover .btn-right>span{text-shadow:1px 1px 0 #FFFFFF, 1px 1px 2px #FFF}.gradient-green{background:#9EDD85;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ExZGU4YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzYzY2U0MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzQ3YTQyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4OWQ3NmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #a1de8a 0%, #63ce40 50%, #47a428 51%, #89d76f 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1de8a), color-stop(50%,#63ce40), color-stop(51%,#47a428), color-stop(100%,#89d76f));background: -webkit-linear-gradient(top, #a1de8a 0%,#63ce40 50%,#47a428 51%,#89d76f 100%);background: -o-linear-gradient(top, #a1de8a 0%,#63ce40 50%,#47a428 51%,#89d76f 100%);background: -ms-linear-gradient(top, #a1de8a 0%,#63ce40 50%,#47a428 51%,#89d76f 100%);background:linear-gradient(to bottom, #a1de8a 0%,#63ce40 50%,#47a428 51%,#89d76f 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#9edd85', endColorstr='#2fb215',GradientType=0 );-moz-box-shadow:inset 0px -4px 4px rgba(190,255,175,0.6);-webkit-box-shadow:inset 0px -4px 4px rgba(190,255,175,0.6);box-shadow:inset 0px -4px 4px rgba(190,255,175,0.6)}.gradient-green:hover{background:#2FB215;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ExZGU4YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI2ZTUwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzQ3YTQyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5YmZjNzEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #a1de8a 0%, #26e500 50%, #47a428 51%, #9bfc71 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1de8a), color-stop(50%,#26e500), color-stop(51%,#47a428), color-stop(100%,#9bfc71));background: -webkit-linear-gradient(top, #a1de8a 0%,#26e500 50%,#47a428 51%,#9bfc71 100%);background: -o-linear-gradient(top, #a1de8a 0%,#26e500 50%,#47a428 51%,#9bfc71 100%);background: -ms-linear-gradient(top, #a1de8a 0%,#26e500 50%,#47a428 51%,#9bfc71 100%);background:linear-gradient(to bottom, #a1de8a 0%,#26e500 50%,#47a428 51%,#9bfc71 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1de8a', endColorstr='#45cc18',GradientType=0 )}.gradient-green:hover .btn-bottom{-moz-box-shadow:0 6px 8px 4px #32FF00;-webkit-box-shadow:0 6px 8px 4px #32FF00;box-shadow:0 6px 8px 4px #32FF00}.gradient-green:hover .btn-left > span,
+.gradient-green:hover .btn-center,
+.gradient-green:hover .btn-right>span{text-shadow:1px 1px 0 #FFFFFF, 1px 1px 2px #FFF}.gradient-gold{background:#f9d96d;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZiZGE2ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZkY2ExMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2NjYTAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYmQ1NGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #fbda6d 0%, #fdca11 50%, #cca000 51%, #fbd54b 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbda6d), color-stop(50%,#fdca11), color-stop(51%,#cca000), color-stop(100%,#fbd54b));background: -webkit-linear-gradient(top, #fbda6d 0%,#fdca11 50%,#cca000 51%,#fbd54b 100%);background: -o-linear-gradient(top, #fbda6d 0%,#fdca11 50%,#cca000 51%,#fbd54b 100%);background: -ms-linear-gradient(top, #fbda6d 0%,#fdca11 50%,#cca000 51%,#fbd54b 100%);background:linear-gradient(to bottom, #fbda6d 0%,#fdca11 50%,#cca000 51%,#fbd54b 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9d96d', endColorstr='#fcc500',GradientType=0 );-moz-box-shadow:inset 0px -4px 4px rgba(255,239,122,0.6);-webkit-box-shadow:inset 0px -4px 4px rgba(255,239,122,0.6);box-shadow:inset 0px -4px 4px rgba(255,239,122,0.6)}.gradient-gold:hover{background:#fcc500;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5ZWJiZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y5YzgxNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2U4YWQyNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOWYwNzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #f9ebbd 0%, #f9c816 50%, #e8ad25 51%, #f9f072 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9ebbd), color-stop(50%,#f9c816), color-stop(51%,#e8ad25), color-stop(100%,#f9f072));background: -webkit-linear-gradient(top, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);background: -o-linear-gradient(top, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);background: -ms-linear-gradient(top, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);background:linear-gradient(to bottom, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4eedc', endColorstr='#f9d24f',GradientType=0 )}.gradient-gold:hover .btn-bottom{-moz-box-shadow:0 6px 8px 4px #FFFA66;-webkit-box-shadow:0 6px 8px 4px #FFFA66;box-shadow:0 6px 8px 4px #FFFA66}.gradient-gold:hover .btn-left > span,
+.gradient-gold:hover .btn-center,
+.gradient-gold:hover .btn-right>span{text-shadow:1px 1px 0 #FFFFFF, 1px 1px 2px #FFF}.gradient-darkgold{border:#C9C2B5;background:#a77b23;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UzY2E5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2MwOTYyYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2E3N2IyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNjkxNDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #e3ca95 0%, #c0962a 50%, #a77b23 51%, #d69142 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3ca95), color-stop(50%,#c0962a), color-stop(51%,#a77b23), color-stop(100%,#d69142));background: -webkit-linear-gradient(top, #e3ca95 0%,#c0962a 50%,#a77b23 51%,#d69142 100%);background: -o-linear-gradient(top, #e3ca95 0%,#c0962a 50%,#a77b23 51%,#d69142 100%);background: -ms-linear-gradient(top, #e3ca95 0%,#c0962a 50%,#a77b23 51%,#d69142 100%);background:linear-gradient(to bottom, #e3ca95 0%,#c0962a 50%,#a77b23 51%,#d69142 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3ca95', endColorstr='#d69142',GradientType=0 );-moz-box-shadow:inset 0px -4px 4px rgba(255,239,122,0.2);-webkit-box-shadow:inset 0px -4px 4px rgba(255,239,122,0.2);box-shadow:inset 0px -4px 4px rgba(255,239,122,0.2)}.gradient-darkgold:hover{background:#e3ca95;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5ZWJiZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y5YzgxNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2U4YWQyNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOWYwNzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #f9ebbd 0%, #f9c816 50%, #e8ad25 51%, #f9f072 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9ebbd), color-stop(50%,#f9c816), color-stop(51%,#e8ad25), color-stop(100%,#f9f072));background: -webkit-linear-gradient(top, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);background: -o-linear-gradient(top, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);background: -ms-linear-gradient(top, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);background:linear-gradient(to bottom, #f9ebbd 0%,#f9c816 50%,#e8ad25 51%,#f9f072 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4eedc', endColorstr='#f9d24f',GradientType=0 )}.gradient-darkgold:hover .btn-bottom{-moz-box-shadow:0 6px 8px 4px #FFB600;-webkit-box-shadow:0 6px 8px 4px #FFB600;box-shadow:0 6px 8px 4px #FFB600}.gradient-darkgold:hover .btn-left > span,
+.gradient-darkgold:hover .btn-center,
+.gradient-darkgold:hover .btn-right>span{text-shadow:1px 1px 0 #FFD166, 1px 1px 2px #999}.btn.homebig{font:bold 28px/22px 'Source Sans Pro',sans-serif;padding:15px
+30px}.btn.homebig.gradient-green:hover .btn-bottom{-moz-box-shadow:0 14px 8px 4px #32FF00;-webkit-box-shadow:0 14px 8px 4px #32FF00;box-shadow:0 14px 8px 4px #32FF00}#footertop
+.btn{padding:10px
+30px}#getStartedToday{margin-top:50px}#getStartedToday
+.btn{width:280px}#contactarea
+.btn{width:130px}.btnget1
+.btn{width:212px}#blockStatsTipsters .btn .btn-center{max-width:80px;overflow:hidden;white-space:nowrap}#login{margin:6px
+0 0}#umenu > div
+span.picto{width:24px;height:24px;background:url(http://static1.betadvisor.com/img/base/picto/ba_menu_4x2.png) no-repeat;display:inline-block}#umenu > div.login
+span.picto{background-position:0 -24px;margin:4px
+0px 4px 6px}#umenu > div.shopping-cart
+span.picto{background-position: -24px -24px;margin:4px
+6px}#umenu > div.live-support
+span.picto{background-position: -48px -24px;margin:4px
+4px 4px 8px}#umenu > div.settings
+span.picto{background-position: -72px -24px;margin:4px
+0px 4px 6px}#umenu>div{display:inline-block;font:12px/24px Arial,Helvetica,sans-serif;height:36px;position:relative}#umenu > div
+.link{display:inline-block;height:36px;z-index:10;position:relative;border-width:0 1px 0 1px;border-color:transparent;border-style:solid;cursor:pointer}#umenu > div.show
+.link{background:#D7D7D7;color:#000;border-color:#888;z-index:9999}#umenu
+input{background-color:#FFF;display:block;height:20px;padding:0
+!important;margin:2px
+0 !important;width:145px !important}#umenu
+.rememberme{margin:-2px 8px -2px 4px;width:auto;display:inline-block}#umenu .rememberme input[type=checkbox]{width:auto !important;height:auto;margin:0
+!important}#umenu
+label{display:inline-block;height:20px}#umenu
+.btn{margin:2px
+0;font:600 16px/20px 'Source Sans Pro',sans-serif;width:150px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}#umenu .settings
+label{text-align:right;padding:0
+10px;font-weight:bold;margin:0}#umenu
+select{margin:6px;padding:2px;width:140px}#umenu > div
+span.label{display:inline-block;height:24px;margin:4px
+8px 4px 0}#umenu > div .link
+a{display:inline-block;text-decoration:none;height:36px}#umenu div.show
+a{color:#000}#umenu>div.show>div{display:block}#umenu>div>div{position:absolute;display:none;font:12px/16px Tahoma,Arial;background:#D7D7D7;margin-top:-1px;z-index:999;border:1px
+solid #888;color:#000;min-width:185px;left:0}#umenu > div > div
+a{text-decoration:underline}#umenu>div.login>div{min-width:220px;padding:6px
+20px 6px 15px}#umenu>div.login>div>div{padding:6px
+20px 6px 15px}#umenu > div.login > div > div a:hover.btni{color:white;text-shadow:2px 2px 1px black}#umenu > div.login > div > div
+a.btni{display:inline-block;text-align:center;width:100%}#umenu>div.settings>div{left:auto;right:0;white-space:nowrap;padding:4px
+20px 4px 10px}#umenu > div.settings
+label{width:65px}#umenu > div.language span
+img{margin:0
+4px -1px !important}#umenu>div.language>div{left:auto;right: -35px;white-space:nowrap;padding:4px
+20px 4px 10px}#umenu > div.language > div
+.language_choices{padding:10px
+0 0}#umenu > div.language > div .language_choices
+p{margin:0;padding:0}#umenu > div.language > div .language_choices
+div{margin:10px}#umenu > div.language > div .language_choices div
+img{margin:0
+10px -1px 0 !important}#umenu > div.show > div
+td{text-align:left}#umenu .login .btn span span span,
+#umenu .login .btn span span
+span{margin:2px
+15px}#umenu .link .head-ico1, #umenu .link .head-ico2, #umenu .link .head-ico3, #umenu .link .head-ico4{padding:8px
+0}#umenu
+.link{padding:0
+4px}.flash_notice{background-color:rgb(63,63,63);background-image:url(http://static1.betadvisor.com/img/flash_notice.png);color:#FFF}.flash_success{background-color:rgb(63,63,63);background-image:url(http://static1.betadvisor.com/img/flash_success.png);color:#FFF}.flash_warning{background-color:rgb(63,63,63);background-image:url(http://static1.betadvisor.com/img/flash_warning.png);color:#FFF}.flash_error{background-color:rgb(63,63,63);background-image:url(http://static1.betadvisor.com/img/flash_error.png);color:#FFF}.flash_loading{background-color:rgb(63,63,63);background-image:url(http://static1.betadvisor.com/images/ajax-loader_v2-black.gif);color:#FFF}.flash_notice,.flash_success,.flash_warning,.flash_error,.flash_validation,.flash_loading{background-position:10px center;background-repeat:no-repeat;border:1px
+solid #4D4D4D;padding:15px
+10px 15px 50px;position:relative;z-index:101}#grey-area{background-color:#f5f4f2;border:1px
+solid #d4d4d4;margin-bottom:30px;margin-top:10px;font-size:14px}.white-area{background-color:#fff;border:1px
+solid #d4d4d4;width:100%;padding:10px
+8px 20px 8px;border-radius:10px;-moz-border-radius:10px}.white-area-inactive{background-color:#f5f4f2;border:1px
+solid #d4d4d4;width:100%;padding:10px
+8px 20px 8px;border-radius:10px;-moz-border-radius:10px}.height-w{height:110px}.content-white{width:75%}.bigico{display:inline-block;height:43px;width:39px;margin-right:20px;clear:both;position:absolute}#sub{width:700px;margin-left:285px;margin-bottom:30px;font-weight:bold}td.textdesc{text-align:right}td.textdesc
+span.l2{max-width:200px;overflow:hidden;white-space:nowrap}.ico-bleu{display:inline-block;height:13px;width:13px;margin-right:5px}.face78x78{display:block;width:78px;height:78px}table.top-grey{padding:15px
+20px 0}table.grey-area{padding:0
+15px 10px 0;width:100%;border-collapse:separate;border-spacing:30px 10px;font-size:14px}table.grey-area
+li{padding:0px
+0 8px 10px;font-size:13px !important}table.grey-area
+p{padding:3px
+0 2px 3px}table.grey-area
+td{vertical-align:top}.flux{display:inline-block;width:18px;height:18px;margin:0
+10px 0 4px}.special-text{background-color:#F00;color:#FFF;font-style:italic;font-size:13px;padding:2px
+}.darkgold{color:#ce8d3a}#title-ico
+.l2{font-size:16px}#conditions{text-align:justify}#conditions
+b{margin:14px
+0;display:block}#conditions
+ol{margin:14px
+0}#popup
+#conditions{font-size:12px;height:300px;overflow:auto;text-align:justify}#popup
+.block{margin:20px}#popup .block .block-header{padding:10px}.btn-promo{width:150px}.second-tier-title{color:#494949;display:inline-block;font-size:30px;height:41px;padding:8px
+0 12px;vertical-align:top}#tipster-2nd-tier-submit{text-align:right}#tipster-2nd-tier-submit
+.price{text-align:right;font-size:16px;padding-right:10px}#tipster-2nd-tier-submit .price
+.gold{font-size:20px}#tipster-2nd-tier-submit
+table{display:inline-block}#tipster-2nd-tier-submit
+button.btn{padding-bottom:7px}#tipster-2nd-tier-content
+table{border:0px}#tipster-2nd-tier-content
+td{border:0px;text-align:left;vertical-align:top}#tipster-2nd-tier-header{margin-bottom:20px}#tipster-2nd-tier-header
+.l1{font:bold 34px/38px 'Source Sans Pro',sans-serif}#tipster-2nd-tier-content{margin-bottom:20px}.term{display:inline-block;font-size:1.2em;margin-top:4px;vertical-align:top}#list-terms
+th{background:none;border-left:0px;text-align:left}#list-terms
+td{background:none;border:0px}#list-terms tbody
+td{height:25px;font-weight:bold;vertical-align:middle}#list-terms tfoot
+td{vertical-align:bottom}#list-terms tfoot td
+input{margin-top:0px}#term-error{color:red}#tipster-2nd-tier-photo{padding-right:10px}#main-about{position:relative;min-height:650px}#main-about
+p{line-height:23px;font-size:15px;font-weight:#000;margin-bottom:15px !important}#main-about-content{width:600px}#man-bill{width:207px;height:636px;background:url(http://static1.betadvisor.com/img/base/frontendV2/elements/man-dollars-s.jpg);position:absolute;right:55px;bottom:10px}.head-content{padding:16px;font-family:'Source Sans Pro',sans-serif;font-size:18px;font-weight:bold;color:#494949;border-top:#ccc 2px solid;border-right:#ccc 2px solid;border-left:#ccc 2px solid;-o-background-size:100% 100%;-moz-background-size:100% 100%;-webkit-background-size:100% 100%;background-size:100% 100%;background: -webkit-gradient(
+linear,
+left top, left bottom,
+from(#dcdcdc),
+to(#bfbfbf)
+);background: -webkit-linear-gradient(
+top,
+#dcdcdc,
+#bfbfbf
+);background: -moz-linear-gradient(
+top,
+#dcdcdc,
+#bfbfbf
+);background: -o-linear-gradient(
+top,
+#dcdcdc,
+#bfbfbf
+);background:linear-gradient(
+top,
+#dcdcdc,
+#bfbfbf
+)}.ctn-center{width:500px;margin:20px
+auto 10px auto;clear:both}.ctn-center-update{width:800px;margin:20px
+auto 10px auto;clear:both}.ctn-center-activate{width:700px;margin:20px
+auto 10px auto;clear:both}.sms-section
+form{margin:0}.sms-section form select,
+.sms-section form
+input{border:1px
+solid #C4C4C4;font-size:16px;padding:6px
+5px;margin-top:0px;width:250px !important}.sms-section form
+select{padding:5px;width:auto !important}#form_mobile_number{padding-top:0}#form_phone_number
+th{font-weight:normal;font-size:15px}#form_activation_code
+.error_list{margin:-18px 0 0}.ctn-activate form
+label{display:none}#info-ico{display:block;height:64px;width:64px;margin-right:10px}table.table-center{line-height:23px;border-collapse:separate;border-spacing:20px 10px}table.table-center
+p{margin:2px
+0 2px 0;padding:0px}table.table-center
+td{vertical-align:top}.sms-section{padding-bottom:20px !important}.sms-section table td
+table{margin:auto}#profil-pic{width:98px;height:98px;display:inline-block}#profil-info{display:inline-block;width:140px;margin-left:8px;position:absolute}.border-tab{display:block;border:1px
+#999 solid;padding:10px}.border-gold{display:block;border:3px
+#dfaf5b solid;padding:20px;height:100%}.border-gold
+select{font-size:16px;padding:6px;display:inline-block}.border-gold input,input.input-sp{font-size:16px;padding:2px;width:160px;display:inline-block;border:1px
+#C4C4C4 solid;-moz-box-shadow:inset 0 0 5px #ccc;-webkit-box-shadow:inset 0 0 5px #ccc;box-shadow:inset 0 0 5px #ccc;height:30px}.form{display:inline-block;height:60px;margin-right:10px;clear:both;font-size:14px}.form
+h1{margin-left:20px}.tiny-ico{display:inline-block;width:33px;height:26px}.tiny-arrow{display:inline-block;width:15px;height:15px;position:absolute;margin-top:3px;margin-left:4px}.border-gold .tiny-arrow{margin-top:5px !important}#big-check{display:inline-block;width:64px;height:64px;background:url(http://static1.betadvisor.com/img/base/frontendV2/elements/big-check.png)}#big-info{display:inline-block;width:64px;height:64px;background:url(http://static1.betadvisor.com/img/base/frontendV2/elements/info.jpg);margin-bottom:150px}.text-right{display:inline-block;width:600px;height:64px;float:right}.text-right
+p{margin:6px
+0 6px 0 !important;padding:0px
+!important}.annot{display:inline-block;margin-top:25px;text-align:center;margin-left:5px}.ctn-activate{margin-left:100px}.ctn-activate
+input{width:300px !important}.sentence{display:block;margin-left:60px;width:600px}.div1{width:600px;height:70px}p.center1{display:block;margin:auto;width:100%;text-align:center;font-size:11px}#body-pick #title-ico{max-width:550px;overflow:hidden;white-space:nowrap}#basic-wait{text-align:center}#basic-confirm{text-align:center;padding-top:30px}#promoMobile
+.btn{min-width:100px}.flag{margin:0
+4px 0 0 !important}#header{height:123px;background-color:#000;position:relative;width:100%}#header-landing{height:80px;background-color:#000;position:relative;width:100%}table.tab-landing{border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:18px;margin-bottom:30px}table.tab-landing
+td{padding:10px;vertical-align:top}td.text24{line-height:24px}.btn-validate-landing{display:block;padding:10px
+10px;background:url(http://static1.betadvisor.com/img/base/frontendV2/cart/button-green-landing.jpg);height:76px;border-radius:15px;-moz-border-radius:15px;width:310px;border:1px
+#52aa40 solid;color:#fff;font-size:30px;text-align:center;font-family:'Titillium Web',sans-serif;font-weight:bold;line-height:35px;text-shadow:1px 1px #333;-moz-box-shadow:3px 3px 10px 0px #cfcfcf;-webkit-box-shadow:3px 3px 10px 0px #cfcfcf;-o-box-shadow:3px 3px 10px 0px #cfcfcf;box-shadow:3px 3px 10px 0px #cfcfcf;filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=135, Strength=10)}.btn-validate-landing
+a{text-decoration:none;color:#fff}.btn-silver-land{display:block;padding:10px
+10px;height:32px;border-radius:15px;-moz-border-radius:15px;width:310px;border:1px
+#949494 solid;color:#565656;font-size:24px;text-align:center;font-family:'Titillium Web',sans-serif;font-weight:700;line-height:35px;-moz-box-shadow:3px 3px 10px 0px #cfcfcf;-webkit-box-shadow:3px 3px 10px 0px #cfcfcf;-o-box-shadow:3px 3px 10px 0px #cfcfcf;box-shadow:3px 3px 10px 0px #cfcfcf;filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=135, Strength=10);background:#8d8d8d url("http://static1.betadvisor.com/img/base/frontendV2/elements/bg-grey.png") repeat-x top;-o-background-size:100% 100%;-moz-background-size:100% 100%;-webkit-background-size:100% 100%;background-size:100% 100%;background: -webkit-gradient(
+linear,
+left top, left bottom,
+from(#f0f0f0),
+to(#8d8d8d)
+);background: -webkit-linear-gradient(
+top,
+#f0f0f0,
+#8d8d8d
+);background: -moz-linear-gradient(
+top,
+#f0f0f0,
+#8d8d8d
+);background: -o-linear-gradient(
+top,
+#f0f0f0,
+#8d8d8d
+);background:linear-gradient(
+top,
+#f0f0f0,
+#8d8d8d
+)}.link-mini-landing{display:block;float:right;height:20px;margin-left:340px;margin-top:0}.link-mini-landing
+a{font-size:14px}#block-landing{padding:15px;border:1px
+#c7c7c7 solid;background:#e3e3e3 url("http://static1.betadvisor.com/img/elements/bg-block.png") repeat-x top;-o-background-size:100% 100%;-moz-background-size:100% 100%;-webkit-background-size:100% 100%;background-size:100% 100%;background: -webkit-gradient(
+linear,
+left top, left bottom,
+from(#f7f7f7),
+to(#e3e3e3)
+);background: -webkit-linear-gradient(
+top,
+#f7f7f7,
+#e3e3e3
+);background: -moz-linear-gradient(
+top,
+#f7f7f7,
+#e3e3e3
+);background: -o-linear-gradient(
+top,
+#f7f7f7,
+#e3e3e3
+);background:linear-gradient(
+top,
+#f7f7f7,
+#e3e3e3
+);-moz-box-shadow:inset 0 0 5px #ccc;-webkit-box-shadow:inset 0 0 5px #ccc;box-shadow:inset 0 0 5px #ccc}.bottomblock{background-color:#d2d2d2;width:337px;height:100px;margin:auto;padding:15px;border:1px
+#d2d2d2 solid}#block-landing
+p{padding:10px
+0;font-size:12px}.bottomblock
+form{width:200px !important;display:inline-block}.bottomblock input[type="text"]{width:180px !important;margin-top:13px;padding:6px;display:inline-block}.bottomblock .colorg-footer{border-radius:0 0 0 0 !important;margin-top:11px !important;position:absolute;padding:10px
+25Px;font-size:16px}#block-landing .colorg-footer{border-radius:0 0 0 0 !important;margin-left:40px;padding:10px
+55Px;font-size:16px;position:absolute;-moz-box-shadow:3px 3px 10px 0px #cfcfcf;-webkit-box-shadow:3px 3px 10px 0px #cfcfcf;-o-box-shadow:3px 3px 10px 0px #cfcfcf;box-shadow:3px 3px 10px 0px #cfcfcf;filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf,Direction=135,Strength=10)}.b-landing1{width:230px;float:left;height:230px}.b-landing2{width:337px;margin:auto;height:230px}.b-landing3{width:310px;float:right;height:230px}ul#sporttiny
+li{margin:7px
+0px;font-family:'Source Sans Pro',sans-serif;font-weight:600}ul#sporttiny li
+a{text-decoration:none}table.table-land2{margin-top:40px}.marginauto{margin:20px
+auto auto}.quote{font-family:'Source Sans Pro',sans-serif;font-size:24px}.landingPopupTable{margin:auto;width:100%}.landingPopupTable
+input{width:100%;height:28px;border:1px
+solid #CCC;padding:5px;font-size:14px;color:black;font-family:'Source Sans Pro',sans-serif;overflow:hidden}.landingPopupTable input[type=checkbox]{height:auto;margin:0;width:28px}#footer-landing{height:60px;background-color:#e2e2e2;width:100%}#content-footer{width:140px;margin:auto;height:21px;padding:20px
+0}#select-country-custom{position:relative;margin-top:20px}#select-country-custom:hover{cursor:pointer}#select-country-custom
+div{width:100%;background:url(http://static1.betadvisor.com/img/base/picto/select.png) no-repeat right center white;color:black;display:block;height:19px;border:1px
+solid grey}#select-country-custom
+ul{height:105px;width:100%;overflow:auto;position:absolute;background:white;color:black;border:1px
+solid #CCC;z-index:1000;margin: -5px 0 0}#select-country-custom
+li{padding:2px
+4px}#select-country-custom
+img{margin:0
+5px 2px}#select-country-custom li:hover{background:black;color:#ffe194}.box{border:2px
+solid #D4D4D4;margin:auto;width:400px}.box-title{background:#f5f5f5;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjVmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkY2RjZGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background: -moz-linear-gradient(top, #f5f5f5 0%, #efefef 60%, #dcdcdc 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(60%,#efefef), color-stop(100%,#dcdcdc));background: -webkit-linear-gradient(top, #f5f5f5 0%,#efefef 60%,#dcdcdc 100%);background: -o-linear-gradient(top, #f5f5f5 0%,#efefef 60%,#dcdcdc 100%);background: -ms-linear-gradient(top, #f5f5f5 0%,#efefef 60%,#dcdcdc 100%);background:linear-gradient(to bottom, #f5f5f5 0%,#efefef 60%,#dcdcdc 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#dcdcdc',GradientType=0 );padding:15px;border:2px
+solid #DCDCDC;font:bold 18px/22px 'Source Sans Pro',sans-serif}.box-title .box-subtitle{float:right;font:bold 12px/16px 'Source Sans Pro',sans-serif;padding-top:4px}.box-content{padding:15px;background:#FFF}#select-country-custom div,
+.box-content textarea,
+.box-content select,
+.box-content
+input{color:#000;font:14px/18px 'Source Sans Pro',sans-serif;overflow:hidden;margin:5px
+0;padding:1%;width:98%;border:1px
+solid #CCC;-moz-box-shadow:inset 0 0 6px -2px #888;-webkit-box-shadow:inset 0 0 6px -2px #888;-o-box-shadow:inset 0 0 6px -2px #888;box-shadow:inset 0 0 6px -2px #888}.box-content
+textarea{height:65px}.box-content textarea:focus,
+.box-content select:focus,
+.box-content input:focus{border:1px
+solid #DFB14C;-moz-box-shadow:inset 0 0 14px -6px #DFB14C;-webkit-box-shadow:inset 0 0 14px -6px #DFB14C;-o-box-shadow:inset 0 0 14px -6px #DFB14C;box-shadow:inset 0 0 14px -6px #DFB14C}.box-content
+label{font-size:12px}.box-content .form-row{padding-top:10px;text-align:left}.box-content
+ul.confirm{margin:0;list-style-type:disc}.box-content ul.confirm
+li{margin:5px
+0 5px 30px}#PaymentMethodForm
+.box{width:100%}#body-sms
+.box{width:800px}#body-sms .ls-contact{text-decoration:underline}#PaymentCheckout
+.box{width:450px}#PaymentCheckout
+ul{margin-top:0}#popup-bar{background:white;border:3px
+solid #D4D4D4;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:fixed;right:5%;bottom:0;z-index:50;width:300px;padding:20px
+20px 48px;text-align:justify}#popup-b-icon{background:url(http://static1.betadvisor.com/img/base/btn/b-close.png) no-repeat left top;width:15px;height:15px;cursor:pointer;position:absolute;right:10px;top:5px}#popup-bar p.popup-warning{background:url(http://static1.betadvisor.com/img/flash_warning.png) no-repeat left top;padding-left:40px}.popup-pick{padding:5px;border:thin solid #D4D4D4;margin-top:8px;margin-bottom:8px;background:none repeat scroll 0 0 #F5F4F2}.popup-pick-msg{font-size:13px;font-weight:bold}.popup-pick-msg
+h8{font-size:18px}.popup-pick-button{text-align:center;margin-top:3px;margin-bottom:3px}.tabs-slider{overflow:hidden;position:relative}.tabs{overflow:visible}.tabs-slider-left,.tabs-slider-right{overflow:hidden;display:none;position:absolute;bottom:0;text-align:center;border-width:3px 3px 0 3px;border-style:solid;border-color:#D4D4D4;cursor:pointer;-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;-webkit-box-shadow:0 2px 2px #4D4D4D;-moz-box-shadow:0 2px 2px #4D4D4D;box-shadow:0 2px 2px #4D4D4D}.tabs-slider-left{left:0}.tabs-slider-right{right:0}.left-slider,.right-slider,.first-slider{display:inline-block;font-size:20px;height:44px;line-height:40px;padding:0
+6px}.left-slider{border-right:2px solid #D4D4D4}.mbar{height:40px}#msg-bar{border-top:1px solid #4D4D4D;border-right:1px solid #4D4D4D;left:0;bottom:0;position:fixed;opacity:0.85;filter:alpha(opacity=80);background:#121212;z-index:500;text-align:left;height:18px;padding:5px
+0;width:100%;font-size:14px;color:#FFF}#msg-bar
+a{text-decoration:none;letter-spacing:1px;color:#FFF;display:inline-block;vertical-align:bottom}#msg-center{width:995px;margin-right:auto;margin-left:auto;position:relative;z-index:10;white-space:nowrap}#msg-b-close:hover,#msg-open:hover{cursor:pointer}#msg-open{padding:0
+20px}#msg-b-open{padding:0
+5px 0}#msg-cat{color:#FFE194;font-weight:bold;padding:2px
+10px}#msg-click{text-decoration:underline}#msg-follow{position:absolute;right:15px}#msg-b-close,#msg-b-open{display:inline-block;vertical-align:bottom}table.table6 td.pick-max-width{text-align:left;max-width:215px;overflow:hidden}.contentUptilab
+.grey{color:#b5b5b5 !important}.or{color:#dba124 !important}#garenteed{margin-top:15px;border:#dba124 solid 1px;height:70px;background-color:#fff}#garenteed
+img{float:left}.pair,#presOffer{background-color:#ededed}#garenteed
+p{width:700px;float:right;color:#474747;font-style:italic;margin-top:10px;margin-right:10px;font-size:14px}#garenteed p
+span{font-weight:600}.help{background:#fff url(http://static1.betadvisor.com/img/base/frontendV2/cart/standardist2.jpg) no-repeat bottom right}.help
+p{font-size:18px;color:#b7b7b7 !important;font-weight:300;line-height:22px;padding-bottom:20px}.contentUptilab{padding-bottom:20px}.help
+a{color:#5d5d5d;font-size:14px;display:block;text-decoration:none}.help a>span{text-decoration:underline}.treeCollum{float:left;padding:20px;width:278px;height:120px;background-color:#fff;border:#dcdcdc solid 1px;margin-top:20px}.treeCollum
+p{color:#474747}.treeCollum.testimonial{margin-right:20px;margin-left:20px;font-size:15px;font-style:italic}.treeCollum.testimonial p
+span{font-weight:600}.treeCollum.testimonial
+span.or{float:right;font-size:15px}.plan
+span{display:block;font-size:13px;font-style:italic;margin-top:10px;margin-left:16px;color:#939393}.plan
+img{margin-left: -16px;margin-right:4px}.contentUptilab p,.contentUptilab
+div.eltp{font-size:15px;font-weight:400 !important}.contentUptilab  .bold,.contentUptilab
+.bolder{font-weight:600 !important}#presTipster{padding:15px;height:130px;border-bottom:1px solid #DCDCDC;background-color:#fff;position:relative}#presTipster
+h2{color:#dba124;font-size:24px;font-family:Arial,Helvetica,sans-serif;width:300px;display:block;margin-bottom:15px}#presTipster .ico-sport17{margin-left:10px}#presTipster
+.eltp{width:150px;margin-left:30px;float:left}#presTipster
+img{float:left}#presTipster
+.details{color:#888;font-size:13px}#presTipster a.btn-supp{text-decoration:none;position:absolute;top:5px;right:10px}#presTipster a.btn-supp .item-remove{font-size:13px}.firstCollum{width:270px}#subtotal{float:right;color:#606060 !important;border-bottom:#dcdcdc solid 1px;padding-bottom:10px}#totalfinal{margin-top:10px;float:right;color:#606060 !important;font-size:19px}#totalfinal
+span{font-weight:600}#presCollum
+div.eltp{text-align:right;line-height:40px;height:40px;position:relative;font-size:12px}.contentUptilab
+.question{z-index:105;position:relative}.contentUptilab .question>span{line-height:18px}.contentUptilab
+.cartItem{padding-bottom:20px}#bule{padding:7px;background-color:#fff;position:absolute;right: -220px;line-height:12px;text-align:left;display:none;top:0px;width:200px;font-size:11px;z-index:100;border:#dcdcdc solid 1px}#presOffer{float:left;border-left:#dcdcdc solid 1px;border-top:#dcdcdc solid 1px;border-bottom:#dcdcdc solid 1px;margin-bottom:1px}.collumOffer{width:138px;float:left;border-bottom:#dcdcdc solid 1px;border-top:#dcdcdc solid 1px;border-left:#dcdcdc solid 1px}.collumOffer
+.headOffer{height:120px;padding:10px;padding-top:30px;border-bottom:#dcdcdc solid 1px}.collumOffer .headOffer
+h3{font-size:20px;text-align:center;display:block}.collumOffer .headOffer
+span{font-size:18px;display:block}.collumOffer .headOffer
+div.eltp{font-style:italic;font-size:12px;text-align:center;height:auto;line-height:12px}.selected{margin-top: -5px;margin-right: -2px;margin-left: -1px;position:relative;z-index:101}.no-selected{position:relative}.no-selected:hover{margin-top:-1px;padding:1px
+0;z-index:102}.no-selected:hover
+.colShadow{position:absolute;top:0;left:0;right:0;bottom:0;border:#838383 solid 1px !important;-webkit-box-shadow:0px 0px 4px 3px rgba(0, 0, 0, 0.2);box-shadow:0px 0px 4px 3px rgba(0,0,0,0.2);z-index:100}a.colShadow{font-size:0}.no-selected.offer12m{border:1px
+solid #DCDCDC}.collumOffer .headOffer
+div.eltp.price{font-size:18px;font-style:normal !important;margin-top:10px;margin-bottom:10px}.noAvailable
+.headOffer{background-color:#fff}.noAvailable
+div.eltp{color:#d3d3d3 !important}.noAvailable .headOffer
+h3{color:#d3d3d3}.collumOffer
+div.eltp{text-align:center;line-height:40px;height:40px;position:relative;font-size:12px}.collumOffer div.eltp
+img{margin-top:12px}.impair{background-color:#fff}div.eltp.fakeButton{padding:8px;font-size:12px;width:100px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer}.noAvailable
+div.eltp.fakeButtonOff{color:#5f5f5f !important}.no-selected:hover
+div.eltp.fakeButton{background:#4ca82d;background: -moz-linear-gradient(top, #4ca82d 48%, #429027 50%, #429027 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#4ca82d), color-stop(50%,#429027), color-stop(100%,#429027));background: -webkit-linear-gradient(top, #4ca82d 48%,#429027 50%,#429027 100%);background: -o-linear-gradient(top, #4ca82d 48%,#429027 50%,#429027 100%);background: -ms-linear-gradient(top, #4ca82d 48%,#429027 50%,#429027 100%);background:linear-gradient(to bottom, #4ca82d 48%,#429027 50%,#429027 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ca82d', endColorstr='#429027',GradientType=0 );color:#fff}.selected
+.headOffer{background-color:#f0b027 !important;height:125px}.selected .headOffer div.eltp, .selected .headOffer
+h3{color:#fff}.selected{border:#919191 solid 1px}.selected
+div.eltp{color:#6a6a6a}.selected
+div.eltp.fakeButton{margin-top:15px;border:#74ae61 solid 1px;background-color:#fff;color:#74ae61;font-size:14px;text-indent:10px;background:#fff url(http://static1.betadvisor.com/img/base/frontendV2/cart/small-check.png) no-repeat 13px 3px}.no-selected{cursor:pointer}.green{color:#4ca82d !important}.totalprice
+.subprice{float:right}.no-selected
+div.eltp.fakeButton{font-size:14px;color:#474747;font-style:normal;border:#c8c8c8 solid 1px;background:#e9e9e9;background: -moz-linear-gradient(top, #e9e9e9 47%, #d9d8d8 50%, #d9d8d8 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(47%,#e9e9e9), color-stop(50%,#d9d8d8), color-stop(100%,#d9d8d8));background: -webkit-linear-gradient(top, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);background: -o-linear-gradient(top, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);background: -ms-linear-gradient(top, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);background:linear-gradient(to bottom, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#d9d8d8',GradientType=0 )}.no-selected .headOffer div.eltp, .no-selected .headOffer h3, .no-selected
+div.eltp{color:#474747}.cartItem.Bet
+.collumOffer{height:130px;padding:15px;width:660px;background:#EDEDED;border-right:1px solid #DCDCDC;cursor:auto}.cartItem.Bet
+#presTipster{border-bottom:0}.cartItem.Bet .collumOffer.no-selected:hover{margin-top:0}.cartItem.Bet .collumOffer
+.competition{padding:10px
+10px 20px}.cartItem.Bet .collumOffer
+.event{padding:20px;background:#F0B027;color:#FFF;font-size:18px}.cartItem.Bet .collumOffer .event
+.price{float:right;color:#000}#biggreybutton{font-size:14px;color:#474747;font-style:normal;border:#c8c8c8 solid 1px;background:#e9e9e9;background: -moz-linear-gradient(top, #e9e9e9 47%, #d9d8d8 50%, #d9d8d8 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(47%,#e9e9e9), color-stop(50%,#d9d8d8), color-stop(100%,#d9d8d8));background: -webkit-linear-gradient(top, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);background: -o-linear-gradient(top, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);background: -ms-linear-gradient(top, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);background:linear-gradient(to bottom, #e9e9e9 47%,#d9d8d8 50%,#d9d8d8 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#d9d8d8',GradientType=0 );padding:10px;padding-left:40px;padding-right:20px;text-decoration:none;-webkit-border-radius:4px;border-radius:4px;position:relative;float:left}#biggreenbutton{font-size:16px;color:#fff;padding:10px;padding-left:20px;padding-right:20px;text-decoration:none;-webkit-border-radius:4px;border-radius:4px;background:#4ca82d;background: -moz-linear-gradient(top, #4ca82d 48%, #429027 50%, #429027 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#4ca82d), color-stop(50%,#429027), color-stop(100%,#429027));background: -webkit-linear-gradient(top, #4ca82d 48%,#429027 50%,#429027 100%);background: -o-linear-gradient(top, #4ca82d 48%,#429027 50%,#429027 100%);background: -ms-linear-gradient(top, #4ca82d 48%,#429027 50%,#429027 100%);background:linear-gradient(to bottom, #4ca82d 48%,#429027 50%,#429027 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ca82d', endColorstr='#429027',GradientType=0 );display:block;width:180px;line-height:13px;position:relative;float:right}#biggreenbutton
+img{position:absolute;right:20px;top:18px}#biggreybutton
+img{position:absolute;left:20px;top:10px}#biggreenbutton
+span{font-size:13px}.flag{width:16px;height:11px;background:url(http://static1.betadvisor.com/img/base/flag/flags14.png) no-repeat;margin: -4px 0 0}.flag.flag-andorra{background-position: -16px 0}.flag.flag-united-arab-emirates{background-position: -32px 0}.flag.flag-afghanistan{background-position: -48px 0}.flag.flag-antigua-and-barbuda{background-position: -64px 0}.flag.flag-anguilla{background-position: -80px 0}.flag.flag-albania{background-position: -96px 0}.flag.flag-armenia{background-position: -112px 0}.flag.flag-netherlands-antilles{background-position: -128px 0}.flag.flag-angola{background-position: -144px 0}.flag.flag-argentina{background-position: -160px 0}.flag.flag-austria{background-position: -176px 0}.flag.flag-austria{background-position: -192px 0}.flag.flag-australia,.flag.flag-australia-open{background-position: -208px 0}.flag.flag-aruba{background-position: -224px 0}.flag.flag-azerbaijan{background-position: -240px 0}.flag.flag-bosnia-herzegovina{background-position:0 -11px}.flag.flag-barbados{background-position: -16px -11px}.flag.flag-bangladesh{background-position: -32px -11px}.flag.flag-belgium{background-position: -48px -11px}.flag.flag-burkina-faso{background-position: -64px -11px}.flag.flag-bulgaria{background-position: -80px -11px}.flag.flag-bahrain{background-position: -96px -11px}.flag.flag-burundi{background-position: -112px -11px}.flag.flag-benin{background-position: -128px -11px}.flag.flag-bermuda{background-position: -144px -11px}.flag.flag-brunei-darussalam{background-position: -160px -11px}.flag.flag-bolivia{background-position: -176px -11px}.flag.flag-brasil,.flag.flag-brazil{background-position: -192px -11px}.flag.flag-bahamas{background-position: -208px -11px}.flag.flag-bhutan{background-position: -224px -11px}.flag.flag-bouvet-island{background-position: -240px -11px}.flag.flag-botswana{background-position:0 -22px}.flag.flag-belarus{background-position: -16px -22px}.flag.flag-belize{background-position: -32px -22px}.flag.flag-canada{background-position: -48px -22px}.flag.flag-catalonia{background-position: -64px -22px}.flag.flag-congo,.flag.flag-dem-rep-congo{background-position: -80px -22px}.flag.flag-central-african-rep{background-position: -96px -22px}.flag.flag-congo-brazzaville{background-position: -112px -22px}.flag.flag-switzerland{background-position: -128px -22px}.flag.flag-ivory-coast{background-position: -144px -22px}.flag.flag-cook-islands{background-position: -160px -22px}.flag.flag-chile{background-position: -176px -22px}.flag.flag-cameroon{background-position: -192px -22px}.flag.flag-china{background-position: -208px -22px}.flag.flag-colombia{background-position: -224px -22px}.flag.flag-costa-rica{background-position: -240px -22px}.flag.flag-cuba{background-position:0 -33px}.flag.flag-cape-verde{background-position: -16px -33px}.flag.flag-cyprus{background-position: -32px -33px}.flag.flag-czech-republic,.flag.flag-czech{background-position: -48px -33px}.flag.flag-germany{background-position: -64px -33px}.flag.flag-djibouti{background-position: -80px -33px}.flag.flag-denmark{background-position: -96px -33px}.flag.flag-dominica{background-position: -112px -33px}.flag.flag-dominican-republic{background-position: -128px -33px}.flag.flag-algeria{background-position: -144px -33px}.flag.flag-ecuador,.flag.flag-escuador{background-position: -160px -33px}.flag.flag-estonia{background-position: -176px -33px}.flag.flag-egypt{background-position: -192px -33px}.flag.flag-western-sahara{background-position: -208px -33px}.flag.flag-england,.flag.flag-england-amateur{background-position: -224px -33px}.flag.flag-eritrea{background-position: -240px -33px}.flag.flag-spain{background-position:0 -44px}.flag.flag-ethiopia{background-position: -16px -44px}.flag.flag-europe,.flag.flag-european-cups{background-position: -32px -44px}.flag.flag-finland{background-position: -48px -44px}.flag.flag-fiji{background-position: -64px -44px}.flag.flag-falkland-islands{background-position: -80px -44px}.flag.flag-f-s-micronesia{background-position: -96px -44px}.flag.flag-faroe-islands{background-position: -112px -44px}.flag.flag-france,.flag.flag-french-open{background-position: -128px -44px}.flag.flag-gabon{background-position: -144px -44px}.flag.flag-united-kingdom,.flag.flag-wimbledon{background-position: -160px -44px}.flag.flag-grenada{background-position: -176px -44px}.flag.flag-rep-of-georgia{background-position: -192px -44px}.flag.flag-guiana-french{background-position: -208px -44px}.flag.flag-ghana{background-position: -224px -44px}.flag.flag-gibraltar{background-position: -240px -44px}.flag.flag-greenland{background-position:0 -55px}.flag.flag-gambia{background-position: -16px -55px}.flag.flag-guinea{background-position: -32px -55px}.flag.flag-guadeloupe{background-position: -48px -55px}.flag.flag-equatorial-guinea{background-position: -64px -55px}.flag.flag-greece{background-position: -80px -55px}.flag.flag-south-georgia{background-position: -96px -55px}.flag.flag-guatemala{background-position: -112px -55px}.flag.flag-guam{background-position: -128px -55px}.flag.flag-guinea-bissau{background-position: -144px -55px}.flag.flag-guyana{background-position: -160px -55px}.flag.flag-hong-kong{background-position: -176px -55px}.flag.flag-heard-island{background-position: -192px -55px}.flag.flag-honduras{background-position: -208px -55px}.flag.flag-croatia{background-position: -224px -55px}.flag.flag-haiti{background-position: -240px -55px}.flag.flag-hungary{background-position:0 -66px}.flag.flag-indonesia{background-position: -16px -66px}.flag.flag-ireland{background-position: -32px -66px}.flag.flag-israel{background-position: -48px -66px}.flag.flag-india{background-position: -64px -66px}.flag.flag-diego-garcia{background-position: -80px -66px}.flag.flag-iraq{background-position: -96px -66px}.flag.flag-iran{background-position: -112px -66px}.flag.flag-iceland{background-position: -128px -66px}.flag.flag-italy{background-position: -144px -66px}.flag.flag-jamaica{background-position: -160px -66px}.flag.flag-jordan{background-position: -176px -66px}.flag.flag-japan{background-position: -192px -66px}.flag.flag-kenya{background-position: -208px -66px}.flag.flag-kyrgyzstan{background-position: -224px -66px}.flag.flag-cambodia{background-position: -240px -66px}.flag.flag-kiribati{background-position:0 -77px}.flag.flag-comoros{background-position: -16px -77px}.flag.flag-saint-kitts-and-nevis{background-position: -32px -77px}.flag.flag-dpr-korea-north{background-position: -48px -77px}.flag.flag-korea-south,.flag.flag-south-korea{background-position: -64px -77px}.flag.flag-kuwait{background-position: -80px -77px}.flag.flag-cayman-islands{background-position: -96px -77px}.flag.flag-kazakhstan{background-position: -112px -77px}.flag.flag-laos{background-position: -128px -77px}.flag.flag-lebanon{background-position: -144px -77px}.flag.flag-saint-lucia{background-position: -160px -77px}.flag.flag-liechtenstein{background-position: -176px -77px}.flag.flag-sri-lanka{background-position: -192px -77px}.flag.flag-liberia{background-position: -208px -77px}.flag.flag-lesotho{background-position: -224px -77px}.flag.flag-lithuania{background-position: -240px -77px}.flag.flag-luxembourg{background-position:0 -88px}.flag.flag-latvia{background-position: -16px -88px}.flag.flag-libya{background-position: -32px -88px}.flag.flag-morocco{background-position: -48px -88px}.flag.flag-monaco{background-position: -64px -88px}.flag.flag-moldova{background-position: -80px -88px}.flag.flag-montenegro{background-position: -96px -88px}.flag.flag-madagascar{background-position: -112px -88px}.flag.flag-marshall-islands{background-position: -128px -88px}.flag.flag-fyr-macedonia{background-position: -144px -88px}.flag.flag-mali{background-position: -160px -88px}.flag.flag-myanmar-burma{background-position: -176px -88px}.flag.flag-mongolia{background-position: -192px -88px}.flag.flag-macau{background-position: -208px -88px}.flag.flag-northern-mariana-islands{background-position: -224px -88px}.flag.flag-martinique{background-position: -240px -88px}.flag.flag-mauritania{background-position:0 -99px}.flag.flag-montserrat{background-position: -16px -99px}.flag.flag-malta{background-position: -32px -99px}.flag.flag-mauritius{background-position: -48px -99px}.flag.flag-maldives{background-position: -64px -99px}.flag.flag-malawi{background-position: -80px -99px}.flag.flag-mexico{background-position: -96px -99px}.flag.flag-malaysia{background-position: -112px -99px}.flag.flag-mozambique{background-position: -128px -99px}.flag.flag-namibia{background-position: -144px -99px}.flag.flag-new-caledonia{background-position: -160px -99px}.flag.flag-niger{background-position: -176px -99px}.flag.flag-norfolk-island{background-position: -192px -99px}.flag.flag-nigeria{background-position: -208px -99px}.flag.flag-nicaragua{background-position: -224px -99px}.flag.flag-netherlands{background-position: -240px -99px}.flag.flag-norway{background-position:0 -110px}.flag.flag-nepal{background-position: -16px -110px}.flag.flag-nauru{background-position: -32px -110px}.flag.flag-niue{background-position: -48px -110px}.flag.flag-new-zealand{background-position: -64px -110px}.flag.flag-oman{background-position: -80px -110px}.flag.flag-panama{background-position: -96px -110px}.flag.flag-peru{background-position: -112px -110px}.flag.flag-french-polynesia{background-position: -128px -110px}.flag.flag-papua-new-guinea{background-position: -144px -110px}.flag.flag-philippines{background-position: -160px -110px}.flag.flag-pakistan{background-position: -176px -110px}.flag.flag-poland{background-position: -192px -110px}.flag.flag-st-pierre-miquelon{background-position: -208px -110px}.flag.flag-pitcairn{background-position: -224px -110px}.flag.flag-puerto-rico{background-position: -240px -110px}.flag.flag-palestine{background-position:0 -121px}.flag.flag-portugal{background-position: -16px -121px}.flag.flag-palau{background-position: -32px -121px}.flag.flag-paraguay{background-position: -48px -121px}.flag.flag-qatar{background-position: -64px -121px}.flag.flag-reunion{background-position: -80px -121px}.flag.flag-romania{background-position: -96px -121px}.flag.flag-serbia{background-position: -112px -121px}.flag.flag-russia{background-position: -128px -121px}.flag.flag-rwanda{background-position: -144px -121px}.flag.flag-saudi-arabia{background-position: -160px -121px}.flag.flag-solomon-islands{background-position: -176px -121px}.flag.flag-seychelles{background-position: -192px -121px}.flag.flag-scotland{background-position: -208px -121px}.flag.flag-sudan{background-position: -224px -121px}.flag.flag-sweden{background-position: -240px -121px}.flag.flag-singapore{background-position:0 -132px}.flag.flag-saint-helena{background-position: -16px -132px}.flag.flag-slovenia{background-position: -32px -132px}.flag.flag-slovakia{background-position: -48px -132px}.flag.flag-sierra-leone{background-position: -64px -132px}.flag.flag-san-marino{background-position: -80px -132px}.flag.flag-senegal{background-position: -96px -132px}.flag.flag-somalia{background-position: -112px -132px}.flag.flag-suriname{background-position: -128px -132px}.flag.flag-sao-tome-principe{background-position: -144px -132px}.flag.flag-el-salvador{background-position: -160px -132px}.flag.flag-syria{background-position: -176px -132px}.flag.flag-swaziland{background-position: -192px -132px}.flag.flag-turks-and-caicos-islands{background-position: -208px -132px}.flag.flag-chad{background-position: -224px -132px}.flag.flag-french-southern-territories{background-position: -240px -132px}.flag.flag-togo{background-position:0 -143px}.flag.flag-thailand{background-position: -16px -143px}.flag.flag-tajikistan{background-position: -32px -143px}.flag.flag-tokelau{background-position: -48px -143px}.flag.flag-timor-leste{background-position: -64px -143px}.flag.flag-turkmenistan{background-position: -80px -143px}.flag.flag-tunisia{background-position: -96px -143px}.flag.flag-tonga{background-position: -112px -143px}.flag.flag-turkey,.flag.flag-turkey-amateur{background-position: -128px -143px}.flag.flag-trinidad-and-tobago{background-position: -144px -143px}.flag.flag-tuvalu{background-position: -160px -143px}.flag.flag-taiwan{background-position: -176px -143px}.flag.flag-tanzania{background-position: -192px -143px}.flag.flag-ukraine{background-position: -208px -143px}.flag.flag-uganda{background-position: -224px -143px}.flag.flag-um{background-position: -240px -143px}.flag.flag-usa,.flag.flag-united-states,.flag.flag-us-open{background-position:0 -154px}.flag.flag-uruguay{background-position: -16px -154px}.flag.flag-uzbekistan{background-position: -32px -154px}.flag.flag-vatican-city{background-position: -48px -154px}.flag.flag-saint-vincent-and-the-grenadines{background-position: -64px -154px}.flag.flag-venezuela{background-position: -80px -154px}.flag.flag-virgin-islands-british{background-position: -96px -154px}.flag.flag-virgin-islands-us{background-position: -112px -154px}.flag.flag-viet-nam{background-position: -128px -154px}.flag.flag-vanuatu{background-position: -144px -154px}.flag.flag-wales{background-position: -160px -154px}.flag.flag-wallis-and-futuna{background-position: -176px -154px}.flag.flag-western-samoa{background-position: -192px -154px}.flag.flag-yemen{background-position: -208px -154px}.flag.flag-mayotte{background-position: -224px -154px}.flag.flag-south-africa{background-position: -240px -154px}.flag.flag-zambia{background-position:0 -165px}.flag.flag-zimbabwe{background-position: -16px -165px}.flag.flag-atp{background-position:0 -176px}.flag.flag-davis-cup{background-position: -16px -176px}.flag.flag-fed-cup{background-position: -32px -176px}.flag.flag-wta{background-position: -48px -176px}.flag.flag-fifa-world-cup-south-africa,.flag.flag-international,.flag.flag-international-clubs,.flag.flag-international-youth{background-position: -64px -176px}.flag.flag-nfl,.flag.flag-nfl-preseason{background-position: -80px -176px}.flag.flag-pro-bowl{background-position: -96px -176px}.flag.flag-6-nations{background-position: -112px -176px}.flag.flag-southern-emisphere{background-position: -128px -176px}.flag.flag-copa-libertadores{background-position: -144px -176px}.flag.flag-challenge{background-position: -160px -176px}.flag.flag-tri-nations{background-position: -176px -176px}.flag.flag-africa-cup-of-nations{background-position: -192px -176px}.flag.flag-usa-ncaa-1{background-position: -208px -176px}.sport{width:70px;height:45px;background-image:url(http://static1.betadvisor.com/img/base/frontendV2/icons/sports-icons-v2.png);background-repeat:no-repeat;display:block;font-family:'Source Sans Pro',sans-serif;font-weight:600;padding:0px
+0 0px 0px;margin:auto}.sport.medium{height:23px;margin:0
+5px -5px 0;width:32px;display:inline-block !important}.sport.small{width:26px;height:23px;margin:auto 0 0 0;display:inline-block !important}.sport.medium.tipsterNewHome{margin:10px
+0;margin:auto;position:absolute;margin-left:100px;margin-top: -20px}.sport.football{background-position:9px 0px}.sport.horse-racing{background-position: -5px -56px}.sport.tennis{background-position:9px -116px}.sport.rugby{background-position:9px -240px}.sport.basketball{background-position:9px -176px}.sport.ice-hockey{background-position:9px -410px}.sport.american-football{background-position:9px -357px}.sport.baseball{background-position:9px -295px}.sport.medium.football{background-position: -76px -2px}.sport.medium.horse-racing{background-position: -84px -56px}.sport.medium.tennis{background-position: -76px -116px}.sport.medium.rugby{background-position: -76px -241px}.sport.medium.basketball{background-position: -76px -177px}.sport.medium.ice-hockey{background-position: -82px -415px}.sport.medium.american-football{background-position: -76px -356px}.sport.medium.baseball{background-position: -76px -301px}.sport.small.football{background-position: -138px 0px}.sport.small.horse-racing{background-position: -141px -44px}.sport.small.tennis{background-position: -140px -90px}.sport.small.rugby{background-position: -138px -190px}.sport.small.basketball{background-position: -138px -137px}.sport.small.ice-hockey{bbackground-position: -140px -324px}.sport.small.american-football{background-position: -138px -280px}.sport.small.baseball{background-position: -138px -237px}
