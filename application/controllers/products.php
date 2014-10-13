@@ -1,11 +1,11 @@
 <?php
 
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+class Products extends CI_Controller
+{
 
-class Products extends CI_Controller {
-
-    public function __construct() {
+    public function __construct()
+    {
 
         parent::__construct();
 
@@ -484,8 +484,10 @@ class Products extends CI_Controller {
 
 
 
-        $data['vehicle_makers'] = $this->product_model->get_products_by_makers_brand_details();
-		$data['vehicle_makers_count'] = $this->product_model->num_products_by_makers_brand_details();
+        $vehicle_makers                 = $this->product_model->get_products_by_makers_brand_details();
+        $data['vehicle_makers_cnt']     = count($vehicle_makers);
+        $data['vehicle_makers']         = $this->sortBand($vehicle_makers);
+		$data['vehicle_makers_count']   = $this->product_model->num_products_by_makers_brand_details();
 
         $data['session_data'] = $this->session->all_userdata();
 
@@ -1289,8 +1291,18 @@ class Products extends CI_Controller {
         $this->load->view('product/get_product_list', $data);
     }
 
+    private function sortBand($data  = array())
+    {
+        if(empty($data)) return array();
+
+        $markerArray = array();
+
+
+        foreach($data as $key => $value)
+        {
+            $markerArray[$value['']][$value['']][] = $value;
+        }
+
+        return $markerArray;
+    }
 }
-
-/* End of file admin.php */
-
-/* Location: ./application/controllers/admin.php */
