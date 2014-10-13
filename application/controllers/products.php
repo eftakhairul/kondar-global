@@ -429,8 +429,6 @@ class Products extends CI_Controller
             $data['vehicle_type_names'] = array();
 
 
-
-
         $vehicle_category_ids = array();
         if(!empty($_POST['method_one'])) {
             $this->session->set_userdata('vehicle_category_id', false);
@@ -479,21 +477,21 @@ class Products extends CI_Controller
             'vehicle_type_names' => $vehicle_type_names
         );
 
+        var_dump($session_data);
 
         $this->session->set_userdata($session_data);
 
 
 
-        $vehicle_makers                 = $this->product_model->get_products_by_makers_brand_details();
-        $data['vehicle_makers_cnt']     = count($vehicle_makers);
-        $data['vehicle_makers']         = $this->sortBand($vehicle_makers);
-		$data['vehicle_makers_count']   = $this->product_model->num_products_by_makers_brand_details();
+        $vehicle_makers                  = $this->product_model->get_products_by_makers_brand_details();
+        var_dump($vehicle_makers);
+        $data['vehicle_makers_cnt']      = count($vehicle_makers);
+        $data['vehicle_makers']          = $this->sortBand($vehicle_makers);
+		$data['vehicle_makers_count']    = $this->product_model->num_products_by_makers_brand_details();
 
-        $data['session_data'] = $this->session->all_userdata();
-
+        $data['session_data']            = $this->session->all_userdata();
         $data['menu_vehicle_categories'] = $this->comman_model->all_data('tbl_vehicle_categories');
-
-        $data['menu_product_types'] = $this->comman_model->get_product_type_for_menu();
+        $data['menu_product_types']      = $this->comman_model->get_product_type_for_menu();
 
         $cart = $this->session->userdata('cart');
 
@@ -1300,7 +1298,7 @@ class Products extends CI_Controller
 
         foreach($data as $key => $value)
         {
-            $markerArray[$value['']][$value['']][] = $value;
+            $markerArray[$value['category']][$value['type']][] = $value;
         }
 
         return $markerArray;

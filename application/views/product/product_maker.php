@@ -81,10 +81,11 @@
 
                     <div id="product_maker_block">
                         <?php foreach ($vehicle_makers as $category => $types): ?>
-                            <p><?php echo $category ?> <a class="show_div"> + </a>|<aclass="show_div"> - </a></p>
+                            <p style="padding-left: 16px; text-decoration:#575757; font-family: Arial; font-size: 26px;"><?php echo $category ?> <a class="show_div">-</a></p>
                             <div>
                                 <?php foreach ($types as $type_name => $markers): ?>
-                                <p><?php echo $type_name ?> <a class="show_div"> + </a>|<aclass="show_div"> - </a></p>
+                                <p style="padding-left: 40px; text-decoration:#575757; font-family: Arial"><?php echo $type_name ?><a class="show_div">-</a></p>
+                                    <div>
                                     <?php foreach($markers as $maker):?>
                                         <div class="col-md-3">
                                             <div class="pro-item product_type_image_wrap product_type_image_wrap1 singlestep <?php if (in_array($maker['id'], $product_maker_id)) { echo "boarder_2_red"; } ?>">
@@ -97,6 +98,8 @@
                                             </div>
                                         </div>
                                      <?php endforeach ?>
+                                     </div>
+                                    <div class="clearfix"></div>
                                 <?php endforeach ?>
                             </div>
                             <div class="clearfix"></div>
@@ -236,6 +239,22 @@
 <!--Modal Custom warning ends-->
 <script type="text/javascript">
     $(document).ready(function(){
+
+        $("a.show_div").on('click', function(){
+            if ($(this).html() == "-") {
+                $(this).html("+")
+            } else {
+                $(this).html("-")
+            }
+
+            $(this).parent().next().toggle();
+        });
+
+
+        $(".hide_div").on('click', function(){
+            $(this).parent().next().hide();
+        });
+
         var tot_pro_types = <?php echo $vehicle_makers_count; ?>;
         var loaded_types = 0;
         var plsWaitText = 'Please Wait...';
