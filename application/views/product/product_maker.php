@@ -73,29 +73,34 @@
                         <?php if ($this->comman_model->get_isactive_checkbox('settings', 'id', 1)) { ?>
                             <div id="check_all_btn" class="col-md-2 custom_btn">
                                 <input id="checkbox" type="checkbox" name="product_option[]" value="all">    
-                                Select All (<span id="vehicle_makers_num"><?php echo count($vehicle_makers); ?></span>)
+                                Select All (<span id="vehicle_makers_num"><?php echo $vehicle_makers_cnt; ?></span>)
                             </div>                        
                         <?php } ?>
                     </div>
                     <div class="clearfix"></div> 
 
                     <div id="product_maker_block">
-                        <?php foreach ($vehicle_makers as $maker) { ?>
-                            <div class="col-md-3">
-                                <div class="pro-item product_type_image_wrap product_type_image_wrap1 singlestep <?php if (in_array($maker['id'], $product_maker_id)) {
-                            echo "boarder_2_red";
-                        } ?>">
-                                    <div class="" style="height:180px;"><?php /* ?>front/product_list/<?php echo $maker['id'];?><?php */ ?>
-                                        <a href="javascript:void(0);" class="product_image_wrap" data-rel="<?php echo $maker['id']; ?>"><img src="assets/uploads/product_maker/<?php echo $maker['maker_logo']; ?>" alt="" /></a>
-                                        <input type="hidden" name="vehicle_brand_id[]" value="<?php if (in_array($maker['id'], $product_maker_id)) {
-                            echo $maker['id'];
-                        } ?>" class="vehicle_type_id">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm"><?php echo $maker['maker_name']; ?></a>
-                                </div>
+                        <?php foreach ($vehicle_makers as $category => $types): ?>
+                            <p><?php echo $category ?> <a class="show_div"> + </a>|<aclass="show_div"> - </a></p>
+                            <div>
+                                <?php foreach ($types as $type_name => $markers): ?>
+                                <p><?php echo $type_name ?> <a class="show_div"> + </a>|<aclass="show_div"> - </a></p>
+                                    <?php foreach($markers as $maker):?>
+                                        <div class="col-md-3">
+                                            <div class="pro-item product_type_image_wrap product_type_image_wrap1 singlestep <?php if (in_array($maker['id'], $product_maker_id)) { echo "boarder_2_red"; } ?>">
+                                                <div class="" style="height:180px;"><?php /* ?>front/product_list/<?php echo $maker['id'];?><?php */ ?>
+                                                    <a href="javascript:void(0);" class="product_image_wrap" data-rel="<?php echo $maker['id']; ?>"><img src="assets/uploads/product_maker/<?php echo $maker['maker_logo']; ?>" alt="" /></a>
+                                                    <input type="hidden" name="vehicle_brand_id[]" value="<?php if (in_array($maker['id'], $product_maker_id)) {echo $maker['id'];} ?>" class="vehicle_type_id">
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <a href="javascript:void(0);" class="btn btn-primary btn-sm"><?php echo $maker['maker_name']; ?></a>
+                                            </div>
+                                        </div>
+                                     <?php endforeach ?>
+                                <?php endforeach ?>
                             </div>
-                    <?php } ?>
+                            <div class="clearfix"></div>
+                        <?php endforeach ?>
                     </div>
                     <div class="clearfix"></div> 
 
