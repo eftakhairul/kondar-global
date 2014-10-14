@@ -1049,6 +1049,12 @@ class comman_model extends CI_Model {
         return $query->row();
     }
 
+    public function getVichleById($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get('tbl_vehicle_categories');
+        return $query->row();
+    }
 }
 
 /* End of file super_admin_model.php */
