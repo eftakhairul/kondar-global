@@ -1040,8 +1040,12 @@ class comman_model extends CI_Model {
 
     public function getVicleDetailsById($id)
     {
-        $this->db->where('id', $id);
-        $query = $this->db->get('tbl_product_types');
+        $this->db->select("tbl_product_types.*, tbl_vehicle_categories.category_name");
+        $this->db->from('tbl_product_types');
+        $this->db->join('tbl_vehicle_categories', 'tbl_product_types.vehicle_category_id = tbl_vehicle_categories.id');
+
+        $this->db->where('tbl_product_types.id', $id);
+        $query = $this->db->get();
         return $query->row();
     }
 

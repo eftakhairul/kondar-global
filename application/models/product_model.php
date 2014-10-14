@@ -1082,6 +1082,107 @@ where tbl_product_types.id=' . $typeid;
         return $data;
     }
 
+
+    function get_products_by_makers_brand_details_with_values($session_data = array(), $offset = NULL) {
+
+
+        $vehicle_category_id = $session_data['vehicle_category_id'];
+        $vehicle_type_id = isset($session_data['vehicle_type_id']) ? $session_data['vehicle_type_id'] : '';
+        //print_r($vehicle_type_id);
+        $vehicle_type_names = isset($session_data['vehicle_type_names']) ? $session_data['vehicle_type_names'] : '';
+        $product_maker_id = isset($session_data['product_maker_id']) ? $session_data['product_maker_id'] : '';
+        if ($product_maker_id == NULL)
+            $product_maker_id = array();
+
+        $querysql = "SELECT tbl_makers.*, tbl_makers.maker_name as make, tbl_makers.maker_logo as maker_logo, tbl_models.model_name as model, tbl_models.model_photo as model_photo,tbl_vehicle_categories.category_name as category, tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages FROM tbl_products JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id JOIN tbl_models ON tbl_models.id = tbl_products.model_id JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
+
+        if (!empty($vehicle_category_id)) {
+            $querysql_1 = "";
+            $i = 1;
+            foreach ($vehicle_category_id as $category_id) {
+                if ($category_id != '') {
+                    if ($i > 1)
+                        $querysql_1.= " OR tbl_products.vehicle_category_id = " . $category_id . " ";
+                    else
+                        $querysql_1.= " AND ( tbl_products.vehicle_category_id = " . $category_id . " ";
+
+                    $i++;
+                }
+            }
+            if ($querysql_1 != '')
+                $querysql_1.= " ) ";
+            $querysql.= $querysql_1;
+        }
+        if (!empty($vehicle_type_names)) {
+            $querysql_2 = "";
+            $j = 1;
+            foreach ($vehicle_type_names as $vehicle_type_name) {
+                //var_dump($type_id);
+                if ($type_id != '') {
+                    if ($j > 1)
+                        $querysql_2.= " OR tbl_product_types.product_type_name = " . $vehicle_type_name . " ";
+                    else
+                        $querysql_2.= " AND ( tbl_product_types.product_type_name = " . $vehicle_type_name . " ";
+
+                    $j++;
+                }
+            }
+            if ($querysql_2 != '')
+                $querysql_2.= " ) ";
+            $querysql.= $querysql_2;
+        }
+        elseif (!empty($vehicle_type_id)) {
+            $querysql_2 = "";
+            $j = 1;
+            foreach ($vehicle_type_id as $type_id) {
+                //var_dump($type_id);
+                if ($type_id != '') {
+                    if ($j > 1)
+                        $querysql_2.= " OR tbl_products.product_type_id = " . $type_id . " ";
+                    else
+                        $querysql_2.= " AND ( tbl_products.product_type_id = " . $type_id . " ";
+
+                    $j++;
+                }
+            }
+            if ($querysql_2 != '')
+                $querysql_2.= " ) ";
+            $querysql.= $querysql_2;
+        }
+
+        if (!empty($product_maker_id)) {
+            $querysql_3 = "";
+            $k = 1;
+            foreach ($product_maker_id as $maker_id) {
+                if ($maker_id != '') {
+                    if ($k > 1)
+                        $querysql_3.= " OR tbl_products.maker_id = " . $maker_id . " ";
+                    else
+                        $querysql_3.= " AND ( tbl_products.maker_id = " . $maker_id . " ";
+
+                    $k++;
+                }
+            }
+            if ($querysql_3 != '')
+                $querysql_3.= " ) ";
+            $querysql.= $querysql_3;
+        }
+
+        $querysql.= " GROUP BY tbl_products.maker_id ";
+
+        if (isset($offset)) {
+            $querysql.= " limit " . $offset . "," . $this->config->item('pagination_limit');
+        } else {
+            $querysql.= " limit " . $this->config->item('pagination_limit');
+        }
+
+       // echo $querysql;
+        //exit;
+        $query = $this->db->query($querysql);
+        //var_dump($query->result());
+        return $query->result_array();
+    }
+
 }
 
 // END Category_model Class

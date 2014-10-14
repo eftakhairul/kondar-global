@@ -429,6 +429,7 @@ class Products extends CI_Controller
             $data['vehicle_type_names'] = array();
 
 
+        $methodOneMarkers = array();
         $vehicle_category_ids = array();
         if(!empty($_POST['method_one'])) {
             $this->session->set_userdata('vehicle_category_id', false);
@@ -449,20 +450,44 @@ class Products extends CI_Controller
 
             //product type
             $vehicle_type_id_array = array();
+
+            //remove null value from $vehicle_type_id
+            foreach($vehicle_type_id as $key=>$value)
+            {
+                if(is_null($value) || $value == '')
+                    unset($vehicle_type_id[$key]);
+            }
+
             foreach($vehicle_type_id as $id)
             {
+                $vichletypeDetails = $this->comman_model->getVicleDetailsById($id);
+
+
                 $vehicle_type = $this->comman_model->get_vichle_type_by_id($id);
 
                 $vehicle_type_details = $this->comman_model->get_vehicle_type_details_by_name($vehicle_type);
 
+                $vehicle_type_id_array_fake = array();
 
                 foreach ($vehicle_type_details as $details)
                 {
-
-                    if (!empty($details))
+                    if (!empty($details)) {
                         $vehicle_type_id_array[] = isset($details->id) ? $details->id : '';
+                        $vehicle_type_id_array_fake[] = isset($details->id) ? $details->id : '';
+                    }
                 }
 
+                $fakeSessionValue = $session_data = array(
+                            'vehicle_type_id' => $vehicle_type_id_array_fake,
+                            'vehicle_category_id' => array(0 => $vichletypeDetails->vehicle_category_id),
+                            'vehicle_type_names' => array()
+                        );
+
+
+
+                $markers = $this->product_model->get_products_by_makers_brand_details_with_values($fakeSessionValue);
+
+                $methodOneMarkers[$vichletypeDetails->category_name][$vehicle_type] = $markers;
                 $vehicle_type_id = $vehicle_type_id_array;
             }
 
@@ -477,17 +502,23 @@ class Products extends CI_Controller
             'vehicle_type_names' => $vehicle_type_names
         );
 
-        var_dump($session_data);
-
-        $this->session->set_userdata($session_data);
 
 
 
-        $vehicle_makers                  = $this->product_model->get_products_by_makers_brand_details();
-        var_dump($vehicle_makers);
+
+       $this->session->set_userdata($session_data);
+
+
+     if(!empty($_POST['method_one'])) {
+         $data['vehicle_makers']  = $methodOneMarkers;
+         $data['vehicle_makers_cnt']      = 0;
+
+     } else {
+         $vehicle_makers                  = $this->product_model->get_products_by_makers_brand_details();
         $data['vehicle_makers_cnt']      = count($vehicle_makers);
         $data['vehicle_makers']          = $this->sortBand($vehicle_makers);
-		$data['vehicle_makers_count']    = $this->product_model->num_products_by_makers_brand_details();
+     }
+        $data['vehicle_makers_count']    = $this->product_model->num_products_by_makers_brand_details();
 
         $data['session_data']            = $this->session->all_userdata();
         $data['menu_vehicle_categories'] = $this->comman_model->all_data('tbl_vehicle_categories');
