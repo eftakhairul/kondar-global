@@ -81,17 +81,20 @@
 
                     <div id="product_maker_block">
                         <?php foreach ($vehicle_makers as $category => $types): ?>
-                            <p style="padding-left: 16px; text-decoration:#575757; font-family: Arial; font-size: 26px;"><?php echo $category ?> <a class="show_div">-</a></p>
+                            <?php $vichle_id = getIdByVichleName($category); ?>
+
+                            <p style="padding-left: 16px; text-decoration:#575757; font-family: Arial; font-size: 26px;"><input type="checkbox" name="" value="">&nbsp;<?php echo $category ?>&nbsp;<a class="show_div">-</a></p>
                             <div>
                                 <?php foreach ($types as $type_name => $markers): ?>
-                                <p style="padding-left: 40px; text-decoration:#575757; font-family: Arial"><?php echo $type_name ?><a class="show_div">-</a></p>
+                                    <?php $product_type_id = getIdByProductTypeandVichleId($type_name, $vichle_id); ?>
+                                <p style="padding-left: 40px; text-decoration:#575757; font-family: Arial"><input type="checkbox" name="" value="">&nbsp;<?php echo $type_name ?>&nbsp;<a class="show_div">-</a></p>
                                     <div>
                                     <?php foreach($markers as $maker):?>
                                         <div class="col-md-3">
                                             <div class="pro-item product_type_image_wrap product_type_image_wrap1 singlestep <?php if (in_array($maker['id'], $product_maker_id)) { echo "boarder_2_red"; } ?>">
                                                 <div class="" style="height:180px;"><?php /* ?>front/product_list/<?php echo $maker['id'];?><?php */ ?>
-                                                    <a href="javascript:void(0);" class="product_image_wrap" data-rel="<?php echo $maker['id']; ?>"><img src="assets/uploads/product_maker/<?php echo $maker['maker_logo']; ?>" alt="" /></a>
-                                                    <input type="hidden" name="vehicle_brand_id[]" value="<?php if (in_array($maker['id'], $product_maker_id)) {echo $maker['id'];} ?>" class="vehicle_type_id">
+                                                    <a href="javascript:void(0);" class="product_image_wrap" data-rel="<?php echo $vichle_id."_".$product_type_id."_".$maker['id']; ?>"><img src="assets/uploads/product_maker/<?php echo $maker['maker_logo']; ?>" alt="" /></a>
+                                                    <input type="hidden" name="vehicle_brand_id[]" value="<?php if (in_array($maker['id'], $product_maker_id)) {echo $vichle_id."_".$product_type_id."_".$maker['id'];} ?>" class="vehicle_type_id">
                                                 </div>
                                                 <div class="clearfix"></div>
                                                 <a href="javascript:void(0);" class="btn btn-primary btn-sm"><?php echo $maker['maker_name']; ?></a>

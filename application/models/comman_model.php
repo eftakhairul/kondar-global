@@ -1055,6 +1055,23 @@ class comman_model extends CI_Model {
         $query = $this->db->get('tbl_vehicle_categories');
         return $query->row();
     }
+
+
+    public function getIdByVichleName($name)
+    {
+        $this->db->where('category_name', $name);
+        $query = $this->db->get('tbl_vehicle_categories');
+        return $query->row()->id;
+    }
+
+    public function getIdByProductTypeandVichleId($product_name, $vichle_id)
+    {
+        $this->db->where('vehicle_category_id', $vichle_id);
+        $this->db->where('product_type_name', $product_name);
+        $query = $this->db->get('tbl_product_types');
+
+        return $query->row()->id;
+    }
 }
 
 /* End of file super_admin_model.php */

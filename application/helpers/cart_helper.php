@@ -28,3 +28,18 @@ function productypesort($a, $b)
     return $cart;
  }
 
+
+function getIdByVichleName($name)
+{
+    $CI =& get_instance();
+    $CI->load->model("comman_model");
+    return $CI->comman_model->getIdByVichleName($name);
+}
+
+
+function getIdByProductTypeandVichleId($product_name, $vichle_id)
+{
+    $CI =& get_instance();
+    $CI->load->model("comman_model");
+    return $CI->comman_model->getIdByProductTypeandVichleId($product_name, $vichle_id);
+}
