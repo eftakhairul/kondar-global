@@ -429,6 +429,7 @@ class Products extends CI_Controller
             $data['vehicle_type_names'] = array();
 
 
+        $markerCount = 0;
         $methodOneMarkers = array();
         $vehicle_category_ids = array();
         if(!empty($_POST['method_one'])) {
@@ -487,6 +488,8 @@ class Products extends CI_Controller
 
                 $markers = $this->product_model->get_products_by_makers_brand_details_with_values($fakeSessionValue);
 
+                 $markerCount += count($markers);
+
                 $methodOneMarkers[$vichletypeDetails->category_name][$vehicle_type] = $markers;
                 $vehicle_type_id = $vehicle_type_id_array;
             }
@@ -538,6 +541,7 @@ class Products extends CI_Controller
 
 
                     $markers = $this->product_model->get_products_by_makers_brand_details_with_values($fakeSessionValue);
+                    $markerCount += count($markers);
                     $vichletypeDetails = $this->comman_model->getVichleByid($vichle_id);
 
                     if(!empty( $markers) ) {
@@ -562,7 +566,7 @@ class Products extends CI_Controller
        $this->session->set_userdata($session_data);
 
          $data['vehicle_makers']          = $methodOneMarkers;
-         $data['vehicle_makers_cnt']      = 0;
+         $data['vehicle_makers_cnt']      = $markerCount;
 
         $data['vehicle_makers_count']    = $this->product_model->num_products_by_makers_brand_details();
 

@@ -110,9 +110,7 @@
                     </div>
                     <div class="clearfix"></div> 
 
-<?php if ($vehicle_makers_count > count($vehicle_makers)) { ?>
-                        <div id="more_button" class="load-more-data"> Load more </div>
-<?php } ?>
+
                     <!--<div class="col-md-3">
                             <div class="pro-item">
             <img src="images/car_pic2.png"   id="image1" />
