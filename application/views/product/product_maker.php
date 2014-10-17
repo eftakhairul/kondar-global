@@ -45,6 +45,36 @@
                 $("#check_all_btn #checkbox").prop('checked',false);
             }
         });
+
+        $(".show_all_types").on('click', function(){
+            if($(this).is(':checked')) {
+                $(this).parent().next().children("div").each(function( key, value ) {
+                    $(this).find('.product_type_image_wrap').addClass('boarder_2_red');
+                    $(this).find('.product_type_image_wrap').each(function(key, value ){
+                        $(this).find(".vehicle_type_id").attr('value',$(this).find(".product_image_wrap").data('rel'));
+                    });
+                });
+
+            }else{
+                 $(this).parent().next().children("div").each(function( key, value ) {
+                    $(this).find('.product_type_image_wrap').removeClass('boarder_2_red');
+                });
+            }
+        });
+
+        $(".select_all_vichles").on('click', function() {
+
+            if($(this).is(':checked')) {
+                $(this).parent().next().children("p").each(function(index, value){
+                    $(this).find('.show_all_types').prop('checked',true);
+                });
+            }else{
+                 $(this).parent().next().children("p").each(function(index, value){
+                    $(this).find('.show_all_types').prop('checked',false);
+                });
+            }
+
+        });
     });
 </script>     
 <div class="container">
@@ -83,11 +113,19 @@
                         <?php foreach ($vehicle_makers as $category => $types): ?>
                             <?php $vichle_id = getIdByVichleName($category); ?>
 
-                            <p style="padding-left: 16px; text-decoration:#575757; font-family: Arial; font-size: 26px;"><input type="checkbox" name="" value="">&nbsp;<?php echo $category ?>&nbsp;<a class="show_div">-</a></p>
+                            <p style="padding-left: 16px; text-decoration:#575757; font-family: Arial; font-size: 26px;">
+                                <input class="select_all_vichles" type="checkbox" name="" value="" />&nbsp;
+                                <?php echo $category ?>&nbsp;
+                                <a class="show_div">-</a>
+                            </p>
                             <div>
                                 <?php foreach ($types as $type_name => $markers): ?>
                                     <?php $product_type_id = getIdByProductTypeandVichleId($type_name, $vichle_id); ?>
-                                <p style="padding-left: 40px; text-decoration:#575757; font-family: Arial"><input type="checkbox" name="" value="">&nbsp;<?php echo $type_name ?>&nbsp;<a class="show_div">-</a></p>
+                                    <p style="padding-left: 40px; text-decoration:#575757; font-family: Arial">
+                                        <input type="checkbox" class='show_all_types' name="" value="" />&nbsp;
+                                        <?php echo $type_name ?>&nbsp;
+                                        <a class="show_div">-</a>
+                                    </p>
                                     <div>
                                     <?php foreach($markers as $maker):?>
                                         <div class="col-md-3">
