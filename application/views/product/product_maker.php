@@ -58,6 +58,9 @@
             }else{
                  $(this).parent().next().children("div").each(function( key, value ) {
                     $(this).find('.product_type_image_wrap').removeClass('boarder_2_red');
+                    $(this).find('.product_type_image_wrap').each(function(key, value ){
+                        $(this).find(".vehicle_type_id").attr('value', '');
+                    });
                 });
             }
         });
@@ -67,10 +70,22 @@
             if($(this).is(':checked')) {
                 $(this).parent().next().children("p").each(function(index, value){
                     $(this).find('.show_all_types').prop('checked',true);
+                    $(this).next().children("div").each(function( key, value ) {
+                        $(this).find('.product_type_image_wrap').addClass('boarder_2_red');
+                        $(this).find('.product_type_image_wrap').each(function (key, value) {
+                            $(this).find(".vehicle_type_id").attr('value', $(this).find(".product_image_wrap").data('rel'));
+                        });
+                    });
                 });
             }else{
                  $(this).parent().next().children("p").each(function(index, value){
                     $(this).find('.show_all_types').prop('checked',false);
+                    $(this).next().children("div").each(function( key, value ) {
+                        $(this).find('.product_type_image_wrap').removeClass('boarder_2_red');
+                        $(this).find('.product_type_image_wrap').each(function (key, value) {
+                            $(this).find(".vehicle_type_id").attr('value', '');
+                        });
+                    });
                 });
             }
 
