@@ -109,7 +109,11 @@
         <link href="assets/template/css/video-js.css" rel="stylesheet" type="text/css">
         <!-- video.js must be in the <head> for older IEs to work. -->
         <script src="assets/template/js/video.js"></script>
-
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var base_url = "<?php echo base_url(); ?>";
+		});
+		</script>
 
 
     </head>

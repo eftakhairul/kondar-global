@@ -10,7 +10,7 @@ function ReloadSelectedTab()
 
     if (seltab != null)
     {
-        //seltab=seltab.replace('#','');	
+        //seltab=seltab.replace('#','');    
         //seltab=seltab.replace('_SEL','');
         $(seltab + '1').trigger('click');
     }
@@ -59,7 +59,7 @@ $(document).ready(function() {
                 return false;
         /*var pathname = window.location;
              pathname = pathname.toString();
-             var langarr 	= '';
+             var langarr    = '';
              var langsearch_fr = pathname.indexOf('/fr');
              var langsearch_ar = pathname.indexOf('/ar');
              
@@ -86,7 +86,7 @@ $(document).ready(function() {
              else
              {
              window.location.href = langarr+'home';
-             }		*/
+             }      */
         }
     });
     $('#checkSerialNumber').click(function() {
@@ -104,7 +104,6 @@ $(document).ready(function() {
         }
     });
     $('#saveBasicDetails').click(function() {
-		
         $('.emailcode-error').hide();
         $('#emailVerificationCode').val('')
         $('#emailVerificationCode').removeClass('boarder_red');
@@ -117,13 +116,6 @@ $(document).ready(function() {
         $('#country_title1').val(country);
         var telephone = $('#telephone').val();
         var email = $('#email').val();
-		
-		// Added by kipldeveloper78 on 09 -oct- 2014 
-		var text = $("#replaceEmail").text();
-		text = text.replace("REPLACE_EMAIL", email);
-		$("#replaceEmail").text(text);
-		//End here 
-		
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         var error_flag = 0;
 
@@ -174,7 +166,7 @@ $(document).ready(function() {
                 url: "promotion/save_user_details",
                 data: $('#saveBasicDetailsForm').serialize(),
                 beforeSend: function() {
-                //	   alert('asa');
+                //     alert('asa');
                 // $("#show_class").show();
                 // $("#show_class").html("Loading ...");
                 },
@@ -208,25 +200,15 @@ $(document).ready(function() {
                         $('#check_mail_code').modal('show');
                     }
                     else if ($.trim(msg) == 2) {
-                        $.ajax({
-                            type: "POST",
-                            url: "promotion/getAwardMsg",
-                            success: function(data){
-                                data = JSON.parse(data)
-                                $('#show_header').html(data[0].blocked_email_msg);
-                                var data = data[0].blocked_email_msg.replace(/PHRASE/g,response_email);
-                                var blockMsg = data.replace(/SECTION/g, time_diff);
-                                $('#blockMsg').html(blockMsg);
-                                $('#check_mail_code').modal('hide');
-                                $('#user_block_box').modal('show');
-                            }
-                        });
-                        //$('#blockMsg').html('You Have Been Blocked in '+time_diff+' section. Please Try After ' + block_min + ' minutes.');
-                        //   var blockMsg = "The email "+$split_msg[2]+" is blocked in the section "+time_diff+". Therefore, please use an alternative email or wait "+$split_msg[3]+" minutes to use this email again within our website. Thank you";
                         
+
+                        //$('#blockMsg').html('You Have Been Blocked in '+time_diff+' section. Please Try After ' + block_min + ' minutes.');
+                        var blockMsg = "The email "+$split_msg[2]+" is blocked in the section "+time_diff+". Therefore, please use an alternative email or wait "+$split_msg[3]+" minutes to use this email again within our website. Thank you";
+                        $('#blockMsg').html(blockMsg);
                         //$('#blockMsg1').html('You Have Been Blocked. Please Try After '+block_min+' minutes.');
                         //$('#blockMsg').html('You Have Been Blocked. Therefore, you will be able to use your email: ' + response_email + ' within our website only after ' + block_min + ' minutes from now. However, you will be welcome to use an alternative email');
-                        
+                        $('#check_mail_code').modal('hide');
+                        $('#user_block_box').modal('show');
                         var new_time = 1200;
                         popwindowactive = false;
                     }
@@ -278,7 +260,7 @@ $(document).ready(function() {
                 url: "promotion/checkserialcode",
                 data: $('#checkVerificationCode').serialize(),
                 beforeSend: function() {
-                //	   alert('asa');
+                //     alert('asa');
                 // $("#show_class").show();
                 // $("#show_class").html("Loading ...");
                 },
@@ -294,19 +276,18 @@ $(document).ready(function() {
                         $('.emailcode-error').hide();
                         $('#check_mail_code').modal('hide');
                         $('#claim_award_winning_number').html($('#serial_number').val());
-                        clock.reset();
+                         clock.reset();
                         $.ajax({
                             type: "POST",
                             url: "promotion/get_award_title",
                             data:'code='+$('#serial_number').val(), 
                             success: function(data) {
-                                
                                 $('#notify_award_w0n #awards_file').html(data);
                                 $('#notify_award_w0n').modal('show');
                             }
                         });
                         popwindowactive = false;
-                    //runCountDownClock("promotiontimer");
+                    //runCountDownClock("timer2");
                     //$('#claim_award').modal('show');
 
                     }
@@ -320,22 +301,9 @@ $(document).ready(function() {
                     }
                     else if ($.trim(msg) == 4)
                     {
-                        // $('#blockMsg').html('Unfortunately, you entered wrong verification code during the 3 attempts. Therefore, you will be welcome to use an alternative email or wait for 120 minutes to use the current email ' + email_ + ' within our website.');
-                       
-                        $.ajax({
-                            type: "POST",
-                            url: "promotion/getAwardMsg",
-                            success: function(data){
-                                data = JSON.parse(data)
-                                var blockMsg = data[0].error_code_block_msg.replace(/PHRASE/g,email_);
-                                $('#blockMsg').html(blockMsg);
-                                popwindowactive = false;  
-                                $('#check_mail_code').modal('hide');
-                                $('#user_block_box').modal('show');
-                            }
-                        });
-                       
-                       
+                        $('#blockMsg').html('Unfortunately, you entered wrong verification code during the 3 attempts. Therefore, you will be welcome to use an alternative email or wait for 120 minutes to use the current email ' + email_ + ' within our website.');
+                        $('#check_mail_code').modal('hide');
+                        $('#user_block_box').modal('show');
                     }
                     else if ($.trim(msg) == 5)
                     {
@@ -364,9 +332,6 @@ $(document).ready(function() {
         }
     });
     $('#claim_award_button').click(function() {
-	
-		var base_url = $("#base_url").val();
-	  
         clock1.reset();
         var str = $('#claim_award_countries_title').find('img').attr('class');
    
@@ -376,24 +341,20 @@ $(document).ready(function() {
         var claim_award_name = $('#claim_award_name').val();
         var claim_award_country = $('#claim_award_country').val();
 
-       var claim_award_country = $('#claim_award_countries_title').find('.ddlabel').html();
+        var claim_award_country = $('#claim_award_countries_title').find('.ddlabel').html();
         $('#claim_award_countries_title1').val(claim_award_country);
 
         var claim_award_telephone = $('#claim_award_telephone').val();
         var claim_award_email = $('#claim_award_email').val();
         var claim_award_passport_id = $('#claim_award_passport_id').val();
-        //var imgInp2 = $('#imgInp2').val(); // Added by Rakesh kumar on 09 - oct -2014
-        var imgInp2 = $('#passport_file').val();
+        var imgInp2 = $('#imgInp2').val();
         var claim_award_address = $('#claim_award_address').val();
         var claim_award_occupation = $('#claim_award_occupation').val();
         var claim_award_product_supplier = $('#claim_award_product_supplier').val();
-        //var imgInp1 = $('#imgInp1').val();
-		var imgInp1 = $('#uploadedFile').val();
-		
-		
+        var imgInp1 = $('#imgInp1').val();
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         var claim_award_error_flag = 0;
-	  
+
         if (claim_award_salutation == '')
         {
             $('#claim_award_salutation').addClass('boarder_red');
@@ -403,8 +364,6 @@ $(document).ready(function() {
         {
             $('#claim_award_salutation').removeClass('boarder_red');
         }
-		 
-		
         if (claim_award_name == '')
         {
             $('#claim_award_name').addClass('boarder_red');
@@ -413,8 +372,7 @@ $(document).ready(function() {
         else
         {
             $('#claim_award_name').removeClass('boarder_red');
-        } 
-		
+        }
         if (claim_award_country == '')
         {
             $('#claim_award_country').addClass('boarder_red');
@@ -451,8 +409,6 @@ $(document).ready(function() {
         {
             $('#claim_award_passport_id').removeClass('boarder_red');
         }
-		
-		
         if (imgInp2 == '')
         {
             $('#blah_imgInp2').addClass('boarder_red');
@@ -498,24 +454,9 @@ $(document).ready(function() {
         {
             $('#blah_imgInp1').removeClass('boarder_red');
         }
-		
-		// var string = 'claim_award_salutation -' + claim_award_salutation 
-					// +'claim_award_name-'+claim_award_name
-					// +'claim_award_country-'+claim_award_country
-					// +'claim_award_telephone-'+claim_award_telephone
-					// +'claim_award_email-'+claim_award_email
-					// +'claim_award_passport_id-'+claim_award_passport_id
-					// +'imgInp2-'+imgInp2
-					// +'claim_award_address-'+claim_award_address
-					// +'claim_award_occupation-'+claim_award_occupation
-					// +'claim_award_product_supplier-'+claim_award_product_supplier
-					// +'imgInp1-'+imgInp1
-					// +'checking'+reg.test(claim_award_email);
-		
-		// console.log(string); return false;
-		
+
         if (claim_award_error_flag == 0)
-        {	
+        {
             //var formData = new FormData($('#claim_award_form'));
             //alert($('#serial_number').val());
             $('#claim_award_winning_number_data').html($('#serial_number').val());
@@ -548,8 +489,7 @@ $(document).ready(function() {
             
             
             $('#timer3').html('');
-			
-            var url =  base_url+"promotion/get_timer_award";
+            var url =  "promotion/get_timer_award";
             var postData = {
                 value:'preview'
             };
@@ -562,15 +502,14 @@ $(document).ready(function() {
                     countdown: true,
                     callbacks: {
                         stop: function() {
-                            promotiontimerCountdownComplete();
+                            countdownComplete();
                         }
                     }
                 });
             },'JSON');
 
         }
-	
-		
+
 
     });
     $('#claim_award_data_button').click(function() {
@@ -583,7 +522,7 @@ $(document).ready(function() {
             url: "promotion/clearSession",
             data: '',
             beforeSend: function() {
-            //	   alert('asa');
+            //     alert('asa');
             // $("#show_class").show();
             // $("#show_class").html("Loading ...");
             },
@@ -605,7 +544,7 @@ $(document).ready(function() {
             "margin-left":"5%"
         });
         popwindowactive = true;
-        $('#promotiontimer').html('');
+        $('#timer2').html('');
         var url =  "promotion/get_timer_award";
         var postData = {
             value:'main'
@@ -614,12 +553,12 @@ $(document).ready(function() {
             $('#award_preview_msg').html(data[0]['main_award_msg']);
             $('#award_preview_msg').hide();
             var time = data[0]['main_award_timer']*60;
-            clock1 = $('#promotiontimer').FlipClock(time, {
+            clock1 = $('#timer2').FlipClock(time, {
                 clockFace: 'HourCounter',
                 countdown: true,
                 callbacks: {
                     stop: function() {
-                        promotiontimerCountdownComplete();
+                        countdownComplete();
                     }
                 }
             });
@@ -649,12 +588,12 @@ function ClaimAwardForm()
         $('#award_preview_msg').html(data[0]['main_award_msg']);
         $('#award_preview_msg').hide();
         var time = data[0]['main_award_timer']*60;
-        clock1 = $('#promotiontimer').FlipClock(time, {
+        clock1 = $('#timer2').FlipClock(time, {
             clockFace: 'HourCounter',
             countdown: true,
             callbacks: {
                 stop: function() {
-                    promotiontimerCountdownComplete();
+                    countdownComplete();
                 }
             }
         });
@@ -703,7 +642,7 @@ function runCountDownClock1(targetdiv, new_time)
         countdown: true,
         callbacks: {
             stop: function() {
-                promotiontimerCountdownComplete();
+                countdownComplete1();
             }
         }
     });
@@ -751,53 +690,6 @@ function countdownComplete_awards()
 
 }
 
-function promotiontimerCountdownComplete()
-{
-   
-    var email = $('#claim_award_email').val();
-    var name = $('#claim_award_name').val();            
-    var contact = $('#claim_award_telephone').val();
-    var country = $('#claim_award_countries_title').find('.ddlabel').html();
-    if(email == '')
-        email = $('#email').val();
-            
-            
-    $.ajax({
-        type: "POST",
-        url: "promotion/award_timeout_block",
-        data: {
-            'email':email,
-            'name':name,
-            'country':country,
-            'contact':contact
-        },               
-        success: function(msg) {
-            $('#claim_award').modal('hide');
-            $('#claim_award_data').modal('hide');
-            $('#enter_user_details').modal('hide');
-            $('#check_mail_code').modal('hide');
-            $('#user_block_box').modal('show');
-            //var blockMsg = "Unfortunately, you did not take any action within the given lead-time.  Therefore, you will be welcome to use an alternative email or wait for 120 minutes to use the current email "+email+" within our website.";
-           
-            $.ajax({
-                type: "POST",
-                url: "promotion/getAwardMsg",
-                success: function(data){
-                    data = JSON.parse(data)
-                    var blockMsg = data[0].verification_timeout.replace(/PHRASE/g,email);
-                    $('#blockMsg').html(blockMsg);
-                    popwindowactive = false;  
-                }
-            });
-           
-            
-           
-        }
-
-    });
-
-}
-
 function countdownComplete()
 {
 
@@ -822,8 +714,7 @@ function countdownComplete()
             $('#notify_submit').modal('hide');
             //$('#blockMsg').html('Unfortunately you did not take any action during the given time therefore please go back to cart and use another email address to send us your request for quotation.  Thank you');
             var blockMsg = "Unfortunately, you did not take any action within the given lead-time.  Therefore, you will be welcome to use an alternative email or wait for 120 minutes to use the current email "+$('#email').val()+" within our website.";
-           alert(blockMsg)
-           $('#blockMsg').html(blockMsg);
+            $('#blockMsg').html(blockMsg);
             $('#blockMsg1').html("");
             //$('#blockMsg1').html("Your email ("+msg+") will be usuable in our website only after 120 mniutes");
 
@@ -838,8 +729,7 @@ function countdownComplete()
             $('#check_mail_code').modal('hide');
             $('#user_block_box').modal('show');
             var blockMsg = "Unfortunately, you did not take any action within the given lead-time.  Therefore, you will be welcome to use an alternative email or wait for 120 minutes to use the current email "+$('#email').val()+" within our website.";
-           alert(blockMsg+'testtest')
-           $('#blockMsg').html(blockMsg);
+            $('#blockMsg').html(blockMsg);
             popwindowactive = false;
         }
 

@@ -4,6 +4,8 @@ var clock;
 var clock1;
 var clock2;
 var clock3;
+
+
 function fn_Set_Cookies(str_email, str_country, str_applicant, str_telephone){
     document.cookie="email=" + str_email + "; expires=; path=/";
     document.cookie="country=" + str_country + "; expires=; path=/";
@@ -568,6 +570,7 @@ function fn_Send_Verification_Code(str_email, str_applicant, int_resend, str_cou
 
 function fn_Send_Block(str_email, str_applicant, str_country, str_telephone, int_case){
    
+   
     if(int_case<4){
         if(typeof clock !== "undefined")
             clock.reset();
@@ -639,7 +642,7 @@ function fn_Send_Block(str_email, str_applicant, str_country, str_telephone, int
                 $('.div_id_verification_block').show();
             }else{
                 $('#modal_dist_popup').modal('hide');
-                document.location.href = "\home";
+                document.location.href = base_url+'home';
 					
             // $('#block_box').modal('show');
             }
@@ -647,7 +650,7 @@ function fn_Send_Block(str_email, str_applicant, str_country, str_telephone, int
         });
     }else{
         $('#modal_dist_popup').modal('hide');
-        document.location.href = "\home";
+         document.location.href = base_url+'home';
     }
 		
 }
@@ -853,6 +856,7 @@ function fn_Prepare_List(obj_id, int_limit){
 }
 
 function fn_Select_From_List(obj_id, gen_value){
+	
     if(obj_id != 'country'){
         if(gen_value > -1){
             for(var int_I = 0; int_I < document.getElementById(obj_id).length; int_I++){

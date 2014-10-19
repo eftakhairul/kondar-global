@@ -354,8 +354,55 @@ function sss()
 }
 
 
+function get_maker_data1($category_id = NULL, $type_id = NULL)
+{
+		$CI =& get_instance();
+		$session_data = $CI->session->all_userdata();
+		$vehicle_type_id = isset($session_data['vehicle_type_id_new']) ? $session_data['vehicle_type_id_new'] : '';
+		//echo $category_id;
+		//echo "<pre>"; print_r($vehicle_type_id); die;
+		$querysql = "SELECT  tbl_products.vehicle_category_id, tbl_product_types.id as type_id,tbl_product_types.product_type_name as type,tbl_product_types.Product_Type_Photo as type_photo,tbl_product_types.vehicle_category_id as category_id FROM tbl_products JOIN tbl_product_types ON tbl_product_types.id = tbl_products. product_type_id  WHERE 1";
+		if (!empty($category_id)) $querysql .= " AND tbl_products.vehicle_category_id = ".$category_id;
+		if (!empty($type_id)) $querysql .= " AND tbl_products.product_type_id = ".$type_id;
+		if(!empty($vehicle_type_id)) {
+            $querysql_1 = "";
+            $j = 1;
+            foreach ($vehicle_type_id as $arr) 
+			{
+				//echo "<pre>"; print_r($arr);
+                //var_dump($type_id);
+                if ($arr['type_id'] != '' && $arr['type_cat_id'] == $category_id) {
+					if ($j > 1)
+                        $querysql_1.= " OR tbl_product_types.id = " . $arr['type_id'] . " ";
+                    else
+                        $querysql_1.= " AND ( tbl_product_types.id = " . $arr['type_id'] . " ";
 
+                    $j++;
+                }
+            }
+			 if ($querysql_1 != '')
+                $querysql_1.= " ) ";
+            $querysql.= $querysql_1;
+		}
+		 $querysql.= " GROUP BY tbl_products.product_type_id ";
+		//echo $querysql; 
+		$query = $CI->db->query($querysql);
+       
+        return $query->result_array();
+    
+}
 
+function get_maker_data2($category_id = null,$product_type_id = null)
+{
+		$CI =& get_instance();
+		
+		$querysql = "SELECT tbl_makers.id as maker_id,tbl_makers.maker_name as maker_name, tbl_makers.maker_logo as maker_logo FROM tbl_products JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id  WHERE tbl_products.vehicle_category_id = ".$category_id." AND tbl_products.product_type_id = ".$product_type_id." GROUP BY tbl_products.maker_id";
+		//echo $querysql; 
+		$query = $CI->db->query($querysql);
+       
+        return $query->result_array();
+    
+}
 // ------------------------------------------------------------------------
 
 /* End of file xml_helper.php */

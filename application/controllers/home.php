@@ -24,7 +24,7 @@ class Home extends MY_Controller {
         parent::__construct();
         $this->load->database();
         $this->load->helper(array('url','date','av_helper','cart_helper','assets','language'));
-        $this->load->library(array("pagination",'form_validation'));
+        $this->load->library(array('session',"pagination",'form_validation'));         
         $this->load->language(array('header','home','footer'));        
     }
 

@@ -7,6 +7,8 @@
 
     $(document).ready(function() {
        
+	  var base_url = $("#base_url").val();
+	 
         // the following block is commented by dhrubo, because in each module is not same at all
         // in some module if verification popup cancels then no block but in other module it does
         // so to make this common, i commented this block, now if any user cancels the verificaiton 
@@ -68,6 +70,7 @@
         
         
         $(document).on('change','.imgInp', function(event) {
+			
             $(".filepreview").html("");
             $(".filepreview").append("<blink><span style='margin-left:10%; color:red;'>Please wait we are generating preview ...</span><blink>");
        
@@ -75,7 +78,7 @@
         
             blink(1);
         
-            $.ajax("promotion/award_form_upload", {
+            $.ajax(base_url+"promotion/award_form_upload", {
                 files: $(":file",this),
                 iframe: true,
             }).success(function(data) {
@@ -90,22 +93,20 @@
         
         
         $(document).on('change','.imgInp1', function(event) {
-        
+			
             $(".filepreview1").html("");
             $(".filepreview1").append("<blink><span style='margin-left:10%; color:red;'>Please wait we are generating preview ...</span><blink>");
        
             //alert($(".filepreview1").html());
         
             blink(1);
-        
-            $.ajax("promotion/receipt_form_upload", {
+            $.ajax(base_url+"promotion/receipt_form_upload", {
                 files: $(":file",this),
                 iframe: true,
             }).success(function(data) {
                 
                 $("blink").remove();
                 blink(0);
-                
                 $(".filepreview1").addClass("notempty").html(data);                
             });
 
@@ -426,9 +427,8 @@
                     <div class="clearfix"></div>
                     <div class="row">
                         <form method="post" enctype="multipart/form-data" id="saveBasicDetailsForm"> 
-                            <input type="hidden" class="form-control" name="code" value="" >
+                            <input type="hidden" class="form-control" name="code" id="code" value="" >
                             <input type="hidden" class="country_title1" name="country_title1" id="country_title1" value="" >
-                            <input type="hidden" name="code" id="code" value="">
                             <!--<div class="col-md-10 col-md-offset-1">-->
                             <div class="col-md-10">
 
@@ -506,7 +506,7 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-
+<input type="hidden" value="<?php echo base_url() ?>"  id="base_url">
 <!--Modal shopping decision cart-->
 <div class="modal fade" id="check_mail_code"> 
     <div class="modal-dialog"> 
@@ -537,9 +537,12 @@
 
                                 <div class="verification_msg">
                                     <div id="emailawardtyped"></div>
-                                    
-                                    <?php echo str_replace('REPLACE_EMAIL',$sesstion_user_email,$award_msg[0]['email_verification_message']);  ?>
-                                    
+                                    <span id="replaceEmail">
+                                    <?php 
+                                   // echo str_replace('REPLACE_EMAIL',$sesstion_user_email,$award_msg[0]['email_verification_message']);
+                                     echo $award_msg[0]['email_verification_message'];
+                                    ?>
+                                    </span>
 <!--                                    Thank you for assisting us validate your email address. We just sent a verification code to your email: <span id="msg_email_span"></span>. Please enter the correct verification code in three attempts and within 20 minutes. In addition, we request you to avoid refresh the page, as it will block your email for 120 minutes.   -->
 
                                 </div>
@@ -857,7 +860,7 @@
                                     <label class="col-sm-5 control-label"><?php echo lang('Upload passport copy') ?></label>
                                     <div class="col-sm-7 imgInp">
 
-<input type="file" style="float:left" id="imgInp2" name="passport_copy"> <!-- <div class="img-preview" id="img-preview11"><img src="" class="margin-bottom-top_-10" width="70" height="70" alt=""  id="blah_imgInp2"></div>-->
+										<input type="file" style="float:left" id="imgInp2" name="passport_copy"> <!-- <div class="img-preview" id="img-preview11"><img src="" class="margin-bottom-top_-10" width="70" height="70" alt=""  id="blah_imgInp2"></div>-->
                                         <span class="help" style="display:block; clear:both">
                                             <?php echo lang('Png. jpeg, pdf with 1Mb size acceptable') ?>
                                         </span>
@@ -896,7 +899,7 @@
                                 <div class="form-group imgInp1">
                                     <label class="col-sm-5 control-label"><?php echo lang('Receipt copy') ?></label>
                                     <div class="col-sm-7 imgInp1">
-                                        <input type="file" style="float:left"  id="imgInp1" name="receipt_copy"> <!-- <div class="img-preview" id="img-preview22"><img src="" class="margin-bottom-top_-10" alt="" width="70" height="70"  id="blah_imgInp1"></div>-->
+                                        <input type="file" style="float:left"  id="imgInp1" name="receipt_copy" value=""> <!-- <div class="img-preview" id="img-preview22"><img src="" class="margin-bottom-top_-10" alt="" width="70" height="70"  id="blah_imgInp1"></div>-->
                                         <span class="help" style="display:block; clear:both">
                                             <?php echo lang('Png. jpeg, pdf with 1Mb size acceptable') ?>
                                         </span>

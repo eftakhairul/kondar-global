@@ -740,6 +740,8 @@ class Contact extends MY_Controller {
                     $result = $this->email->send();
 
 
+
+
                     //$mailerstatus = $kgtmailer->sendmail($subject, $message, $to, $from, $fromname, $cc, $bcc, $toname);
                     //for user mail
 //                    $from = 'customerservice@kondarglobal.ca';

@@ -333,7 +333,7 @@ class Product_model extends CI_Model {
         return $query->result_array();
     }
 
-    function get_product_type_by_typename($ids, $offset = 0) {
+    function get_product_type_by_typename($ids, $offset = 0, $type_ids=FALSE) {
 
         $this->db->select('tbl_product_types.*,tbl_vehicle_categories.category_name as category_name');
         $this->db->from('tbl_vehicle_categories');
@@ -346,6 +346,14 @@ class Product_model extends CI_Model {
                 //$this->db->where('tbl_products.vehicle_category_id', $id); 
             }
         }
+				
+				if (!empty($type_ids)) {
+            foreach ($type_ids as $type_id)
+						{
+                if ($type_id != '')
+                    $this->db->where('tbl_product_types.id', $type_id);
+            }
+        }
         $this->db->group_by("tbl_product_types.id");
         $this->db->order_by("tbl_product_types.product_type_name");
         $this->db->limit($this->config->item('pagination_limit'), $offset);
@@ -354,17 +362,69 @@ class Product_model extends CI_Model {
         return $query->result_array();
     }
 
-    function count_product_type_by_typename($ids) {
+	function get_product_type_by_type_names($names, $offset=0) {
+				if(!is_array($names)) $names = array($names);
+        $this->db->select('*');
+        $this->db->from('tbl_product_types');
+
+        if (!empty($names)) {
+            foreach ($names as $name) {
+                if ($name != '')
+                    $this->db->or_where('product_type_name', $name);
+            }
+        }
+        $this->db->order_by("tbl_product_types.product_type_name");
+        $this->db->limit($this->config->item('pagination_limit'), $offset);
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+		
+	function get_product_type_ids_by_type_names_and_cat_ids($names, $cat_ids) {
+		if(!is_array($names)) $names = array($names);
+		if(!is_array($cat_ids)) $cat_ids = array($cat_ids);
+        $this->db->select('id');
+        $this->db->from('tbl_product_types');
+
+        if ($names && !empty($names))
+		{
+			$names = array_diff($names, array(''));
+			$this->db->where_in('product_type_name', $names);
+        }
+			
+		if ($cat_ids && !empty($cat_ids))
+		{
+			$cat_ids = array_diff($cat_ids, array(''));
+			$this->db->where_in('vehicle_category_id', $cat_ids);
+        }
+				
+        $this->db->order_by("tbl_product_types.product_type_name");
+        $query = $this->db->get();
+				$result = array();
+				foreach ($query->result_array() as $elem)
+						$result[] = $elem['id'];
+				return $result;
+    }
+		
+    function count_product_type_by_typename($ids, $type_ids=FALSE) {
 
         $this->db->select('tbl_product_types.id');
         $this->db->from('tbl_vehicle_categories');
         $this->db->join('tbl_product_types', 'tbl_product_types.vehicle_category_id = tbl_vehicle_categories.id');
 
-        if (!empty($ids)) {
-            foreach ($ids as $id) {
+        if (!empty($ids))
+		{
+            foreach ($ids as $id)
+			{
                 if ($id != '')
                     $this->db->or_where('tbl_vehicle_categories.id', $id);
-                //$this->db->where('tbl_products.vehicle_category_id', $id); 
+            }
+        }
+		if (!empty($type_ids))
+		{
+            foreach ($type_ids as $type_id)
+			{
+                if ($type_id != '')
+                    $this->db->where('tbl_product_types.id', $type_id);
             }
         }
         $this->db->group_by("tbl_product_types.id");
@@ -414,6 +474,7 @@ class Product_model extends CI_Model {
         $session_data = $this->session->all_userdata();
 
         $vehicle_category_id = $session_data['vehicle_category_id'];
+		$vehicle_category_id = array_unique($vehicle_category_id);
         $vehicle_type_id = isset($session_data['vehicle_type_id']) ? $session_data['vehicle_type_id'] : '';
         //print_r($vehicle_type_id);
         $vehicle_type_names = isset($session_data['vehicle_type_names']) ? $session_data['vehicle_type_names'] : '';
@@ -421,7 +482,7 @@ class Product_model extends CI_Model {
         if ($product_maker_id == NULL)
             $product_maker_id = array();
 
-        $querysql = "SELECT tbl_makers.*, tbl_makers.maker_name as make, tbl_makers.maker_logo as maker_logo, tbl_models.model_name as model, tbl_models.model_photo as model_photo,tbl_vehicle_categories.category_name as category, tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages FROM tbl_products JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id JOIN tbl_models ON tbl_models.id = tbl_products.model_id JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
+		$querysql = "SELECT tbl_makers.*, tbl_makers.maker_name as make, tbl_makers.maker_logo as maker_logo, tbl_models.id as model_id,tbl_models.model_name as model, tbl_models.model_photo as model_photo,tbl_vehicle_categories.id as category_id,tbl_vehicle_categories.category_name as category,tbl_vehicle_categories.vehicle_category_icon as category_icon, tbl_product_types.id as type_id,tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages FROM tbl_products JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id JOIN tbl_models ON tbl_models.id = tbl_products.model_id JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
 
         if (!empty($vehicle_category_id)) {
             $querysql_1 = "";
@@ -495,8 +556,9 @@ class Product_model extends CI_Model {
             $querysql.= $querysql_3;
         }
 
-        $querysql.= " GROUP BY tbl_products.maker_id ";
-
+        //$querysql.= " GROUP BY tbl_products.maker_id ";
+		 $querysql.= " GROUP BY tbl_products.vehicle_category_id ";
+		 
         if (isset($offset)) {
             $querysql.= " limit " . $offset . "," . $this->config->item('pagination_limit');
         } else {
@@ -506,7 +568,6 @@ class Product_model extends CI_Model {
        // echo $querysql;
         //exit;
         $query = $this->db->query($querysql);
-        //var_dump($query->result());
         return $query->result_array();
     }
 
@@ -651,12 +712,17 @@ class Product_model extends CI_Model {
 
         $vehicle_category_id = $session_data['vehicle_category_id'];
         $vehicle_type_id = isset($session_data['vehicle_type_id']) ? $session_data['vehicle_type_id'] : '';
-        $product_maker_id = isset($session_data['product_maker_id']) ? $session_data['product_maker_id'] : '';
+        $product_maker_id = isset($session_data['vehicle_brand_id']) ? $session_data['vehicle_brand_id'] : '';
         $product_model_id = isset($session_data['product_model_id']) ? $session_data['product_model_id'] : '';
         if ($product_maker_id == NULL)
             $product_maker_id = array();
 
-        $querysql = "SELECT tbl_products.*, tbl_makers.maker_name as make,tbl_makers.maker_logo as maker_logo, tbl_models.model_name as model,tbl_models.model_photo as model_photo, tbl_vehicle_categories.category_name as category, tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages FROM tbl_products JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id JOIN tbl_models ON tbl_models.id = tbl_products.model_id JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
+        $querysql = "SELECT tbl_products.*, tbl_makers.maker_name as make,tbl_makers.maker_logo as maker_logo, tbl_models.model_name as model,tbl_models.model_photo as model_photo, tbl_vehicle_categories.category_name as category, tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages 
+				FROM tbl_products 
+				JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id 
+				JOIN tbl_models ON tbl_models.id = tbl_products.model_id 
+				JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id 
+				JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
 
         if (!empty($vehicle_category_id)) {
             $querysql_1 = "";
@@ -734,11 +800,11 @@ class Product_model extends CI_Model {
 
 
         //$querysql.= " GROUP BY tbl_products.maker_id,tbl_products.id,tbl_products.kgt_ref_number ";
-        $querysql.= " GROUP BY tbl_products.id ORDER BY tbl_products.maker_id, tbl_products.model_id, tbl_products.product_type_id ";
+        $querysql.= " GROUP BY tbl_products.id ORDER BY tbl_products.maker_id, tbl_models.model_name, tbl_products.model_id, tbl_products.product_type_id ";
         if ($limit) {
             $querysql.= " limit " . $offset . "," . $limit;
         }
-        //echo $querysql;
+        // echo $querysql;
         $query = $this->db->query($querysql);
         return $query->result();
     }
@@ -748,7 +814,7 @@ class Product_model extends CI_Model {
 
         $vehicle_category_id = $session_data['vehicle_category_id'];
         $vehicle_type_id = isset($session_data['vehicle_type_id']) ? $session_data['vehicle_type_id'] : '';
-        $product_maker_id = isset($session_data['product_maker_id']) ? $session_data['product_maker_id'] : '';
+        $product_maker_id = isset($session_data['vehicle_brand_id']) ? $session_data['vehicle_brand_id'] : '';
         $product_model_id = isset($session_data['product_model_id']) ? $session_data['product_model_id'] : '';
         if ($product_maker_id == NULL)
             $product_maker_id = array();
@@ -1081,10 +1147,9 @@ where tbl_product_types.id=' . $typeid;
 
         return $data;
     }
-
-
-    function get_products_by_makers_brand_details_with_values($session_data = array(), $offset = NULL) {
-
+		
+	function get_products_by_makers_brand_details_count($offset = NULL) {
+        $session_data = $this->session->all_userdata();
 
         $vehicle_category_id = $session_data['vehicle_category_id'];
         $vehicle_type_id = isset($session_data['vehicle_type_id']) ? $session_data['vehicle_type_id'] : '';
@@ -1094,7 +1159,7 @@ where tbl_product_types.id=' . $typeid;
         if ($product_maker_id == NULL)
             $product_maker_id = array();
 
-        $querysql = "SELECT tbl_makers.*, tbl_makers.maker_name as make, tbl_makers.maker_logo as maker_logo, tbl_models.model_name as model, tbl_models.model_photo as model_photo,tbl_vehicle_categories.category_name as category, tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages FROM tbl_products JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id JOIN tbl_models ON tbl_models.id = tbl_products.model_id JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
+      $querysql = "SELECT tbl_makers.*, tbl_makers.maker_name as make, tbl_makers.maker_logo as maker_logo, tbl_models.id as model_id,tbl_models.model_name as model, tbl_models.model_photo as model_photo,tbl_vehicle_categories.id as category_id,tbl_vehicle_categories.category_name as category,tbl_vehicle_categories.vehicle_category_icon as category_icon, tbl_product_types.id as type_id,tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages FROM tbl_products JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id JOIN tbl_models ON tbl_models.id = tbl_products.model_id JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
 
         if (!empty($vehicle_category_id)) {
             $querysql_1 = "";
@@ -1168,21 +1233,107 @@ where tbl_product_types.id=' . $typeid;
             $querysql.= $querysql_3;
         }
 
-        $querysql.= " GROUP BY tbl_products.maker_id ";
+        //$querysql.= " GROUP BY tbl_products.maker_id ";
+		 $querysql.= " GROUP BY tbl_products.vehicle_category_id ";
+		
 
-        if (isset($offset)) {
-            $querysql.= " limit " . $offset . "," . $this->config->item('pagination_limit');
-        } else {
-            $querysql.= " limit " . $this->config->item('pagination_limit');
-        }
-
-       // echo $querysql;
+       //echo $querysql;
         //exit;
         $query = $this->db->query($querysql);
         //var_dump($query->result());
-        return $query->result_array();
+        return count($query->result_array());
     }
 
+	//get products according selected maker_id-type_id pair
+	function get_products_by_makers_cats_pair($limit = null, $offset = 0)
+	{
+        $session_data = $this->session->all_userdata();
+        $vehicle_type_id_and_cat_id_pair = isset($session_data['vehicle_type_id_and_cat_id_pair']) ? $session_data['vehicle_type_id_and_cat_id_pair'] : array();
+
+        $querysql = "SELECT tbl_products.*, tbl_makers.maker_name as make,tbl_makers.maker_logo as maker_logo, tbl_models.model_name as model,tbl_models.model_photo as model_photo, tbl_vehicle_categories.category_name as category, tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages 
+				FROM tbl_products 
+				JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id 
+				JOIN tbl_models ON tbl_models.id = tbl_products.model_id 
+				JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id 
+				JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
+
+        if (!empty($vehicle_type_id_and_cat_id_pair))
+		{
+            $where_array = array();
+			foreach ($vehicle_type_id_and_cat_id_pair as $pair)
+			{
+				if ($pair['brand_id'] && $pair['type_id'])
+					$where_array[] = " ( tbl_products.maker_id = " . $pair['brand_id'] . " AND tbl_products.product_type_id = " . $pair['type_id'] . " ) ";
+            }
+        }
+		$querysql.= " AND (" . implode(" OR ",$where_array) . ") ";
+          
+        $querysql.= " GROUP BY tbl_products.id ORDER BY tbl_products.maker_id, tbl_models.model_name, tbl_products.model_id, tbl_products.product_type_id ";
+        if ($limit) {
+            $querysql.= " limit " . $offset . "," . $limit;
+        }
+        // echo $querysql;
+        $query = $this->db->query($querysql);
+        return $query->result();
+    }
+	
+	function get_all_products_by_makers_cats_pair()
+	{
+        $session_data = $this->session->all_userdata();
+        $vehicle_type_id_and_cat_id_pair = isset($session_data['vehicle_type_id_and_cat_id_pair']) ? $session_data['vehicle_type_id_and_cat_id_pair'] : array();
+
+        $querysql = "SELECT tbl_products.*, tbl_makers.maker_name as make,tbl_makers.maker_logo as maker_logo, tbl_models.model_name as model,tbl_models.model_photo as model_photo, tbl_vehicle_categories.category_name as category, tbl_product_types.product_type_name as type, tbl_product_types.menu_privilages 
+				FROM tbl_products 
+				JOIN tbl_makers ON tbl_makers.id = tbl_products.maker_id 
+				JOIN tbl_models ON tbl_models.id = tbl_products.model_id 
+				JOIN tbl_vehicle_categories ON tbl_vehicle_categories.id = tbl_products.vehicle_category_id 
+				JOIN tbl_product_types ON tbl_product_types.id = tbl_products.product_type_id WHERE 1 = 1";
+
+        if (!empty($vehicle_type_id_and_cat_id_pair))
+		{
+            $where_array = array();
+			foreach ($vehicle_type_id_and_cat_id_pair as $pair)
+			{
+				if ($pair['brand_id'] && $pair['type_id'])
+					$where_array[] = " ( tbl_products.maker_id = " . $pair['brand_id'] . " AND tbl_products.product_type_id = " . $pair['type_id'] . " ) ";
+            }
+        }
+		if ($where_array) $querysql.= " AND (" . implode(" OR ",$where_array) . ") ";
+          
+        $querysql.= " GROUP BY tbl_products.id ORDER BY tbl_products.maker_id, tbl_models.model_name, tbl_products.model_id, tbl_products.product_type_id ";
+
+        // echo $querysql;
+        $query = $this->db->query($querysql);
+        return $query->result();
+    }
+	
+	//get category ids for selected type_ids
+	function get_product_category_by_type_id($id = array())
+	{
+		if ($id)
+		{
+			$this->db->or_where_in('id', $id);
+			$this->db->select('vehicle_category_id');
+			$query = $this->db->get('tbl_product_types');
+			foreach ($query->result_array() as $res )
+				$result[] = $res['vehicle_category_id'];
+			return $result;
+		}
+		return array();
+    }
+
+	function get_product_type_data_by_id($product_type_ids=array())
+	{
+
+        if ($product_type_ids)
+		{
+			$this->db->where_in('tbl_product_types.id', $product_type_ids);
+			$this->db->join('tbl_vehicle_categories','tbl_vehicle_categories.id=tbl_product_types.vehicle_category_id');
+			$query = $this->db->get('tbl_product_types');
+			return $query->row_array();
+		}
+		return array();
+    }
 }
 
 // END Category_model Class

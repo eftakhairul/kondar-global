@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'commonrbs';
+$db['default']['username'] = 'kondar_consol';
+$db['default']['password'] = 'New@2014';
 $db['default']['database'] = 'kondar_consol';
 
 $db['default']['dbdriver'] = 'mysql';

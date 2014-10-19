@@ -98,7 +98,7 @@
 <?php } ?>
                 </div>
                     <div class="clearfix"></div>
-                     <?php if ($total_num_of_vehicle_type > count($vehicle_type)) { ?>
+                     <?php if (false && $total_num_of_vehicle_type > count($vehicle_type)) { //disable cause not isset noumber of vehicle_type by page?>
                             <div id="more_button_vehicle_type" class="load-more-data"> Load more </div>
                         <?php } ?>
                 </div>

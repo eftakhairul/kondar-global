@@ -5,7 +5,9 @@ if ($this->session->flashdata('error')) {
     $msg = $this->session->flashdata('error');
     ?>
     <script>
+	  
         $(document).ready(function(){
+			
             $('#modal_block').modal('show');
             $('#block_bttn').click(function(){
                 return false;	
@@ -31,6 +33,7 @@ if ($this->session->flashdata('error')) {
 
 <script>
     $(document).ready(function(){
+		var base_url = '<?php echo base_url(); ?>'; // on 08 - oct - 2014 Rakesh kumar 
         $('.openPop').click(function(){
             var id = $(this).attr('id');
             var name = $(this).attr('title');
@@ -51,7 +54,7 @@ if ($this->session->flashdata('error')) {
         $('#ok_bttn').click(function(){
             //		alert('');
             var pro_id = $('#promotion_id').attr('value');
-            window.location.href = "promotion/promotion_form/"+pro_id;
+            window.location.href = base_url+"promotion/promotion_form/"+pro_id;
             return false;
         });
 	

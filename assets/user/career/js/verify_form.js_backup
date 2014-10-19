@@ -1,14 +1,14 @@
 $(document).ready(function() {
-	
+
     $('#notify_submit').modal('show');
-	
-    // $('#ok_bttn').click(function() {
 
-        // window.location.href = base_url+"career/interview";
+    $('#ok_bttn').click(function() {
 
-        // return false;
+        window.location.href = "career/interview";
 
-    // });
+        return false;
+
+    });
 
 
 

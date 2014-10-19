@@ -643,6 +643,8 @@ class Promotion extends CI_Controller {
             'address' => $this->input->post('address'),
             'occupation' => $this->input->post('occupation'),
             'product_supplier' => $this->input->post('product_supplier'),
+            'receipt_copy' => $this->input->post('receipt_copy_file'),
+            'passport_copy' => $this->input->post('passport_copy_file'),
             'serial_id' => $result[0]->id,
             'created_date' => time()
         );
@@ -656,23 +658,7 @@ class Promotion extends CI_Controller {
         $flag_name = $block_email[0]->alpha_2;
         //region end
 
-        if (!empty($_FILES['passport_copy']['name']) && !empty($_FILES['receipt_copy']['name'])) {
-            $field_name1 = 'passport_copy';
-            $field_name2 = 'receipt_copy';
-            $config['upload_path'] = './assets/uploads/winner_image';
-            $config['allowed_types'] = 'doc|docx|DOC|DOCX|pdf|jpg|JPG|png|gif|tif';
-            $config['max_size'] = '1024';
-            $config['max_width'] = '100000';
-            $config['max_height'] = '10000';
-            $this->load->library('upload', $config);
-
-            $this->upload->do_upload($field_name1);
-            $upload_data = $this->upload->data();
-            $post_data['passport_copy'] = $upload_data['file_name'];
-
-            $this->upload->do_upload($field_name2);
-            $upload_data = $this->upload->data();
-            $post_data['receipt_copy'] = $upload_data['file_name'];
+        if (!empty($post_data['passport_copy']) && !empty($post_data['receipt_copy'])) {
 
             $data['code'] = $claim_award_code_VerificationCode;
 
@@ -812,6 +798,7 @@ class Promotion extends CI_Controller {
                 echo $this->upload->display_errors();
             } else {
                 $upload_data = $this->upload->data();
+				$upload_data['passport_copy'] = 1;
                 $this->load->view("promotion/filepreview", array('file' => $upload_data));
             }
         }
@@ -832,9 +819,12 @@ class Promotion extends CI_Controller {
             $this->load->library('upload', $config);
             if (!$this->upload->do_upload($field_name)) {
                 echo $this->upload->display_errors();
+				$this->session->set_userdata('fileUploaded', 0);
             } else {
                 $upload_data = $this->upload->data();
+				$upload_data['receipt_copy'] = 1;
                 $this->load->view("promotion/filepreview", array('file' => $upload_data));
+				
             }
         }
     }

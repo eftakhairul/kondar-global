@@ -17,6 +17,20 @@
     $('#ok_button').click(function(){
         clock.reset();
     })
+	
+	$(document).ready(function() {
+	
+	 var base_url = '<?php echo base_url(); ?>';
+	 
+	  $('#ok_bttn').click(function() {
+
+		window.location.href = base_url+"career/interview";
+
+		return false;
+
+	});
+	});
+
 </script>
 <div class="bodywrapper">
     <div class="container">
@@ -84,7 +98,8 @@
                     <p><?php echo preg_replace('/\bPHRASE\b/', $user_data['email'], $career_msg[0]['validate_confirm']); ?></p>
                     <div class="clearfix"></div>
                     <div class="btn-modal"> <a style="float:right" href="javascript:void(0)" id="ok_bttn" onClick="$('#modal_success').modal('hide')" class="btn btn-primary btn-sm"><?php echo lang('OK'); ?> <i class="glyphicon glyphicon-chevron-right"></i></a> </div>
-                </div>
+					
+				</div>
             </div>
         </div>
         <!-- /.modal-content -->

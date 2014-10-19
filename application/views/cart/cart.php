@@ -225,10 +225,16 @@
 												<?php } ?>
                                                 <td style="color: #575757; font-family: arial; font-size: 12px; text-align: center;"><a href="javascript:void(0)" onClick="$(this).parent().parent().next('.less_info').toggle();$(this).find('.less_img').toggle();$(this).find('.more_img').toggle();"> 
                                                 <!--<img class="less_img" src="assets/template/images/less_info.png" style="display:none" alt=""/> 
-                                                <img class="more_img" src="assets/template/images/more_info.png" style="display:inline" alt=""/> </a> </td>-->
-
+                                                <img class="more_img" src="assets/template/images/more_info.png" style="display:inline" alt=""/>-->
+												<?/* it looks like very! alternative usage of img tag =)
                                                         <img class="less_img" src="" style="display:inline; color: black;  background-color: whitesmoke;" alt=" - "/> 
-                                                        <img class="more_img" src="" style="display:none; color: black;  background-color: whitesmoke;" alt=" + "/> </a> </td>
+                                                        <img class="more_img" src="" style="display:none; color: black;  background-color: whitesmoke;" alt=" + "/>
+												*/?>	
+												
+												<span class="less_img" style="display:block;color:black;background-color: whitesmoke;"> - </span>
+												<span class="more_img" style="display:none;color:black;background-color: whitesmoke;"> + </span>
+												</a> </td>
+
 
                                             </tr>
                                             <tr class="less_info cart_details_row_<?php echo $cart['id']; ?>" style="background-color: rgb(219, 219, 219);">

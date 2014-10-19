@@ -140,7 +140,7 @@
                     //  alert(msg);
                     $(".show_class").html('');
                     if (msg == 'success') {
-                        window.location.href = "promotion/verify_promotion";
+                        window.location.href = base_url+"promotion/verify_promotion";
                         //alert('We sent a varification code.Please Check Your mail.');
                     }
                     else {

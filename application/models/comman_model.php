@@ -1040,38 +1040,11 @@ class comman_model extends CI_Model {
 
     public function getVicleDetailsById($id)
     {
-        $this->db->select("tbl_product_types.*, tbl_vehicle_categories.category_name");
-        $this->db->from('tbl_product_types');
-        $this->db->join('tbl_vehicle_categories', 'tbl_product_types.vehicle_category_id = tbl_vehicle_categories.id');
-
-        $this->db->where('tbl_product_types.id', $id);
-        $query = $this->db->get();
-        return $query->row();
-    }
-
-    public function getVichleById($id)
-    {
         $this->db->where('id', $id);
-        $query = $this->db->get('tbl_vehicle_categories');
+        $query = $this->db->get('tbl_product_types');
         return $query->row();
     }
 
-
-    public function getIdByVichleName($name)
-    {
-        $this->db->where('category_name', $name);
-        $query = $this->db->get('tbl_vehicle_categories');
-        return $query->row()->id;
-    }
-
-    public function getIdByProductTypeandVichleId($product_name, $vichle_id)
-    {
-        $this->db->where('vehicle_category_id', $vichle_id);
-        $this->db->where('product_type_name', $product_name);
-        $query = $this->db->get('tbl_product_types');
-
-        return $query->row()->id;
-    }
 }
 
 /* End of file super_admin_model.php */
